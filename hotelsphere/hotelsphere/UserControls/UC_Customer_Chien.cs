@@ -1,9 +1,6 @@
-﻿using ExcelLibrary.BinaryFileFormat;
-using Guna.UI2.WinForms;
+﻿using Guna.UI2.WinForms;
 using hotelsphere.Controller;
 using hotelsphere.Models;
-using Stimulsoft.Controls;
-using Stimulsoft.Controls.Win.DotNetBar.Controls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
