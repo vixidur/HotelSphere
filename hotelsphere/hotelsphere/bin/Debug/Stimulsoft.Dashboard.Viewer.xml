@@ -1,0 +1,548 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Stimulsoft.Dashboard.Viewer</name>
+    </assembly>
+    <members>
+        <member name="F:Stimulsoft.Dashboard.Viewer.Controls.DatePicker.StiDateRangeControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.Controls.DatePicker.StiDateRangeControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.Controls.DatePicker.StiDateRangeControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.Controls.Helpers.StiActionButtonsHelper.UpdateActionButtonControl(System.Int32@,System.Windows.Forms.Control,System.Boolean,System.Boolean)">
+            <summary>
+            Updates <paramref name="actionButton"/>'s visibility and position.
+            </summary>
+            <param name="alwaysUpdatePosition">This one is a workaround for
+            <see cref="P:Stimulsoft.Dashboard.Viewer.Controls.IStiActionButtons.ViewStateButtons"/>.</param>
+            <returns>
+            <see langword="true"/> if <paramref name="actionButton"/>'s
+            properties were changed, <see langword="false"/> otherwise.
+            </returns>
+        </member>
+        <member name="T:Stimulsoft.Dashboard.Viewer.Controls.IStiActionButton">
+            <summary>
+            Idetifies a button control for the dashboard viewer.
+            </summary>
+        </member>
+        <member name="T:Stimulsoft.Dashboard.Viewer.Controls.NumberBox.StiNumberBoxInput">
+            <summary>
+            Defines the base numeric edit control.
+            </summary>
+        </member>
+        <member name="T:Stimulsoft.Dashboard.Viewer.Controls.StiHintTextBox">
+            <summary>
+            Displays a text box control with hint for the user input.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Dashboard.Viewer.Controls.StiHintTextBox.BackgroundImage">
+            <summary>
+            Do not use this property.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Dashboard.Viewer.Controls.StiHintTextBox.Focused">
+            <summary>
+            Gets a value indicating whether the control has input focus.
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Dashboard.Viewer.Controls.Table.Menu.StiTableElementFiltersForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.Controls.Table.Menu.StiTableElementFiltersForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.Controls.Table.Menu.StiTableElementFiltersForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Dashboard.Viewer.Controls.Table.Menu.StiTableElementFilterZoneControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.Controls.Table.Menu.StiTableElementFilterZoneControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.Controls.Table.Menu.StiTableElementFilterZoneControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Dashboard.Viewer.Controls.Table.Menu.StiTableZoneContainer.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.Controls.Table.Menu.StiTableZoneContainer.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.Controls.Table.Menu.StiTableZoneContainer.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Dashboard.Viewer.Controls.Table.Menu.StiTableZoneControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.Controls.Table.Menu.StiTableZoneControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.Controls.Table.Menu.StiTableZoneControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Stimulsoft.Dashboard.Viewer.Controls.Table.Menu.StiTextEditorForm">
+            <summary>
+            This form is used for text editor.
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Dashboard.Viewer.Controls.Table.Menu.StiTextEditorForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.Controls.Table.Menu.StiTextEditorForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.Controls.Table.Menu.StiTextEditorForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Stimulsoft.Dashboard.Viewer.Controls.Table.PageNavigation.StiDoubleBufferedTableLayoutPanel">
+            <summary>
+            Original <see cref="T:System.Windows.Forms.TableLayoutPanel"/> flickers when updated,
+            even when <see cref="M:System.Windows.Forms.Control.SuspendLayout"/> and <see cref="M:System.Windows.Forms.Control.ResumeLayout"/>
+            are used. This one uses double-buffering, thus greatly reducing flickering.
+            </summary>
+        </member>
+        <member name="T:Stimulsoft.Dashboard.Viewer.Controls.Table.PageNavigation.StiTablePageNavigationControl">
+            <summary>
+            Displays page navigation buttons, like "1 ... 7 8 9 ... 100".
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Dashboard.Viewer.Controls.Table.PageNavigation.StiTablePageNavigationControl.pageNavigator">
+            <summary>
+            'View Model' of current navigation control.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Dashboard.Viewer.Controls.Table.PageNavigation.StiTablePageNavigationControl.DefaultPageButtonWidth">
+            <summary>
+            Used when cannot find another width.
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Dashboard.Viewer.Controls.Table.PageNavigation.StiTablePageNavigationControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.Controls.Table.PageNavigation.StiTablePageNavigationControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.Controls.Table.PageNavigation.StiTablePageNavigationControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Dashboard.Viewer.Controls.Table.PageNavigation.StiTablePageNavigationControl.Ellipsis.textBrush">
+            <summary>
+            Cached brush, to avoid recreating for each OnPaint call.
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Dashboard.Viewer.Controls.Table.PageNavigation.StiTablePageNavigationControl.Ellipsis.textFormat">
+            <summary>
+            Cached format, to avoid recreating for each OnPaint call.
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Dashboard.Viewer.Controls.Table.PageNavigation.StiTablePageNavigationControl.PageButton.textBrush">
+            <summary>
+            Cached brush, to avoid recreating for each OnPaint call.
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Dashboard.Viewer.Controls.Table.PageNavigation.StiTablePageNavigationControl.PageButton.textFormat">
+            <summary>
+            Cached format, to avoid recreating for each OnPaint call.
+            </summary>
+        </member>
+        <member name="T:Stimulsoft.Dashboard.Viewer.Controls.Table.PageNavigation.StiTablePageNavigationFooter">
+            <summary>
+            <see cref="T:Stimulsoft.Dashboard.Viewer.Controls.Table.PageNavigation.StiTablePageNavigationControl"/>
+            should be displayed below the table,
+            and its width should be equal to that of the table,
+            otherwise it's not beautiful.
+            <para/>
+            However, <see cref="T:Stimulsoft.Dashboard.Viewer.Controls.Table.StiTableViewControl"/>'s <see cref="P:System.Windows.Forms.Control.Width"/>
+            property is lying: it's not the visible width of the table.
+            We have to calculate it manually.
+            <para/>
+            This control performs said width calculations,
+            wraps <see cref="T:Stimulsoft.Dashboard.Viewer.Controls.Table.PageNavigation.StiTablePageNavigationControl"/>
+            and appropriately resizes it.
+            </summary>
+        </member>
+        <member name="E:Stimulsoft.Dashboard.Viewer.Controls.Table.PageNavigation.StiTablePageNavigationFooter.CurrentPageIndexChanged">
+            These are just wrappers for <see cref="T:Stimulsoft.Dashboard.Viewer.Controls.Table.PageNavigation.StiTablePageNavigationControl"/>.
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.Controls.Table.PageNavigation.StiTablePageNavigationFooter.MatchWidthWithTable">
+            <summary>
+            See <see cref="T:Stimulsoft.Dashboard.Viewer.Controls.Table.PageNavigation.StiTablePageNavigationFooter"/>'s description.
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Dashboard.Viewer.Controls.Table.PageNavigation.StiTablePageNavigationFooter.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.Controls.Table.PageNavigation.StiTablePageNavigationFooter.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.Controls.Table.PageNavigation.StiTablePageNavigationFooter.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Dashboard.Viewer.Controls.Table.StiTableFooterControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.Controls.Table.StiTableFooterControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.Controls.Table.StiTableFooterControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Dashboard.Viewer.Controls.Table.StiTableViewControl.DataSource">
+            Pagination is rather cumbersome, so workarounds are used.
+            
+            <see cref="P:System.Windows.Forms.DataGridView.DataSource"/> property is used
+            both as data input for users and as output for displaying
+            (base <see cref="T:System.Windows.Forms.DataGridView"/> displays it).
+            So, to modify data in between these actions
+            (namely, apply sorting and pagination), we need the following:
+            
+             <see cref="F:Stimulsoft.Dashboard.Viewer.Controls.Table.StiTableViewControl.dataSourceChangeIsExternal"/> field and
+            <see cref="P:Stimulsoft.Dashboard.Viewer.Controls.Table.StiTableViewControl.DataSource"/> property
+            allow to discriminate whether change was internal or external.
+            
+            When internal change is made, it means we have new table to display.
+            It may contain only one page, so <see cref="P:System.Windows.Forms.DataGridView.DataSource"/>
+            cannot be used for storing both full 'original' table and for output one.
+            We use <see cref="F:Stimulsoft.Dashboard.Viewer.Controls.Table.StiTableViewControl.tableBeforePagination"/> to store 'original' instead.
+            
+            When external change happens, <see cref="P:System.Windows.Forms.DataGridView.DataSource"/>
+            contains new, unsorted and un-paginated data.
+            Therefore, <see cref="F:Stimulsoft.Dashboard.Viewer.Controls.Table.StiTableViewControl.tableBeforePagination"/> should be reset,
+            as it contains previous, now invalid table.
+            <summary>
+            Internal calls to <see cref="P:Stimulsoft.Dashboard.Viewer.Controls.Table.StiTableViewControl.DataSource"/> go here,
+            so <see cref="F:Stimulsoft.Dashboard.Viewer.Controls.Table.StiTableViewControl.dataSourceChangeIsExternal"/> is properly set.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Dashboard.Viewer.Controls.Table.StiTableViewControl.NumberOfPages">
+            <summary>
+            Has no sense if <see cref="P:Stimulsoft.Dashboard.Viewer.Controls.Table.StiTableViewControl.UsePaginaton"/> is <see langword="false"/>.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Dashboard.Viewer.Controls.Table.StiTableViewControl.RowsPerPage">
+            <summary>
+            Ignored if <see cref="P:Stimulsoft.Dashboard.Viewer.Controls.Table.StiTableViewControl.UsePaginaton"/> is <see langword="false"/>.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Dashboard.Viewer.Controls.Table.StiTableViewControl.CurrentPageIndex">
+            <summary>
+            Ignored if <see cref="P:Stimulsoft.Dashboard.Viewer.Controls.Table.StiTableViewControl.UsePaginaton"/> is <see langword="false"/>.
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Dashboard.Viewer.Controls.Table.StiTableViewControl.tableBeforePagination">
+            <summary>
+            Table after applying sorting but before applying pagination.
+            To turn pages we need all of those pages, not only displayed one
+            which is available through <see cref="P:Stimulsoft.Dashboard.Viewer.Controls.Table.StiTableViewControl.NetTable"/>.
+            </summary>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.Controls.Table.StiTableViewControl.UpdateDisplayedTable">
+            <summary>
+            Currently applies sorting and pagination, if any.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Dashboard.Viewer.Elements.StiSimpleAtomElementControl.ToolTipString">
+            <summary>
+            Do not optimize this proeprty sctructure! We need to calculate that property only on first access.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Dashboard.Viewer.Elements.StiSimpleAtomElementControl.HyperlinkString">
+            <summary>
+            Do not optimize this proeprty sctructure! We need to calculate that property only on first access.
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Dashboard.Viewer.Export.StiDashboardDataExportSetupForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.Export.StiDashboardDataExportSetupForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.Export.StiDashboardDataExportSetupForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Dashboard.Viewer.Export.StiDashboardExcelExportSetupForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.Export.StiDashboardExcelExportSetupForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.Export.StiDashboardExcelExportSetupForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Dashboard.Viewer.Export.StiDashboardHtmlExportSetupForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.Export.StiDashboardHtmlExportSetupForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.Export.StiDashboardHtmlExportSetupForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Dashboard.Viewer.Export.StiDashboardImageExportSetupForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.Export.StiDashboardImageExportSetupForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.Export.StiDashboardImageExportSetupForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Dashboard.Viewer.Export.StiDashboardPdfExportSetupForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.Export.StiDashboardPdfExportSetupForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.Export.StiDashboardPdfExportSetupForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Dashboard.Viewer.FullScreen.StiElementFullScreenHelper.StoredParent">
+            <summary>
+            Stored parent control for the fullscreen mode.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Dashboard.Viewer.FullScreen.StiElementFullScreenHelper.StoredIndex">
+            <summary>
+            Stored position in the collection of the controls for the fullscreen mode.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Dashboard.Viewer.FullScreen.StiElementFullScreenHelper.CurrentControl">
+            <summary>
+            Control which now is viewing in fullscreen mode.
+            </summary>
+        </member>
+        <member name="P:Stimulsoft.Dashboard.Viewer.FullScreen.StiViewerFullScreenHelper.StoredParent">
+            <summary>
+            Stored parent control for the fullscreen mode for whole viewer.
+            </summary>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.Images.StiDashboardViewerImages.NoResult.Dashboard_ExplicitlyScaled(System.String,System.Nullable{Stimulsoft.Base.Drawing.StiDashboardViewerUIIconSet},System.Nullable{Stimulsoft.Base.Drawing.StiControlTheme})">
+            <summary>
+            This icon is loaded without auto-scaling,
+            exact scale should be provided.
+            For ex., pass scale "_x1_5" to load "Dashboard_x1_5.png".
+            </summary>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.StiDashboardViewerControl.ResetAllFiltersDashboard">
+            <summary>
+            Do not change a name of this method!
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Dashboard.Viewer.StiDashboardViewerControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.StiDashboardViewerControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.StiDashboardViewerControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Stimulsoft.Dashboard.Viewer.StiDashboardViewerForm">
+            <summary>
+            Window of the dashboard viewer.
+            </summary>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.StiDashboardViewerForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Dashboard.Viewer.StiDashboardViewerForm.report">
+            <summary>
+            Gets or sets viewed report.
+            </summary>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.StiDashboardViewerForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.StiElementPanel.UpdateVisualSettings(Stimulsoft.Dashboard.Components.StiDashboard)">
+            <summary>
+            Color theme and icon set.
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Dashboard.Viewer.StiSafeWarningForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.StiSafeWarningForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.StiSafeWarningForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Stimulsoft.Dashboard.Viewer.StiViewDataForm">
+            <summary>
+            This control is used for viewing content of DataSet.
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Dashboard.Viewer.StiViewDataForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.StiViewDataForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.StiViewDataForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Stimulsoft.Dashboard.Viewer.Trial.StiUsingTrialVersionForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.Trial.StiUsingTrialVersionForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Stimulsoft.Dashboard.Viewer.Trial.StiUsingTrialVersionForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>
