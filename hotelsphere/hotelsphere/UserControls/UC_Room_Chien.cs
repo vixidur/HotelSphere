@@ -18,7 +18,9 @@ namespace hotelsphere.UserControls
         public UC_Room_Chien()
         {
             InitializeComponent();
-            roomController = new roomController();  
+            roomController = new roomController();
+            //cbRoomType_Chien.SelectedItem = "1 Người";
+            LoadRooms();
         }
 
         private void UC_Room_Chien_Load(object sender, EventArgs e)
@@ -26,12 +28,12 @@ namespace hotelsphere.UserControls
             LoadRooms();
         }
 
-        private void LoadRooms(int? roomTypeId = null)
+        private void LoadRooms()
         {
-            flpRooms_Chien.Controls.Clear(); 
-
-            List<RoomModel_Chien> rooms = roomController.GetRoomsByType(roomTypeId);
-
+            flpRooms_Chien.Controls.Clear();
+            int? roomTypeId = LayIDRoomType_Chien();
+            string status = LayStatusRoom_Chien();
+            List<RoomModel_Chien> rooms = roomController.LocRoom_Chien(roomTypeId, status);
             foreach (RoomModel_Chien room in rooms)
             {
                 UC_RoomType_Chien roomControl = new UC_RoomType_Chien();
@@ -41,7 +43,35 @@ namespace hotelsphere.UserControls
             }
         }
 
+        private int? LayIDRoomType_Chien()
+        {
+            switch (cbRoomType_Chien.SelectedItem?.ToString())
+            {
+                case "1 Người":
+                    return 1;
+                case "2 Người":
+                    return 2;
+                case "Gia đình":
+                    return 3;
+                case "Phòng Cao Cấp":
+                    return 4;
+                case "Tất cả":
+                    return null;
+                default:
+                    return null;
+            }
+        }
 
+
+        private string LayStatusRoom_Chien()
+        {
+            if (EmptyRoom_Chien.Checked)
+                return "Trống";
+            else if (RentingRoom_Chien.Checked)
+                return "Đang thuê";
+            else
+                return null; // Trường hợp tất cả phòng
+        }
         private void LoadRoomsEmptyOrRenting_Chien()
         {
             flpRooms_Chien.Controls.Clear(); 
@@ -77,45 +107,23 @@ namespace hotelsphere.UserControls
         {
             if (allRoom_Chien.Checked)
             {
-                LoadRooms(null); 
-            }
-        }
-
-        private void SingleRoom_Chien_CheckedChanged(object sender, EventArgs e)
-        {
-            if (SingleRoom_Chien.Checked)
-            {
-                LoadRooms(1);
-            }
-        }
-
-        private void DoubleRoom_Chien_CheckedChanged(object sender, EventArgs e)
-        {
-            if (DoubleRoom_Chien.Checked)
-            {
-                LoadRooms(2);
-            }
-        }
-
-        private void FamilyRoom_Chien_CheckedChanged(object sender, EventArgs e)
-        {
-            if (FamilyRoom_Chien.Checked)
-            {
-                LoadRooms(3);
-            }
-        }
-
-        private void SuiteRoom_Chien_CheckedChanged(object sender, EventArgs e)
-        {
-            if (SuiteRoom_Chien.Checked)
-            {
-                LoadRooms(4);
+                LoadRooms(); 
             }
         }
 
         private void EmptyRoom_Chien_CheckedChanged(object sender, EventArgs e)
         {
-            LoadRoomsEmptyOrRenting_Chien();
+            LoadRooms();
+        }
+
+        private void RentingRoom_Chien_CheckedChanged(object sender, EventArgs e)
+        {
+            LoadRooms();
+        }
+
+        private void cbRoomType_Chien_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            LoadRooms();
         }
     }
 }

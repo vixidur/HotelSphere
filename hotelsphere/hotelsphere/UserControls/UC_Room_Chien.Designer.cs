@@ -33,13 +33,10 @@
             this.EmptyRoom_Chien = new Guna.UI2.WinForms.Guna2RadioButton();
             this.RentingRoom_Chien = new Guna.UI2.WinForms.Guna2RadioButton();
             this.label2 = new System.Windows.Forms.Label();
-            this.SingleRoom_Chien = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.DoubleRoom_Chien = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.FamilyRoom_Chien = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.SuiteRoom_Chien = new Guna.UI2.WinForms.Guna2RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.flpRooms_Chien = new System.Windows.Forms.FlowLayoutPanel();
+            this.cbRoomType_Chien = new Guna.UI2.WinForms.Guna2ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -113,6 +110,7 @@
             this.RentingRoom_Chien.UncheckedState.BorderThickness = 2;
             this.RentingRoom_Chien.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.RentingRoom_Chien.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.RentingRoom_Chien.CheckedChanged += new System.EventHandler(this.RentingRoom_Chien_CheckedChanged);
             // 
             // label2
             // 
@@ -126,96 +124,13 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "LOẠI PHÒNG";
             // 
-            // SingleRoom_Chien
-            // 
-            this.SingleRoom_Chien.AutoSize = true;
-            this.SingleRoom_Chien.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.SingleRoom_Chien.CheckedState.BorderThickness = 0;
-            this.SingleRoom_Chien.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.SingleRoom_Chien.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.SingleRoom_Chien.CheckedState.InnerOffset = -4;
-            this.SingleRoom_Chien.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SingleRoom_Chien.Location = new System.Drawing.Point(25, 181);
-            this.SingleRoom_Chien.Name = "SingleRoom_Chien";
-            this.SingleRoom_Chien.Size = new System.Drawing.Size(112, 25);
-            this.SingleRoom_Chien.TabIndex = 1;
-            this.SingleRoom_Chien.Text = "Phòng đơn";
-            this.SingleRoom_Chien.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.SingleRoom_Chien.UncheckedState.BorderThickness = 2;
-            this.SingleRoom_Chien.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.SingleRoom_Chien.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.SingleRoom_Chien.CheckedChanged += new System.EventHandler(this.SingleRoom_Chien_CheckedChanged);
-            // 
-            // DoubleRoom_Chien
-            // 
-            this.DoubleRoom_Chien.AutoSize = true;
-            this.DoubleRoom_Chien.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.DoubleRoom_Chien.CheckedState.BorderThickness = 0;
-            this.DoubleRoom_Chien.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.DoubleRoom_Chien.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.DoubleRoom_Chien.CheckedState.InnerOffset = -4;
-            this.DoubleRoom_Chien.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DoubleRoom_Chien.Location = new System.Drawing.Point(25, 212);
-            this.DoubleRoom_Chien.Name = "DoubleRoom_Chien";
-            this.DoubleRoom_Chien.Size = new System.Drawing.Size(106, 25);
-            this.DoubleRoom_Chien.TabIndex = 1;
-            this.DoubleRoom_Chien.Text = "Phòng đôi";
-            this.DoubleRoom_Chien.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.DoubleRoom_Chien.UncheckedState.BorderThickness = 2;
-            this.DoubleRoom_Chien.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.DoubleRoom_Chien.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.DoubleRoom_Chien.CheckedChanged += new System.EventHandler(this.DoubleRoom_Chien_CheckedChanged);
-            // 
-            // FamilyRoom_Chien
-            // 
-            this.FamilyRoom_Chien.AutoSize = true;
-            this.FamilyRoom_Chien.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.FamilyRoom_Chien.CheckedState.BorderThickness = 0;
-            this.FamilyRoom_Chien.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.FamilyRoom_Chien.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.FamilyRoom_Chien.CheckedState.InnerOffset = -4;
-            this.FamilyRoom_Chien.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FamilyRoom_Chien.Location = new System.Drawing.Point(25, 243);
-            this.FamilyRoom_Chien.Name = "FamilyRoom_Chien";
-            this.FamilyRoom_Chien.Size = new System.Drawing.Size(145, 25);
-            this.FamilyRoom_Chien.TabIndex = 1;
-            this.FamilyRoom_Chien.Text = "Phòng gia đình";
-            this.FamilyRoom_Chien.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.FamilyRoom_Chien.UncheckedState.BorderThickness = 2;
-            this.FamilyRoom_Chien.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.FamilyRoom_Chien.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.FamilyRoom_Chien.CheckedChanged += new System.EventHandler(this.FamilyRoom_Chien_CheckedChanged);
-            // 
-            // SuiteRoom_Chien
-            // 
-            this.SuiteRoom_Chien.AutoSize = true;
-            this.SuiteRoom_Chien.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.SuiteRoom_Chien.CheckedState.BorderThickness = 0;
-            this.SuiteRoom_Chien.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.SuiteRoom_Chien.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.SuiteRoom_Chien.CheckedState.InnerOffset = -4;
-            this.SuiteRoom_Chien.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SuiteRoom_Chien.Location = new System.Drawing.Point(25, 274);
-            this.SuiteRoom_Chien.Name = "SuiteRoom_Chien";
-            this.SuiteRoom_Chien.Size = new System.Drawing.Size(147, 25);
-            this.SuiteRoom_Chien.TabIndex = 1;
-            this.SuiteRoom_Chien.Text = "Phòng cao cấp";
-            this.SuiteRoom_Chien.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.SuiteRoom_Chien.UncheckedState.BorderThickness = 2;
-            this.SuiteRoom_Chien.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.SuiteRoom_Chien.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.SuiteRoom_Chien.CheckedChanged += new System.EventHandler(this.SuiteRoom_Chien_CheckedChanged);
-            // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.SuiteRoom_Chien);
+            this.panel1.Controls.Add(this.cbRoomType_Chien);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.FamilyRoom_Chien);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.RentingRoom_Chien);
             this.panel1.Controls.Add(this.allRoom_Chien);
-            this.panel1.Controls.Add(this.DoubleRoom_Chien);
-            this.panel1.Controls.Add(this.SingleRoom_Chien);
             this.panel1.Controls.Add(this.EmptyRoom_Chien);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -242,6 +157,28 @@
             this.flpRooms_Chien.Size = new System.Drawing.Size(562, 480);
             this.flpRooms_Chien.TabIndex = 5;
             // 
+            // cbRoomType_Chien
+            // 
+            this.cbRoomType_Chien.BackColor = System.Drawing.Color.Transparent;
+            this.cbRoomType_Chien.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbRoomType_Chien.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbRoomType_Chien.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbRoomType_Chien.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbRoomType_Chien.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.cbRoomType_Chien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbRoomType_Chien.ItemHeight = 30;
+            this.cbRoomType_Chien.Items.AddRange(new object[] {
+            "Tất cả",
+            "1 Người",
+            "2 Người",
+            "Gia đình",
+            "Phòng Cao Cấp"});
+            this.cbRoomType_Chien.Location = new System.Drawing.Point(25, 184);
+            this.cbRoomType_Chien.Name = "cbRoomType_Chien";
+            this.cbRoomType_Chien.Size = new System.Drawing.Size(166, 36);
+            this.cbRoomType_Chien.TabIndex = 2;
+            this.cbRoomType_Chien.SelectedIndexChanged += new System.EventHandler(this.cbRoomType_Chien_SelectedIndexChanged);
+            // 
             // UC_Room_Chien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -267,12 +204,9 @@
         private Guna.UI2.WinForms.Guna2RadioButton EmptyRoom_Chien;
         private Guna.UI2.WinForms.Guna2RadioButton RentingRoom_Chien;
         private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2RadioButton SingleRoom_Chien;
-        private Guna.UI2.WinForms.Guna2RadioButton DoubleRoom_Chien;
-        private Guna.UI2.WinForms.Guna2RadioButton FamilyRoom_Chien;
-        private Guna.UI2.WinForms.Guna2RadioButton SuiteRoom_Chien;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.FlowLayoutPanel flpRooms_Chien;
+        private Guna.UI2.WinForms.Guna2ComboBox cbRoomType_Chien;
     }
 }

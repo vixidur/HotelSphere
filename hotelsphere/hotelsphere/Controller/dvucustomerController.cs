@@ -64,7 +64,7 @@ namespace hotelsphere.Controller
 
         public DataTable GetCustomers()
         {
-            string query = "SELECT id_customer AS 'ID', tenkhachhang AS 'Họ Tên', so_cmt AS 'Số CCCD', quoctich AS 'Quốc Tịch', gioitinh AS 'Giới Tính', sdt AS 'SĐT' FROM customer ORDER BY id_customer DESC";
+            string query = "SELECT * FROM customer ORDER BY id_customer DESC";
             return db.ExecuteQuery(query);
         }
     }
