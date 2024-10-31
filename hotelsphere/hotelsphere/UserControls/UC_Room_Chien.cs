@@ -19,8 +19,7 @@ namespace hotelsphere.UserControls
         {
             InitializeComponent();
             roomController = new roomController();
-            //cbRoomType_Chien.SelectedItem = "1 Người";
-            LoadRooms();
+            LoadRooms();    
         }
 
         private void UC_Room_Chien_Load(object sender, EventArgs e)
@@ -124,6 +123,21 @@ namespace hotelsphere.UserControls
         private void cbRoomType_Chien_SelectedIndexChanged(object sender, EventArgs e)
         {
             LoadRooms();
+        }
+
+        public string SoCCCD { get; set; }
+        public string TenKhachHang { get; set; }
+        public string QuocTich { get; set; }
+        public void LoadCustomerData()
+        {
+            lblSoCCCD_Chien.Text = SoCCCD; 
+            lblTenCustomer_Chien.Text = TenKhachHang; 
+            lblQuocTich_Chien.Text = QuocTich;
+        }
+
+        public string LoadDataService_Chien()
+        {
+            return TenKhachHang = lblTenCustomer_Chien.Text;
         }
     }
 }

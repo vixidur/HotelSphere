@@ -143,6 +143,12 @@
     <Compile Include="View\iStaff_Chien.Designer.cs">
       <DependentUpon>iStaff_Chien.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\ThongTinHoaDon_Chien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ThongTinHoaDon_Chien.Designer.cs">
+      <DependentUpon>ThongTinHoaDon_Chien.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1_Chien.resx">
       <DependentUpon>Form1_Chien.cs</DependentUpon>
     </EmbeddedResource>
@@ -177,6 +183,9 @@
     <EmbeddedResource Include="View\iStaff_Chien.resx">
       <DependentUpon>iStaff_Chien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\ThongTinHoaDon_Chien.resx">
+      <DependentUpon>ThongTinHoaDon_Chien.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -206,7 +215,24 @@
     <None Include="Resources\background-login.png" />
     <None Include="Resources\background-splash-screen.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\icon-status-room.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6324346.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-datetime.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5583604.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-idcustomer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9746676.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Web.WebView2.1.0.2277.86\build\Microsoft.Web.WebView2.targets" Condition="Exists('..\packages\Microsoft.Web.WebView2.1.0.2277.86\build\Microsoft.Web.WebView2.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

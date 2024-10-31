@@ -1,4 +1,5 @@
-﻿using System;
+﻿using hotelsphere.View;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -60,6 +61,25 @@ namespace hotelsphere.UserControls
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void panel1_Click(object sender, EventArgs e)
+        {
+            if (lblTinhTrang_Chien.Text == "Trống")
+            {
+                UC_Room_Chien uC_Room_Chien = new UC_Room_Chien(); 
+                string customerName = uC_Room_Chien.LoadDataService_Chien();
+                ThongTinHoaDon_Chien thongTinDonHang = new ThongTinHoaDon_Chien
+                {
+                    CustomerName_Chien = customerName
+                };
+
+                thongTinDonHang.Show();
+            }
+            else if (lblTinhTrang_Chien.Text == "Đang thuê")
+            {
+                MessageBox.Show("Phòng hiện đang được thuê. Vui lòng chọn phòng khác.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }

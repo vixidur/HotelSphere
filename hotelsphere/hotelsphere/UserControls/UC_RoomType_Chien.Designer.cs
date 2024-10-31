@@ -32,6 +32,7 @@
             this.lblLoaiPhong_Chien = new System.Windows.Forms.Label();
             this.lblTinhTrang_Chien = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblChiTiet_Chien = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -76,13 +77,25 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.lblTinhTrang_Chien);
             this.panel1.Controls.Add(this.lblLoaiPhong_Chien);
+            this.panel1.Controls.Add(this.lblChiTiet_Chien);
             this.panel1.Controls.Add(this.lblTenPhong_Chien);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(180, 100);
             this.panel1.TabIndex = 1;
+            this.panel1.Click += new System.EventHandler(this.panel1_Click);
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // lblChiTiet_Chien
+            // 
+            this.lblChiTiet_Chien.AutoSize = true;
+            this.lblChiTiet_Chien.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChiTiet_Chien.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblChiTiet_Chien.Location = new System.Drawing.Point(81, 79);
+            this.lblChiTiet_Chien.Name = "lblChiTiet_Chien";
+            this.lblChiTiet_Chien.Size = new System.Drawing.Size(0, 17);
+            this.lblChiTiet_Chien.TabIndex = 0;
             // 
             // pictureBox1
             // 
@@ -115,5 +128,6 @@
         private System.Windows.Forms.Label lblTinhTrang_Chien;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblChiTiet_Chien;
     }
 }

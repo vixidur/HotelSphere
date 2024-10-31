@@ -14,33 +14,55 @@ namespace hotelsphere.View
 {
     public partial class iStaff_Chien : Form
     {
+
         public iStaff_Chien()
         {
             InitializeComponent();
             timer1.Start();
             UC_Home_Chien uC_Home_Chien = new UC_Home_Chien();
+            panelHistory = new Stack<UserControl>();
             addUserControl(uC_Home_Chien);
             notify_Chien.Visible = false;
             RoundPanel(notify_Chien, 20);
         }
-        private Stack<Panel> panelHistory;
+
+
+        private Stack<UserControl> panelHistory;
 
         private void timer1_Tick(object sender, EventArgs e)
         {
 
         }
 
-        private void addUserControl(UserControl user)
+
+        public void addUserControl(UserControl user)
         {
-            user.Dock = DockStyle.Fill;
+            if (panelContainer.Controls.Count > 0)
+            {
+                UserControl currentControl = panelContainer.Controls[0] as UserControl;
+                panelHistory.Push(currentControl); 
+            }
+
             panelContainer.Controls.Clear();
+            user.Dock = DockStyle.Fill;
             panelContainer.Controls.Add(user);
             user.BringToFront();
         }
 
+        public void BackToPreviousControl()
+        {
+            if (panelHistory.Count > 0)
+            {
+                UserControl previousControl = panelHistory.Pop();
+                panelContainer.Controls.Clear();
+                panelContainer.Controls.Add(previousControl);
+                previousControl.BringToFront();
+            }
+        }
+
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            UC_Customer_Chien uC_Customer_Chien = new UC_Customer_Chien();
+            UC_Customer_Chien uC_Customer_Chien = new UC_Customer_Chien(this);
             addUserControl(uC_Customer_Chien);
         }
 

@@ -32,3 +32,4 @@ D:\HotelSphere\hotelsphere\hotelsphere\bin\Debug\MetroFramework.Fonts.dll
 D:\HotelSphere\hotelsphere\hotelsphere\bin\Debug\System.ComponentModel.Annotations.dll
 D:\HotelSphere\hotelsphere\hotelsphere\obj\Debug\hotelsphere.UserControls.UC_Setting_Chien.resources
 D:\HotelSphere\hotelsphere\hotelsphere\obj\Debug\hotelsphere.UserControls.UC_RoomType_Chien.resources
+D:\HotelSphere\hotelsphere\hotelsphere\obj\Debug\hotelsphere.View.ThongTinHoaDon_Chien.resources
