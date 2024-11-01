@@ -10,16 +10,19 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using hotelsphere.Models;
 using Guna.UI2.AnimatorNS;
+using hotelsphere.View;
 namespace hotelsphere.UserControls
 {
     public partial class UC_Room_Chien : UserControl
     {
+        public event EventHandler RoomSelected;
         private roomController roomController;
         public UC_Room_Chien()
         {
             InitializeComponent();
             roomController = new roomController();
-            LoadRooms();    
+            LoadRooms();
+            LoadCustomerData();
         }
 
         private void UC_Room_Chien_Load(object sender, EventArgs e)
@@ -33,11 +36,34 @@ namespace hotelsphere.UserControls
             int? roomTypeId = LayIDRoomType_Chien();
             string status = LayStatusRoom_Chien();
             List<RoomModel_Chien> rooms = roomController.LocRoom_Chien(roomTypeId, status);
+
             foreach (RoomModel_Chien room in rooms)
             {
                 UC_RoomType_Chien roomControl = new UC_RoomType_Chien();
                 roomControl.SetRoomStatus(room.TinhTrang_Chien);
                 roomControl.SetRoomInfo(room.LoaiPhong_Chien, room.TenPhong_Chien, room.TinhTrang_Chien);
+                roomControl.RoomSelected += (s, roomName) =>
+                {
+                    if (roomTypeId.HasValue && roomTypeId.Value > 0)
+                    {
+                        decimal roomPrice = roomController.LayGiaTienTheoIDRoom_Chien(roomTypeId.Value);
+                        ThongTinHoaDon_Chien thongTinHoaDon = new ThongTinHoaDon_Chien
+                        {
+                            CustomerName_Chien = TenKhachHang,
+                            RoomType_Chien = room.LoaiPhong_Chien,
+                            StatusRoom_Chien = room.TinhTrang_Chien,
+                            RentDate_Chien = DateTime.Now,
+                            ReturnDate_Chien = DateTime.Now.AddDays(1),
+                            PriceRoom_Chien = roomPrice,
+                            TenPhong = roomName 
+                        };
+                        thongTinHoaDon.ShowDialog();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Loại phòng không hợp lệ hoặc giá phòng không xác định.");
+                    }
+                };
                 flpRooms_Chien.Controls.Add(roomControl);
             }
         }
@@ -61,6 +87,20 @@ namespace hotelsphere.UserControls
             }
         }
 
+        public int? LoaiPhong
+        {
+            get { return LayIDRoomType_Chien(); }
+        }
+
+        public string TrangThaiPhong
+        {
+            get { return LayStatusRoom_Chien(); }
+        }
+
+        public string TenLoaiPhong
+        {
+            get { return cbRoomType_Chien.SelectedItem?.ToString(); }
+        }
 
         private string LayStatusRoom_Chien()
         {
@@ -69,7 +109,7 @@ namespace hotelsphere.UserControls
             else if (RentingRoom_Chien.Checked)
                 return "Đang thuê";
             else
-                return null; // Trường hợp tất cả phòng
+                return null; 
         }
         private void LoadRoomsEmptyOrRenting_Chien()
         {

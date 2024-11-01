@@ -136,8 +136,8 @@
   <data name="icon-verify1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon-verify.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="background-login" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\background-login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon_remove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_remove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon-bell" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon-bell.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,8 +154,17 @@
   <data name="icon-datetime" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon-datetime.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="5583604" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5583604.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icon-home" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon-home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_remove1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_remove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon-dollar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon-dollar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="6324346" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\6324346.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,8 +175,8 @@
   <data name="icon-room" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon-room.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="5583604" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\5583604.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="9746676" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\9746676.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon-verify" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon-verify.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,7 +184,7 @@
   <data name="background-login1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\background-login1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="9746676" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\9746676.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="5507757-200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5507757-200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -63,19 +63,40 @@ namespace hotelsphere.UserControls
         UC_Room_Chien UC_Room_Chien = new UC_Room_Chien();
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            if (IStaff_Chien != null && selectedRow != null)
+            if (IStaff_Chien != null)
             {
-                UC_Room_Chien ucRoomChien = new UC_Room_Chien();
-                ucRoomChien.SoCCCD = selectedRow.Cells[2].Value != null ? selectedRow.Cells[2].Value.ToString() : string.Empty;
-                ucRoomChien.TenKhachHang = selectedRow.Cells[1].Value != null ? selectedRow.Cells[1].Value.ToString() : string.Empty;
-                ucRoomChien.QuocTich = selectedRow.Cells[3].Value != null ? selectedRow.Cells[3].Value.ToString() : string.Empty;
+                if (selectedRow == null || selectedRow.Cells[0].Value == null)
+                {
+                    MessageBox.Show("Vui lòng chọn khách hàng trước khi tiến hành đặt phòng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                string soCCCD = selectedRow.Cells[2].Value != null ? selectedRow.Cells[2].Value.ToString() : string.Empty;
+                string tenKhachHang = selectedRow.Cells[1].Value != null ? selectedRow.Cells[1].Value.ToString() : string.Empty;
+                string quocTich = selectedRow.Cells[3].Value != null ? selectedRow.Cells[3].Value.ToString() : string.Empty;
+                UC_Room_Chien ucRoomChien = new UC_Room_Chien
+                {
+                    SoCCCD = soCCCD,
+                    TenKhachHang = tenKhachHang,
+                    QuocTich = quocTich
+                };
                 ucRoomChien.LoadCustomerData();
-
                 IStaff_Chien.addUserControl(ucRoomChien);
+                ucRoomChien.RoomSelected += (s, args) =>
+                {
+                    ThongTinHoaDon_Chien thongTinHoaDon = new ThongTinHoaDon_Chien
+                    {
+                        CustomerName_Chien = tenKhachHang,
+                        RoomType_Chien = ucRoomChien.TenLoaiPhong,
+                        StatusRoom_Chien = ucRoomChien.TrangThaiPhong,
+                        RentDate_Chien = DateTime.Now,
+                        ReturnDate_Chien = DateTime.Now.AddDays(1),
+                    };
+                    thongTinHoaDon.ShowDialog();
+                };
             }
             else
             {
-                MessageBox.Show("Unable to load room service view. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Không thể tiến hành đặt phòng", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

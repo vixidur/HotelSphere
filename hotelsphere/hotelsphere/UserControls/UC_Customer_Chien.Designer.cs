@@ -77,7 +77,7 @@
             this.tabControl_Chien.Controls.Add(this.tabChucnang);
             this.tabControl_Chien.Location = new System.Drawing.Point(13, 60);
             this.tabControl_Chien.Name = "tabControl_Chien";
-            this.tabControl_Chien.SelectedIndex = 1;
+            this.tabControl_Chien.SelectedIndex = 0;
             this.tabControl_Chien.Size = new System.Drawing.Size(728, 406);
             this.tabControl_Chien.TabIndex = 0;
             this.tabControl_Chien.UseSelectable = true;
@@ -112,9 +112,9 @@
             this.useServices_Chien.ForeColor = System.Drawing.Color.White;
             this.useServices_Chien.Location = new System.Drawing.Point(6, 325);
             this.useServices_Chien.Name = "useServices_Chien";
-            this.useServices_Chien.Size = new System.Drawing.Size(192, 36);
+            this.useServices_Chien.Size = new System.Drawing.Size(220, 36);
             this.useServices_Chien.TabIndex = 2;
-            this.useServices_Chien.Text = "SỬ DỤNG DỊCH VỤ";
+            this.useServices_Chien.Text = "TIẾN HÀNH ĐẶT PHÒNG";
             this.useServices_Chien.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // dgvCustomer_Chien

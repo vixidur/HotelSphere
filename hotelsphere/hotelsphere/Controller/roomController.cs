@@ -20,6 +20,45 @@ namespace hotelsphere.Controller
             db = new DB_Chien();
         }
 
+        public decimal LayGiaTienTheoIDRoom_Chien(int id_roomType)
+        {
+            string query = "SELECT giaphongmotngay FROM loaiphong WHERE id_loaiphong = @id";
+            SqlParameter[] parameters = new SqlParameter[]
+            {
+                new SqlParameter("@id", id_roomType)
+            };
+
+            DataTable result = db.ExecuteQuery(query, parameters);
+            if (result.Rows.Count > 0)
+            {
+                object priceValue = result.Rows[0]["giaphongmotngay"];
+                if (priceValue != DBNull.Value)
+                {
+                    if (priceValue is decimal priceDecimal)
+                    {
+                        return priceDecimal;
+                    }
+                    else if (priceValue is string priceString)
+                    {
+                        if (decimal.TryParse(priceString, out decimal parsedPrice))
+                        {
+                            return parsedPrice;
+                        }
+                        else
+                        {
+                            throw new FormatException("Price value is not in a correct decimal format.");
+                        }
+                    }
+                    else
+                    {
+                        throw new InvalidCastException("Price value is not a valid type.");
+                    }
+                }
+            }
+            return 0; 
+        }
+
+
         public List<RoomModel_Chien> GetRoomsByType(int? roomTypeId = null)
         {
             List<RoomModel_Chien> rooms = new List<RoomModel_Chien>();

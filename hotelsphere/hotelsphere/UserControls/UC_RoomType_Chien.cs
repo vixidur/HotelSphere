@@ -13,6 +13,9 @@ namespace hotelsphere.UserControls
 {
     public partial class UC_RoomType_Chien : UserControl
     {
+        public event EventHandler<string> RoomSelected;
+        ThongTinHoaDon_Chien thongtinhoadon = new ThongTinHoaDon_Chien();
+        public string TenPhong { get => lblTenPhong_Chien.Text; set => lblTenPhong_Chien.Text = value; }
         public UC_RoomType_Chien()
         {
             InitializeComponent();
@@ -25,6 +28,7 @@ namespace hotelsphere.UserControls
             this.BackColor = Color.Transparent;
             this.BorderStyle = BorderStyle.None;
         }
+
 
 
         public void SetRoomInfo(string roomType, string roomName, string status)
@@ -67,14 +71,7 @@ namespace hotelsphere.UserControls
         {
             if (lblTinhTrang_Chien.Text == "Trống")
             {
-                UC_Room_Chien uC_Room_Chien = new UC_Room_Chien(); 
-                string customerName = uC_Room_Chien.LoadDataService_Chien();
-                ThongTinHoaDon_Chien thongTinDonHang = new ThongTinHoaDon_Chien
-                {
-                    CustomerName_Chien = customerName
-                };
-
-                thongTinDonHang.Show();
+                RoomSelected?.Invoke(this, lblTenPhong_Chien.Text);
             }
             else if (lblTinhTrang_Chien.Text == "Đang thuê")
             {
