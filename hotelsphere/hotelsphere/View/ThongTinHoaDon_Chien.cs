@@ -1,4 +1,5 @@
 ﻿using hotelsphere.Controller;
+using hotelsphere.Models;
 using hotelsphere.UserControls;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,9 @@ namespace hotelsphere.View
     public partial class ThongTinHoaDon_Chien : Form
     {
         servicesController serviceController = new servicesController();
+        invoiceController hoadonController;
+        private int? currentCustomerId; 
+        private int? currentRoomId;  
         public string CustomerName_Chien { get => lblNameCustomer_Chien.Text; set => lblNameCustomer_Chien.Text = value; }
         public string RoomType_Chien { get => lblRoomType_Chien.Text; set => lblRoomType_Chien.Text = value; }
         public string StatusRoom_Chien { get => lblStatusRoom_Chien.Text; set => lblStatusRoom_Chien.Text = value; }
@@ -36,31 +40,37 @@ namespace hotelsphere.View
         {
             if (RentDate_Chien != null && ReturnDate_Chien != null)
             {
-                int songaythue = (ReturnDate_Chien - RentDate_Chien).Days + 2;
+                int songaythue = (ReturnDate_Chien - RentDate_Chien).Days + 1;
                 lblSoNgayThue_Chien.Text = songaythue > 0 ? "Số ngày thuê: " + songaythue.ToString() : "Vui lòng chọn lại!";
             }
         }
-
-        public ThongTinHoaDon_Chien()
+        public ThongTinHoaDon_Chien(roomController controller, UC_Room_Chien ucRoomChien, customerModel_Chien customer)
         {
             InitializeComponent();
+            lblNameCustomer_Chien.Text = ucRoomChien.TenKhachHang;
+            currentCustomerId = customer.Id_Customer;
             lblDateRent_Chien.Text = DateTime.Now.ToShortDateString();
             RoundPanel(panel_Chien, 20);
+
+            this.roomController = controller; 
+            this.ucRoomChien = new UC_Room_Chien(customer); 
 
             RentDate_Chien = DateTime.Now;
             dtpNgayTraPhong.Value = RentDate_Chien.AddDays(1);
             ReturnDate_Chien = dtpNgayTraPhong.Value;
             TinhSoNgayThue();
+
             dtpNgayTraPhong.ValueChanged += (s, e) =>
             {
                 ReturnDate_Chien = dtpNgayTraPhong.Value;
                 TinhSoNgayThue();
             };
-        }
 
+            hoadonController = new invoiceController();
+        }
         private void CapNhatTongTien_Chien()
         {
-            decimal total = serviceController.TinhTongThanhTien();
+            decimal total = serviceController.TinhTongDichVu();
             lblCalcService_Chien.Text = total.ToString("N2") + " VND";
         }
 
@@ -71,7 +81,7 @@ namespace hotelsphere.View
 
         private void ThongTinHoaDon_Chien_Load(object sender, EventArgs e)
         {
-            lblNameCustomer_Chien.Text = CustomerName_Chien;
+            lblNameCustomer_Chien.Text = ucRoomChien.LoadDataService_Chien();
             lblDateRent_Chien.Text = DateTime.Now.ToShortDateString();
             cbNameService_Chien.DataSource = serviceController.GetTenDichVu_Chien();
             DataGridViewImageColumn imgColumn = new DataGridViewImageColumn();
@@ -158,6 +168,136 @@ namespace hotelsphere.View
             serviceController.XoaAll_Chien();
             CapNhatTongTien_Chien();
             dgvServiceRoom_Chien.DataSource = serviceController.LayDataService_Chien();
+        }
+        private UC_Room_Chien ucRoomChien;
+        private roomController roomController;
+
+        private List<DichVuModel> dsDichVu(DataTable dt)
+        {
+            List<DichVuModel> list = new List<DichVuModel>();
+
+            if (dt == null || dt.Rows.Count == 0)
+            {
+                MessageBox.Show("Không có dữ liệu dịch vụ để xử lý.");
+                return list;
+            }
+
+            // Kiểm tra cột trước khi đọc dữ liệu
+            if (!dt.Columns.Contains("id_dichvu") || !dt.Columns.Contains("dongia"))
+            {
+                MessageBox.Show("Thiếu cột 'id_dichvu' hoặc 'dongia' trong dữ liệu dịch vụ.");
+                return list;
+            }
+
+            foreach (DataRow row in dt.Rows)
+            {
+                try
+                {
+                    DichVuModel model = new DichVuModel()
+                    {
+                        IdDichVu = Convert.ToInt32(row["id_dichvu"]),
+                        DonGia = Convert.ToDecimal(row["dongia"])
+                    };
+                    list.Add(model);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi khi xử lý dữ liệu dịch vụ: " + ex.Message);
+                }
+            }
+
+            return list;
+        }
+
+
+        staffModel_Chien staffModel_Chien = new staffModel_Chien();
+        private void btnComfirmRent_Chien_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(TenPhong) || string.IsNullOrEmpty(CustomerName_Chien))
+            {
+                MessageBox.Show("Vui lòng kiểm tra thông tin đặt phòng.");
+                return;
+            }
+
+            bool success = roomController.CapNhatTrangThaiPhong_Chien(TenPhong, "Đang thuê");
+            if (success)
+            {
+                ConfirmRental();
+            }
+            else
+            {
+                MessageBox.Show("Cập nhật trạng thái phòng không thành công.");
+            }
+        }
+
+        private void ConfirmRental()
+        {
+            currentRoomId = roomController.GetRoomIdByName(TenPhong);
+            int totalDays = (ReturnDate_Chien - RentDate_Chien).Days + 1;
+
+            decimal totalRoomPrice = PriceRoom_Chien * totalDays;
+            decimal totalServicePrice = serviceController.TinhTongDichVu();
+            decimal totalInvoiceAmount = totalRoomPrice + totalServicePrice;
+
+            int invoiceId = hoadonController.ThemHoaDon(
+                currentCustomerId,
+                staffModel_Chien.Id_Staff_Chien,
+                currentRoomId,
+                PriceRoom_Chien,
+                RentDate_Chien,
+                ReturnDate_Chien,
+                totalInvoiceAmount
+            );
+
+            HTHoaDonCT(invoiceId, totalRoomPrice, totalServicePrice);
+            if (invoiceId > 0)
+            {
+                //LuuCTDichVu(invoiceId);
+                MessageBox.Show("Đặt phòng thành công!");
+                ucRoomChien.LoadRooms(); 
+                Close();
+            }
+            else
+            {
+                MessageBox.Show("Đặt phòng không thành công. Vui lòng thử lại.");
+            }
+        }
+
+        private void LuuCTDichVu(int invoiceId)
+        {
+            var dataTable = serviceController.LayDataService_Chien();
+            List<DichVuModel> serviceList = new List<DichVuModel>();
+
+            foreach (DataRow row in dataTable.Rows)
+            {
+                var service = new DichVuModel
+                {
+                    IdDichVu = Convert.ToInt32(row["id_dichvu"]),
+                    TenDichVu = row["tendichvu"].ToString(),
+                    DonGia = Convert.ToDecimal(row["dongia"]),
+                    SoLuongSuDung = Convert.ToInt32(row["soluong"]),
+                };
+                serviceList.Add(service);
+            }
+
+            foreach (var service in serviceList)
+            {
+                hoadonController.ThemCTHoaDon(service.IdDichVu, invoiceId, service.DonGia, service.SoLuongSuDung);
+            }
+        }
+
+        private void HTHoaDonCT(int invoiceId, decimal totalRoomPrice, decimal totalServicePrice)
+        {
+            MessageBox.Show($"idHoaDon: {invoiceId}\n" +
+                             $"currentCustomerId: {currentCustomerId}\n" +
+                             $"idStaff: {staffModel_Chien.Id_Staff_Chien}\n" +
+                             $"currentRoomId: {currentRoomId}\n" +
+                             $"Giá phòng 1 ngày: {PriceRoom_Chien}\n" +
+                             $"Ngày thuê phòng: {RentDate_Chien}\n" +
+                             $"Ngày trả phòng: {ReturnDate_Chien}\n" +
+                             $"Thành tiền: {totalRoomPrice + totalServicePrice}\n" +
+                             $"Tổng tiền thuê phòng: {totalRoomPrice}\n" +
+                             $"Tổng tiền dịch vụ: {totalServicePrice}");
         }
     }
 }

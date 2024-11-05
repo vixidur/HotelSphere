@@ -68,8 +68,8 @@ namespace hotelsphere.View
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            UC_Room_Chien uC_Room_Chien = new UC_Room_Chien();
-            addUserControl(uC_Room_Chien);
+            //UC_Room_Chien uC_Room_Chien = new UC_Room_Chien();
+            //addUserControl(uC_Room_Chien);
         }
 
         private void iStaff_Chien_Load(object sender, EventArgs e)

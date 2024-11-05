@@ -19,6 +19,7 @@ namespace hotelsphere.UserControls
     {
         private iStaff_Chien IStaff_Chien;
         private dvucustomerController customerService_Chien;
+        private roomController roomController;
         public UC_Customer_Chien(iStaff_Chien ic)
         {
             InitializeComponent();
@@ -28,6 +29,7 @@ namespace hotelsphere.UserControls
             tabControl_Chien.TabPages.Remove(tabChucnang);
             LoadCustomers();
             dgvCustomer_Chien.AutoGenerateColumns = false;
+            roomController = new roomController();
         }
 
         //private void guna2Button4_Click(object sender, EventArgs e)
@@ -59,8 +61,7 @@ namespace hotelsphere.UserControls
             var customers = customerService_Chien.GetCustomers();
             dgvCustomer_Chien.DataSource = customers;
         }
-
-        UC_Room_Chien UC_Room_Chien = new UC_Room_Chien();
+        private customerModel_Chien customerModel;
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             if (IStaff_Chien != null)
@@ -70,20 +71,27 @@ namespace hotelsphere.UserControls
                     MessageBox.Show("Vui lòng chọn khách hàng trước khi tiến hành đặt phòng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-                string soCCCD = selectedRow.Cells[2].Value != null ? selectedRow.Cells[2].Value.ToString() : string.Empty;
-                string tenKhachHang = selectedRow.Cells[1].Value != null ? selectedRow.Cells[1].Value.ToString() : string.Empty;
-                string quocTich = selectedRow.Cells[3].Value != null ? selectedRow.Cells[3].Value.ToString() : string.Empty;
-                UC_Room_Chien ucRoomChien = new UC_Room_Chien
+                string soCCCD = selectedRow.Cells[2].Value?.ToString() ?? string.Empty;
+                string tenKhachHang = selectedRow.Cells[1].Value?.ToString() ?? string.Empty;
+                string quocTich = selectedRow.Cells[3].Value?.ToString() ?? string.Empty;
+
+                MessageBox.Show("soCCCD: " + soCCCD + "\nNameCustomer: " + tenKhachHang + "\nQuoc tich: " + quocTich);
+
+                // Khởi tạo đối tượng customerModel
+                customerModel = new customerModel_Chien
                 {
+                    //Id_Customer = 
                     SoCCCD = soCCCD,
-                    TenKhachHang = tenKhachHang,
+                    NameCustomer = tenKhachHang,
                     QuocTich = quocTich
                 };
-                ucRoomChien.LoadCustomerData();
+
+                UC_Room_Chien ucRoomChien = new UC_Room_Chien(customerModel);
                 IStaff_Chien.addUserControl(ucRoomChien);
+
                 ucRoomChien.RoomSelected += (s, args) =>
                 {
-                    ThongTinHoaDon_Chien thongTinHoaDon = new ThongTinHoaDon_Chien
+                    ThongTinHoaDon_Chien thongTinHoaDon = new ThongTinHoaDon_Chien(roomController, ucRoomChien, customerModel)
                     {
                         CustomerName_Chien = tenKhachHang,
                         RoomType_Chien = ucRoomChien.TenLoaiPhong,
