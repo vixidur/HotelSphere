@@ -14,7 +14,6 @@ namespace hotelsphere.UserControls
     public partial class UC_RoomType_Chien : UserControl
     {
         public event EventHandler<string> RoomSelected;
-        ThongTinHoaDon_Chien thongtinhoadon = new ThongTinHoaDon_Chien();
         public string TenPhong { get => lblTenPhong_Chien.Text; set => lblTenPhong_Chien.Text = value; }
         public UC_RoomType_Chien()
         {
@@ -28,8 +27,6 @@ namespace hotelsphere.UserControls
             this.BackColor = Color.Transparent;
             this.BorderStyle = BorderStyle.None;
         }
-
-
 
         public void SetRoomInfo(string roomType, string roomName, string status)
         {

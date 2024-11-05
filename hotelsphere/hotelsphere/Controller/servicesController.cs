@@ -106,7 +106,7 @@ namespace hotelsphere.Controller
             db.ExecuteNonQuery(query);
         }
 
-        public decimal TinhTongThanhTien()
+        public decimal TinhTongDichVu()
         {
             string query = "SELECT SUM(thanhtien) AS Total FROM ct_dichvu";
             DataTable result = db.ExecuteQuery(query);

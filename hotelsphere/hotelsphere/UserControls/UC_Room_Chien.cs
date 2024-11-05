@@ -17,12 +17,14 @@ namespace hotelsphere.UserControls
     {
         public event EventHandler RoomSelected;
         private roomController roomController;
-        public UC_Room_Chien()
+        private customerModel_Chien customerModel;
+        public UC_Room_Chien(customerModel_Chien customer)
         {
             InitializeComponent();
             roomController = new roomController();
+            customerModel = customer; // Gán customerModel trước
+            LoadCustomerData(); // Gọi LoadCustomerData() sau khi customerModel đã được gán
             LoadRooms();
-            LoadCustomerData();
         }
 
         private void UC_Room_Chien_Load(object sender, EventArgs e)
@@ -30,7 +32,7 @@ namespace hotelsphere.UserControls
             LoadRooms();
         }
 
-        private void LoadRooms()
+        public void LoadRooms()
         {
             flpRooms_Chien.Controls.Clear();
             int? roomTypeId = LayIDRoomType_Chien();
@@ -47,7 +49,7 @@ namespace hotelsphere.UserControls
                     if (roomTypeId.HasValue && roomTypeId.Value > 0)
                     {
                         decimal roomPrice = roomController.LayGiaTienTheoIDRoom_Chien(roomTypeId.Value);
-                        ThongTinHoaDon_Chien thongTinHoaDon = new ThongTinHoaDon_Chien
+                        ThongTinHoaDon_Chien thongTinHoaDon = new ThongTinHoaDon_Chien(this.roomController, this, customerModel)
                         {
                             CustomerName_Chien = TenKhachHang,
                             RoomType_Chien = room.LoaiPhong_Chien,
@@ -165,19 +167,24 @@ namespace hotelsphere.UserControls
             LoadRooms();
         }
 
-        public string SoCCCD { get; set; }
         public string TenKhachHang { get; set; }
-        public string QuocTich { get; set; }
         public void LoadCustomerData()
         {
-            lblSoCCCD_Chien.Text = SoCCCD; 
-            lblTenCustomer_Chien.Text = TenKhachHang; 
-            lblQuocTich_Chien.Text = QuocTich;
+            if (customerModel != null) // Kiểm tra xem customerModel có khác null không
+            {
+                lblSoCCCD_Chien.Text = customerModel.SoCCCD;
+                lblTenCustomer_Chien.Text = customerModel.NameCustomer;
+                lblQuocTich_Chien.Text = customerModel.QuocTich;
+            }
+            else
+            {
+                MessageBox.Show("Thông tin khách hàng không có sẵn.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         public string LoadDataService_Chien()
         {
-            return TenKhachHang = lblTenCustomer_Chien.Text;
+            return TenKhachHang = customerModel.NameCustomer;
         }
     }
 }

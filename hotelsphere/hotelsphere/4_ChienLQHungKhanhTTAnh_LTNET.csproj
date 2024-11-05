@@ -104,6 +104,7 @@
     </Compile>
     <Compile Include="Models\customerModel_Chien.cs" />
     <Compile Include="Models\DB_Chien.cs" />
+    <Compile Include="Models\DichVuModel.cs" />
     <Compile Include="Models\RoomModel_Chien.cs" />
     <Compile Include="Models\staffModel_Chien.cs" />
     <Compile Include="Program.cs" />

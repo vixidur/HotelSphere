@@ -68,9 +68,23 @@ namespace hotelsphere.Models
                 {
                     DataTable result = new DataTable();
                     adapter.Fill(result);
-                    Close();
                     return result;
                 }
+            }
+        }
+
+        public object ExecuteScalar(string query, SqlParameter[] parameters = null)
+        {
+            Open();
+            using (SqlCommand cmd = new SqlCommand(query, conn))
+            {
+                if (parameters != null)
+                {
+                    cmd.Parameters.AddRange(parameters);
+                }
+                object result = cmd.ExecuteScalar();
+                Close();
+                return result;
             }
         }
 

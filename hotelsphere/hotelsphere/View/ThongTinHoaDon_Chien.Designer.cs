@@ -47,16 +47,16 @@
             this.label11 = new System.Windows.Forms.Label();
             this.btnSaveService_Chien = new Guna.UI2.WinForms.Guna2Button();
             this.dgvServiceRoom_Chien = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.lblPriceRoom_Chien = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.nudSoluong = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.lblTenPhong_Chien = new System.Windows.Forms.Label();
             this.ServicePrice_Chien = new Guna.UI2.WinForms.Guna2TextBox();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -66,9 +66,9 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel_Chien = new System.Windows.Forms.Panel();
-            this.dtpNgayTraPhong = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.lblSoNgayThue_Chien = new System.Windows.Forms.Label();
             this.lblNgayTraPhong_Chien = new System.Windows.Forms.Label();
+            this.lblSoNgayThue_Chien = new System.Windows.Forms.Label();
+            this.dtpNgayTraPhong = new Guna.UI2.WinForms.Guna2DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dgvServiceRoom_Chien)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudSoluong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -188,6 +188,7 @@
             this.btnComfirmRent_Chien.Size = new System.Drawing.Size(296, 45);
             this.btnComfirmRent_Chien.TabIndex = 5;
             this.btnComfirmRent_Chien.Text = "XÁC NHẬN THUÊ PHÒNG";
+            this.btnComfirmRent_Chien.Click += new System.EventHandler(this.btnComfirmRent_Chien_Click);
             // 
             // label9
             // 
@@ -195,7 +196,7 @@
             this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(25, 539);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(114, 22);
+            this.label9.Size = new System.Drawing.Size(103, 22);
             this.label9.TabIndex = 6;
             this.label9.Text = "TỔNG TIỀN: ";
             // 
@@ -301,6 +302,34 @@
             this.dgvServiceRoom_Chien.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgvServiceRoom_Chien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvServiceRoom_Chien_CellContentClick);
             // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "tendichvu";
+            this.Column1.HeaderText = "TÊN DỊCH VỤ";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "giatien";
+            this.Column2.HeaderText = "GIÁ TIỀN";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "soluong";
+            this.Column4.HeaderText = "SL";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "thanhtien";
+            this.Column3.HeaderText = "THÀNH TIỀN";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
             // guna2ControlBox1
             // 
             this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -376,34 +405,6 @@
             this.ServicePrice_Chien.SelectedText = "";
             this.ServicePrice_Chien.Size = new System.Drawing.Size(295, 36);
             this.ServicePrice_Chien.TabIndex = 10;
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "tendichvu";
-            this.Column1.HeaderText = "TÊN DỊCH VỤ";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "giatien";
-            this.Column2.HeaderText = "GIÁ TIỀN";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "soluong";
-            this.Column4.HeaderText = "SL";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "thanhtien";
-            this.Column3.HeaderText = "THÀNH TIỀN";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
             // 
             // pictureBox7
             // 
@@ -498,6 +499,30 @@
             this.panel_Chien.Size = new System.Drawing.Size(253, 100);
             this.panel_Chien.TabIndex = 13;
             // 
+            // lblNgayTraPhong_Chien
+            // 
+            this.lblNgayTraPhong_Chien.AutoSize = true;
+            this.lblNgayTraPhong_Chien.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNgayTraPhong_Chien.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblNgayTraPhong_Chien.Location = new System.Drawing.Point(25, 8);
+            this.lblNgayTraPhong_Chien.MaximumSize = new System.Drawing.Size(150, 0);
+            this.lblNgayTraPhong_Chien.Name = "lblNgayTraPhong_Chien";
+            this.lblNgayTraPhong_Chien.Size = new System.Drawing.Size(110, 17);
+            this.lblNgayTraPhong_Chien.TabIndex = 1;
+            this.lblNgayTraPhong_Chien.Text = "Ngày trả phòng";
+            this.lblNgayTraPhong_Chien.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblSoNgayThue_Chien
+            // 
+            this.lblSoNgayThue_Chien.AutoSize = true;
+            this.lblSoNgayThue_Chien.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSoNgayThue_Chien.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblSoNgayThue_Chien.Location = new System.Drawing.Point(27, 73);
+            this.lblSoNgayThue_Chien.Name = "lblSoNgayThue_Chien";
+            this.lblSoNgayThue_Chien.Size = new System.Drawing.Size(101, 17);
+            this.lblSoNgayThue_Chien.TabIndex = 1;
+            this.lblSoNgayThue_Chien.Text = "Số Ngày Thuê: ";
+            // 
             // dtpNgayTraPhong
             // 
             this.dtpNgayTraPhong.AutoRoundedCorners = true;
@@ -514,30 +539,6 @@
             this.dtpNgayTraPhong.Size = new System.Drawing.Size(190, 27);
             this.dtpNgayTraPhong.TabIndex = 0;
             this.dtpNgayTraPhong.Value = new System.DateTime(2024, 11, 2, 1, 24, 27, 588);
-            // 
-            // lblSoNgayThue_Chien
-            // 
-            this.lblSoNgayThue_Chien.AutoSize = true;
-            this.lblSoNgayThue_Chien.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSoNgayThue_Chien.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblSoNgayThue_Chien.Location = new System.Drawing.Point(27, 73);
-            this.lblSoNgayThue_Chien.Name = "lblSoNgayThue_Chien";
-            this.lblSoNgayThue_Chien.Size = new System.Drawing.Size(108, 17);
-            this.lblSoNgayThue_Chien.TabIndex = 1;
-            this.lblSoNgayThue_Chien.Text = "Số Ngày Thuê: 3";
-            // 
-            // lblNgayTraPhong_Chien
-            // 
-            this.lblNgayTraPhong_Chien.AutoSize = true;
-            this.lblNgayTraPhong_Chien.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNgayTraPhong_Chien.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblNgayTraPhong_Chien.Location = new System.Drawing.Point(25, 8);
-            this.lblNgayTraPhong_Chien.MaximumSize = new System.Drawing.Size(150, 0);
-            this.lblNgayTraPhong_Chien.Name = "lblNgayTraPhong_Chien";
-            this.lblNgayTraPhong_Chien.Size = new System.Drawing.Size(110, 17);
-            this.lblNgayTraPhong_Chien.TabIndex = 1;
-            this.lblNgayTraPhong_Chien.Text = "Ngày trả phòng";
-            this.lblNgayTraPhong_Chien.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ThongTinHoaDon_Chien
             // 
