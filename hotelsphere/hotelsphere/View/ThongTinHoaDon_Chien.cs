@@ -18,7 +18,8 @@ namespace hotelsphere.View
         servicesController serviceController = new servicesController();
         invoiceController hoadonController;
         private int? currentCustomerId; 
-        private int? currentRoomId;  
+        private int? currentRoomId;
+        private string TenNhanVien { get; set; }
         public string CustomerName_Chien { get => lblNameCustomer_Chien.Text; set => lblNameCustomer_Chien.Text = value; }
         public string RoomType_Chien { get => lblRoomType_Chien.Text; set => lblRoomType_Chien.Text = value; }
         public string StatusRoom_Chien { get => lblStatusRoom_Chien.Text; set => lblStatusRoom_Chien.Text = value; }
@@ -26,6 +27,12 @@ namespace hotelsphere.View
         public DateTime ReturnDate_Chien { get; set; }
         public string TenPhong { get => lblTenPhong_Chien.Text; set => lblTenPhong_Chien.Text = value; }
         private decimal priceRoom;
+        public int? IdStaff { get; set; }
+        // phương thức để thiết lập idStaff khi mở form
+        public void SetIdStaff(int? idStaff)
+        {
+            this.IdStaff = idStaff;
+        }
         public decimal PriceRoom_Chien
         {
             get => priceRoom;
@@ -44,7 +51,7 @@ namespace hotelsphere.View
                 lblSoNgayThue_Chien.Text = songaythue > 0 ? "Số ngày thuê: " + songaythue.ToString() : "Vui lòng chọn lại!";
             }
         }
-        public ThongTinHoaDon_Chien(roomController controller, UC_Room_Chien ucRoomChien, customerModel_Chien customer)
+        public ThongTinHoaDon_Chien(roomController controller, UC_Room_Chien ucRoomChien, customerModel_Chien customer, int? idStaff, string tenNhanVien)
         {
             InitializeComponent();
             lblNameCustomer_Chien.Text = ucRoomChien.TenKhachHang;
@@ -53,7 +60,7 @@ namespace hotelsphere.View
             RoundPanel(panel_Chien, 20);
 
             this.roomController = controller; 
-            this.ucRoomChien = new UC_Room_Chien(customer); 
+            this.ucRoomChien = new UC_Room_Chien(customer, idStaff, TenNhanVien); 
 
             RentDate_Chien = DateTime.Now;
             dtpNgayTraPhong.Value = RentDate_Chien.AddDays(1);
@@ -67,6 +74,8 @@ namespace hotelsphere.View
             };
 
             hoadonController = new invoiceController();
+            IdStaff = idStaff;
+            TenNhanVien = tenNhanVien;
         }
         private void CapNhatTongTien_Chien()
         {
@@ -84,6 +93,7 @@ namespace hotelsphere.View
             lblNameCustomer_Chien.Text = ucRoomChien.LoadDataService_Chien();
             lblDateRent_Chien.Text = DateTime.Now.ToShortDateString();
             cbNameService_Chien.DataSource = serviceController.GetTenDichVu_Chien();
+            lblTenNhanVien_Chien.Text = TenNhanVien;
             DataGridViewImageColumn imgColumn = new DataGridViewImageColumn();
             imgColumn.Name = "HÀNH ĐỘNG";
             imgColumn.HeaderText = "HÀNH ĐỘNG";
@@ -210,7 +220,7 @@ namespace hotelsphere.View
         }
 
 
-        staffModel_Chien staffModel_Chien = new staffModel_Chien();
+        //iStaff_Chien staffModel_Chien;
         private void btnComfirmRent_Chien_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(TenPhong) || string.IsNullOrEmpty(CustomerName_Chien))
@@ -222,7 +232,7 @@ namespace hotelsphere.View
             bool success = roomController.CapNhatTrangThaiPhong_Chien(TenPhong, "Đang thuê");
             if (success)
             {
-                ConfirmRental();
+                Xacnhanthuephong();
             }
             else
             {
@@ -230,7 +240,7 @@ namespace hotelsphere.View
             }
         }
 
-        private void ConfirmRental()
+        private void Xacnhanthuephong()
         {
             currentRoomId = roomController.GetRoomIdByName(TenPhong);
             int totalDays = (ReturnDate_Chien - RentDate_Chien).Days + 1;
@@ -241,7 +251,7 @@ namespace hotelsphere.View
 
             int invoiceId = hoadonController.ThemHoaDon(
                 currentCustomerId,
-                staffModel_Chien.Id_Staff_Chien,
+                IdStaff,
                 currentRoomId,
                 PriceRoom_Chien,
                 RentDate_Chien,
@@ -249,11 +259,35 @@ namespace hotelsphere.View
                 totalInvoiceAmount
             );
 
-            HTHoaDonCT(invoiceId, totalRoomPrice, totalServicePrice);
+            //HTHoaDonCT(invoiceId, totalRoomPrice, totalServicePrice);
             if (invoiceId > 0)
             {
                 //LuuCTDichVu(invoiceId);
                 MessageBox.Show("Đặt phòng thành công!");
+                // Hiển thị hóa đơn
+                InHoaDon inHoaDonForm = new InHoaDon
+                {
+                    CustomerName = CustomerName_Chien,
+                    InvoiceNumber = invoiceId,
+                    RoomName = TenPhong,
+                    TotalDays = totalDays,
+                    RoomType = RoomType_Chien,
+                    StaffName = TenNhanVien,
+                    TotalRoomPrice = totalRoomPrice,
+                    TotalServicePrice = totalServicePrice
+                };
+                MessageBox.Show($"Ten Khach Hang: {CustomerName_Chien}"
+                    +$"\nSo hoa don: {invoiceId}"
+                    +$"\nTen phong: {TenPhong}"
+                    +$"\nso ngay thue {totalDays}"
+                    +$"\nloai phong: {RoomType_Chien}"
+                    +$"\nten nhan vien: {TenNhanVien}"
+                    +$"\nTien  thue phong: {totalRoomPrice}"
+                    +$"\ntien dich vu: {totalServicePrice}");
+                inHoaDonForm.HienthiHoaDonChiTiet();
+                inHoaDonForm.ShowDialog();
+
+
                 ucRoomChien.LoadRooms(); 
                 Close();
             }
@@ -290,7 +324,7 @@ namespace hotelsphere.View
         {
             MessageBox.Show($"idHoaDon: {invoiceId}\n" +
                              $"currentCustomerId: {currentCustomerId}\n" +
-                             $"idStaff: {staffModel_Chien.Id_Staff_Chien}\n" +
+                             $"idStaff: {IdStaff}\n" +
                              $"currentRoomId: {currentRoomId}\n" +
                              $"Giá phòng 1 ngày: {PriceRoom_Chien}\n" +
                              $"Ngày thuê phòng: {RentDate_Chien}\n" +

@@ -28,7 +28,7 @@ namespace hotelsphere.Controller
             if (result.Rows.Count > 0)
             {
                 DataRow row = result.Rows[0];
-                string idStaff = row["id_staff"].ToString();
+                staff.Id_Staff_Chien = Convert.ToInt32(row["id_staff"]); // id staff = 4
                 string nameStaff = row["hoten"].ToString();
                 string roleFromDb = row["role"].ToString();
                 if (roleFromDb.Equals("staff", StringComparison.OrdinalIgnoreCase) && staff.Role_Chien.Equals("staff", StringComparison.OrdinalIgnoreCase))
@@ -36,8 +36,8 @@ namespace hotelsphere.Controller
                     MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     try
                     {
-                        iStaff_Chien staffForm = new iStaff_Chien();
-                        staffForm.SetStaffInfo(nameStaff);
+                        iStaff_Chien staffForm = new iStaff_Chien(staff.Id_Staff_Chien);
+                        staffForm.SetStaffInfo(nameStaff, staff.Id_Staff_Chien);
                         staffForm.Show();
                         currentForm.Hide(); 
                     }

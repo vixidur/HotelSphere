@@ -69,6 +69,7 @@
             this.lblNgayTraPhong_Chien = new System.Windows.Forms.Label();
             this.lblSoNgayThue_Chien = new System.Windows.Forms.Label();
             this.dtpNgayTraPhong = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.lblTenNhanVien_Chien = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvServiceRoom_Chien)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudSoluong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -540,12 +541,22 @@
             this.dtpNgayTraPhong.TabIndex = 0;
             this.dtpNgayTraPhong.Value = new System.DateTime(2024, 11, 2, 1, 24, 27, 588);
             // 
+            // lblTenNhanVien_Chien
+            // 
+            this.lblTenNhanVien_Chien.AutoSize = true;
+            this.lblTenNhanVien_Chien.Location = new System.Drawing.Point(343, 13);
+            this.lblTenNhanVien_Chien.Name = "lblTenNhanVien_Chien";
+            this.lblTenNhanVien_Chien.Size = new System.Drawing.Size(60, 13);
+            this.lblTenNhanVien_Chien.TabIndex = 14;
+            this.lblTenNhanVien_Chien.Text = "tenhanvien";
+            // 
             // ThongTinHoaDon_Chien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(818, 578);
+            this.Controls.Add(this.lblTenNhanVien_Chien);
             this.Controls.Add(this.panel_Chien);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox7);
@@ -637,5 +648,6 @@
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpNgayTraPhong;
         private System.Windows.Forms.Label lblSoNgayThue_Chien;
         private System.Windows.Forms.Label lblNgayTraPhong_Chien;
+        private System.Windows.Forms.Label lblTenNhanVien_Chien;
     }
 }
