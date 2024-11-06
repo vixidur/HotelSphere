@@ -1,4 +1,5 @@
-﻿using hotelsphere.UserControls;
+﻿using hotelsphere.Models;
+using hotelsphere.UserControls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,8 +15,9 @@ namespace hotelsphere.View
 {
     public partial class iStaff_Chien : Form
     {
-
-        public iStaff_Chien()
+        public int? IdStaff { get; set; }
+        staffModel_Chien staffModel_Chien;
+        public iStaff_Chien(int? idStaff)
         {
             InitializeComponent();
             timer1.Start();
@@ -24,8 +26,9 @@ namespace hotelsphere.View
             addUserControl(uC_Home_Chien);
             notify_Chien.Visible = false;
             RoundPanel(notify_Chien, 20);
+            staffModel_Chien = new staffModel_Chien();
+            IdStaff = idStaff;
         }
-
 
         private Stack<UserControl> panelHistory;
 
@@ -62,7 +65,7 @@ namespace hotelsphere.View
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            UC_Customer_Chien uC_Customer_Chien = new UC_Customer_Chien(this);
+            UC_Customer_Chien uC_Customer_Chien = new UC_Customer_Chien(this, IdStaff);
             addUserControl(uC_Customer_Chien);
         }
 
@@ -149,8 +152,9 @@ namespace hotelsphere.View
             panel.Region = new Region(path);
         }
 
-        public void SetStaffInfo(string nameStaff)
+        public void SetStaffInfo(string nameStaff, int? idStaff)
         {
+            IdStaff = idStaff;
             label2.Text = "Xin chào, " + nameStaff;
         }
 

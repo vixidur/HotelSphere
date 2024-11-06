@@ -1,4 +1,5 @@
-﻿using hotelsphere.View;
+﻿using hotelsphere.Models;
+using hotelsphere.View;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,7 +16,8 @@ namespace hotelsphere.UserControls
     {
         public event EventHandler<string> RoomSelected;
         public string TenPhong { get => lblTenPhong_Chien.Text; set => lblTenPhong_Chien.Text = value; }
-        public UC_RoomType_Chien()
+        public int? IdStaff { get; private set; }
+        public UC_RoomType_Chien(int? idStaff)
         {
             InitializeComponent();
             this.BorderStyle = BorderStyle.FixedSingle;
@@ -26,6 +28,7 @@ namespace hotelsphere.UserControls
             this.SetStyle(ControlStyles.SupportsTransparentBackColor, true);
             this.BackColor = Color.Transparent;
             this.BorderStyle = BorderStyle.None;
+            IdStaff = idStaff;
         }
 
         public void SetRoomInfo(string roomType, string roomName, string status)

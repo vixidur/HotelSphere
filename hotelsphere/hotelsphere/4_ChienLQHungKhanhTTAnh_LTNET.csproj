@@ -145,6 +145,12 @@
     <Compile Include="View\iAdmin_Chien.Designer.cs">
       <DependentUpon>iAdmin_Chien.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\InHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\InHoaDon.Designer.cs">
+      <DependentUpon>InHoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\iStaff_Chien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,6 +193,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UC_Setting_Chien.resx">
       <DependentUpon>UC_Setting_Chien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\InHoaDon.resx">
+      <DependentUpon>InHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\iStaff_Chien.resx">
       <DependentUpon>iStaff_Chien.cs</DependentUpon>
@@ -260,6 +269,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\5507757-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-printer.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Web.WebView2.1.0.2277.86\build\Microsoft.Web.WebView2.targets" Condition="Exists('..\packages\Microsoft.Web.WebView2.1.0.2277.86\build\Microsoft.Web.WebView2.targets')" />

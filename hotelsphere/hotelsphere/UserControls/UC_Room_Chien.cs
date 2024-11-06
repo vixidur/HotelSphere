@@ -18,13 +18,17 @@ namespace hotelsphere.UserControls
         public event EventHandler RoomSelected;
         private roomController roomController;
         private customerModel_Chien customerModel;
-        public UC_Room_Chien(customerModel_Chien customer)
+        public int? IdStaff { get; set; }
+        public string TenNhanVien { get; set; }
+        public UC_Room_Chien(customerModel_Chien customer, int? idStaff, string tenNhanVien)
         {
             InitializeComponent();
             roomController = new roomController();
             customerModel = customer; // Gán customerModel trước
             LoadCustomerData(); // Gọi LoadCustomerData() sau khi customerModel đã được gán
             LoadRooms();
+            IdStaff = idStaff;
+            TenNhanVien = tenNhanVien;
         }
 
         private void UC_Room_Chien_Load(object sender, EventArgs e)
@@ -41,7 +45,7 @@ namespace hotelsphere.UserControls
 
             foreach (RoomModel_Chien room in rooms)
             {
-                UC_RoomType_Chien roomControl = new UC_RoomType_Chien();
+                UC_RoomType_Chien roomControl = new UC_RoomType_Chien(IdStaff);
                 roomControl.SetRoomStatus(room.TinhTrang_Chien);
                 roomControl.SetRoomInfo(room.LoaiPhong_Chien, room.TenPhong_Chien, room.TinhTrang_Chien);
                 roomControl.RoomSelected += (s, roomName) =>
@@ -49,7 +53,7 @@ namespace hotelsphere.UserControls
                     if (roomTypeId.HasValue && roomTypeId.Value > 0)
                     {
                         decimal roomPrice = roomController.LayGiaTienTheoIDRoom_Chien(roomTypeId.Value);
-                        ThongTinHoaDon_Chien thongTinHoaDon = new ThongTinHoaDon_Chien(this.roomController, this, customerModel)
+                        ThongTinHoaDon_Chien thongTinHoaDon = new ThongTinHoaDon_Chien(this.roomController, this, customerModel, IdStaff, TenNhanVien)
                         {
                             CustomerName_Chien = TenKhachHang,
                             RoomType_Chien = room.LoaiPhong_Chien,
@@ -59,6 +63,7 @@ namespace hotelsphere.UserControls
                             PriceRoom_Chien = roomPrice,
                             TenPhong = roomName 
                         };
+                        thongTinHoaDon.SetIdStaff(IdStaff);
                         thongTinHoaDon.ShowDialog();
                     }
                     else
@@ -123,7 +128,7 @@ namespace hotelsphere.UserControls
 
                 foreach (RoomModel_Chien room in emptyRooms)
                 {
-                    UC_RoomType_Chien roomControl = new UC_RoomType_Chien();
+                    UC_RoomType_Chien roomControl = new UC_RoomType_Chien(IdStaff);
                     roomControl.SetRoomStatus(room.TinhTrang_Chien);
                     roomControl.SetRoomInfo(room.LoaiPhong_Chien, room.TenPhong_Chien, room.TinhTrang_Chien);
                     flpRooms_Chien.Controls.Add(roomControl);
@@ -135,7 +140,7 @@ namespace hotelsphere.UserControls
 
                 foreach (RoomModel_Chien room in rentingRooms)
                 {
-                    UC_RoomType_Chien roomControl = new UC_RoomType_Chien();
+                    UC_RoomType_Chien roomControl = new UC_RoomType_Chien(IdStaff);
                     roomControl.SetRoomStatus(room.TinhTrang_Chien);
                     roomControl.SetRoomInfo(room.LoaiPhong_Chien, room.TenPhong_Chien, room.TinhTrang_Chien);
                     flpRooms_Chien.Controls.Add(roomControl);
@@ -170,7 +175,7 @@ namespace hotelsphere.UserControls
         public string TenKhachHang { get; set; }
         public void LoadCustomerData()
         {
-            if (customerModel != null) // Kiểm tra xem customerModel có khác null không
+            if (customerModel != null) 
             {
                 lblSoCCCD_Chien.Text = customerModel.SoCCCD;
                 lblTenCustomer_Chien.Text = customerModel.NameCustomer;
