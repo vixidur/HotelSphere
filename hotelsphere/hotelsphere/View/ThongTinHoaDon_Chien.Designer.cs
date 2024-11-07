@@ -103,7 +103,7 @@
             this.lblNameCustomer_Chien.Name = "lblNameCustomer_Chien";
             this.lblNameCustomer_Chien.Size = new System.Drawing.Size(137, 22);
             this.lblNameCustomer_Chien.TabIndex = 2;
-            this.lblNameCustomer_Chien.Text = "Phạm Tuấn Vũ";
+            this.lblNameCustomer_Chien.Text = "";
             // 
             // lblDateRent_Chien
             // 

@@ -30,27 +30,6 @@ namespace hotelsphere.UserControls
             this.BorderStyle = BorderStyle.None;
             IdStaff = idStaff;
         }
-
-        public void SetRoomInfo(string roomType, string roomName, string status)
-        {
-            lblLoaiPhong_Chien.Text = roomType;
-            lblTenPhong_Chien.Text = roomName;
-            lblTinhTrang_Chien.Text = status;
-        }
-
-        public void SetRoomStatus(string status)
-        {
-            if(status == "Trống")
-            {
-                panel1.BackColor = ColorTranslator.FromHtml("#133E87");
-                pictureBox1.Image = Properties.Resources.icon_verify;
-            }
-            else if (status == "Đang thuê")
-            {
-                panel1.BackColor = ColorTranslator.FromHtml("#AF1740"); 
-                pictureBox1.Image = Properties.Resources.icon_customer;
-            }
-        }
         private void RoundPanel(Panel panel, int radius)
         {
             Rectangle bounds = new Rectangle(0, 0, panel.Width, panel.Height);
@@ -61,11 +40,45 @@ namespace hotelsphere.UserControls
             path.AddArc(bounds.X, bounds.Y + bounds.Height - radius, radius, radius, 90, 90);
             panel.Region = new Region(path);
         }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        public void SetRoomInfo(string roomType, string roomName, string status, string customerName = null)
         {
+            lblLoaiPhong_Chien.Text = roomType;
+            lblTenPhong_Chien.Text = roomName;
 
+            // Nếu phòng đang thuê, hiển thị tên khách hàng
+            if (status == "Đang thuê" && !string.IsNullOrEmpty(customerName))
+            {
+                lblTinhTrang_Chien.Text = customerName;
+            }
+            else
+            {
+                lblTinhTrang_Chien.Text = status;  // Nếu không thì hiển thị trạng thái phòng
+            }
+
+            // Gọi SetRoomStatus để cập nhật màu sắc
+            SetRoomStatus(status);
         }
+
+        public void SetRoomStatus(string status)
+        {
+            // Kiểm tra trạng thái phòng và áp dụng màu sắc và icon phù hợp
+            if (status == "Trống")
+            {
+                panel1.BackColor = ColorTranslator.FromHtml("#2A73CC");  // Xanh dương cho phòng trống
+                pictureBox1.Image = Properties.Resources.icon_verify;
+            }
+            else if (status == "Đang thuê")
+            {
+                panel1.BackColor = ColorTranslator.FromHtml("#FFA726");  // Vàng cho phòng đang thuê
+                pictureBox1.Image = Properties.Resources.icon_customer;
+            }
+            else
+            {
+                panel1.BackColor = ColorTranslator.FromHtml("#D32F2F");  // Đỏ cho trạng thái khác
+                pictureBox1.Image = Properties.Resources.icon_customer;
+            }
+        }
+
 
         private void panel1_Click(object sender, EventArgs e)
         {

@@ -133,6 +133,16 @@ namespace hotelsphere.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BANNERHOTEL {
+            get {
+                object obj = ResourceManager.GetObject("BANNERHOTEL", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icon_bell {
             get {
                 object obj = ResourceManager.GetObject("icon-bell", resourceCulture);

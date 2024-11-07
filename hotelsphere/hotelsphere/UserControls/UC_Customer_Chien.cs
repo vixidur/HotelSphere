@@ -74,7 +74,8 @@ namespace hotelsphere.UserControls
                 string soCCCD = selectedRow.Cells[2].Value?.ToString() ?? string.Empty;
                 string tenKhachHang = selectedRow.Cells[1].Value?.ToString() ?? string.Empty;
                 string quocTich = selectedRow.Cells[3].Value?.ToString() ?? string.Empty;
-                // Khởi tạo đối tượng customerModel
+
+                // Khởi tạo đối tượng customerModel và lưu vào biến toàn cục
                 customerModel = new customerModel_Chien
                 {
                     Id_Customer = idCustomer,
@@ -323,6 +324,17 @@ namespace hotelsphere.UserControls
             catch (Exception ex)
             {
                 MessageBox.Show("Lỗi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void txtSearchCustomer_Chien_TextChanged(object sender, EventArgs e)
+        {
+            string searchTerm = txtSearchCustomer_Chien.Text;
+            DataTable searchResults = customerService_Chien.SearchCustomer(searchTerm);
+
+            if (searchResults.Rows.Count > 0)
+            {
+                dgvCustomer_Chien.DataSource = searchResults;
             }
         }
     }

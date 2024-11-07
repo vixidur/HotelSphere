@@ -160,5 +160,31 @@ namespace hotelsphere.Controller
             return -1; // Trả về -1 nếu không tìm thấy id_room
         }
 
+        public string LayTenKhachHangTheoPhong(string tenPhong_Chien)
+        {
+            // SQL query để lấy tên khách hàng dựa trên tên phòng và trạng thái phòng là "Đang thuê"
+            string query = @"SELECT kh.tenkhachhang
+                            FROM hoadon hd
+                            JOIN customer kh ON hd.id_customer = kh.id_customer
+                            JOIN phong p ON hd.id_room = p.id_room
+                            WHERE p.tenphong = @TenPhong
+                              AND p.tinhtrang = N'Đang thuê';
+                            ";
+
+            SqlParameter[] parameters = new SqlParameter[]
+            {
+                new SqlParameter("@TenPhong", tenPhong_Chien)
+            };
+
+            DataTable result = db.ExecuteQuery(query, parameters);
+
+            if (result.Rows.Count > 0)
+            {
+                return result.Rows[0]["tenkhachhang"].ToString();
+            }
+
+            return null;
+        }
+
     }
 }

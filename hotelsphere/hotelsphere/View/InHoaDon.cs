@@ -48,5 +48,10 @@ namespace hotelsphere.View
             // Hiển thị tổng tiền
             lblTongTien.Text = (TotalRoomPrice + TotalServicePrice).ToString("N0") + " VNĐ";
         }
+
+        //private void panel3_Paint(object sender, PaintEventArgs e)
+        //{
+
+        //}
     }
 }

@@ -27,12 +27,12 @@ namespace hotelsphere.View
         public DateTime ReturnDate_Chien { get; set; }
         public string TenPhong { get => lblTenPhong_Chien.Text; set => lblTenPhong_Chien.Text = value; }
         private decimal priceRoom;
-        public int? IdStaff { get; set; }
-        // phương thức để thiết lập idStaff khi mở form
-        public void SetIdStaff(int? idStaff)
-        {
-            this.IdStaff = idStaff;
-        }
+        //public int? IdStaff { get; set; }
+        //// phương thức để thiết lập idStaff khi mở form
+        //public void SetIdStaff(int? idStaff)
+        //{
+        //    this.IdStaff = idStaff;
+        //}
         public decimal PriceRoom_Chien
         {
             get => priceRoom;
@@ -74,7 +74,7 @@ namespace hotelsphere.View
             };
 
             hoadonController = new invoiceController();
-            IdStaff = idStaff;
+            ucRoomChien.IdStaff = idStaff;
             TenNhanVien = tenNhanVien;
         }
         private void CapNhatTongTien_Chien()
@@ -223,6 +223,7 @@ namespace hotelsphere.View
         //iStaff_Chien staffModel_Chien;
         private void btnComfirmRent_Chien_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("CustomerName_Chien: " + CustomerName_Chien);
             if (string.IsNullOrEmpty(TenPhong) || string.IsNullOrEmpty(CustomerName_Chien))
             {
                 MessageBox.Show("Vui lòng kiểm tra thông tin đặt phòng.");
@@ -251,7 +252,7 @@ namespace hotelsphere.View
 
             int invoiceId = hoadonController.ThemHoaDon(
                 currentCustomerId,
-                IdStaff,
+                ucRoomChien.IdStaff,
                 currentRoomId,
                 PriceRoom_Chien,
                 RentDate_Chien,
@@ -263,7 +264,6 @@ namespace hotelsphere.View
             if (invoiceId > 0)
             {
                 //LuuCTDichVu(invoiceId);
-                MessageBox.Show("Đặt phòng thành công!");
                 // Hiển thị hóa đơn
                 InHoaDon inHoaDonForm = new InHoaDon
                 {
@@ -289,12 +289,14 @@ namespace hotelsphere.View
 
 
                 ucRoomChien.LoadRooms(); 
+                MessageBox.Show("Đặt phòng thành công!");
                 Close();
             }
             else
             {
                 MessageBox.Show("Đặt phòng không thành công. Vui lòng thử lại.");
             }
+
         }
 
         private void LuuCTDichVu(int invoiceId)
@@ -324,7 +326,7 @@ namespace hotelsphere.View
         {
             MessageBox.Show($"idHoaDon: {invoiceId}\n" +
                              $"currentCustomerId: {currentCustomerId}\n" +
-                             $"idStaff: {IdStaff}\n" +
+                             $"idStaff: {ucRoomChien.IdStaff}\n" +
                              $"currentRoomId: {currentRoomId}\n" +
                              $"Giá phòng 1 ngày: {PriceRoom_Chien}\n" +
                              $"Ngày thuê phòng: {RentDate_Chien}\n" +
