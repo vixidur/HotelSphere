@@ -51,14 +51,17 @@ namespace hotelsphere.View
                 lblSoNgayThue_Chien.Text = songaythue > 0 ? "Số ngày thuê: " + songaythue.ToString() : "Vui lòng chọn lại!";
             }
         }
-        public ThongTinHoaDon_Chien(roomController controller, UC_Room_Chien ucRoomChien, customerModel_Chien customer, int? idStaff, string tenNhanVien)
+        public ThongTinHoaDon_Chien(roomController controller, UC_Room_Chien ucRoomChien, customerModel_Chien customer, int? idStaff)
         {
+            hoadonController = new invoiceController();
             InitializeComponent();
             lblNameCustomer_Chien.Text = ucRoomChien.TenKhachHang;
             currentCustomerId = customer.Id_Customer;
             lblDateRent_Chien.Text = DateTime.Now.ToShortDateString();
             RoundPanel(panel_Chien, 20);
-
+            //idStaff = ucRoomChien.IdStaff;
+            MessageBox.Show("check id staff: " + idStaff);
+            lblTenNhanVien_Chien.Text = hoadonController.LayTenNhanVien(idStaff);
             this.roomController = controller; 
             this.ucRoomChien = new UC_Room_Chien(customer, idStaff, TenNhanVien); 
 
@@ -74,8 +77,7 @@ namespace hotelsphere.View
             };
 
             hoadonController = new invoiceController();
-            ucRoomChien.IdStaff = idStaff;
-            TenNhanVien = tenNhanVien;
+            TenNhanVien = lblTenNhanVien_Chien.Text;
         }
         private void CapNhatTongTien_Chien()
         {
@@ -223,7 +225,6 @@ namespace hotelsphere.View
         //iStaff_Chien staffModel_Chien;
         private void btnComfirmRent_Chien_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("CustomerName_Chien: " + CustomerName_Chien);
             if (string.IsNullOrEmpty(TenPhong) || string.IsNullOrEmpty(CustomerName_Chien))
             {
                 MessageBox.Show("Vui lòng kiểm tra thông tin đặt phòng.");

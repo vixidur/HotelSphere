@@ -17,13 +17,14 @@ namespace hotelsphere.View
     {
         public int? IdStaff { get; set; }
         staffModel_Chien staffModel_Chien;
+
         public iStaff_Chien(int? idStaff)
         {
             InitializeComponent();
             timer1.Start();
             UC_Home_Chien uC_Home_Chien = new UC_Home_Chien();
             panelHistory = new Stack<UserControl>();
-            addUserControl(uC_Home_Chien);
+            ThemUserControl(uC_Home_Chien);
             notify_Chien.Visible = false;
             RoundPanel(notify_Chien, 20);
             staffModel_Chien = new staffModel_Chien();
@@ -38,12 +39,12 @@ namespace hotelsphere.View
         }
 
 
-        public void addUserControl(UserControl user)
+        public void ThemUserControl(UserControl user)
         {
             if (panelContainer.Controls.Count > 0)
             {
                 UserControl currentControl = panelContainer.Controls[0] as UserControl;
-                panelHistory.Push(currentControl); 
+                panelHistory.Push(currentControl);
             }
 
             panelContainer.Controls.Clear();
@@ -66,13 +67,21 @@ namespace hotelsphere.View
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             UC_Customer_Chien uC_Customer_Chien = new UC_Customer_Chien(this, IdStaff);
-            addUserControl(uC_Customer_Chien);
+            ThemUserControl(uC_Customer_Chien);
         }
-
+        public string TenNhanVien { get; set; }
+        public customerModel_Chien customerModel;
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            //UC_Room_Chien uC_Room_Chien = new UC_Room_Chien();
-            //addUserControl(uC_Room_Chien);
+            customerModel = new customerModel_Chien
+            {
+                Id_Customer = 1,
+                SoCCCD = "Chưa rõ",
+                NameCustomer = "Chưa rõ",
+                QuocTich = "Chưa rõ"
+            };
+            UC_Room_Chien uC_Room_Chien = new UC_Room_Chien(customerModel, IdStaff, TenNhanVien);
+            ThemUserControl(uC_Room_Chien);
         }
 
         private void iStaff_Chien_Load(object sender, EventArgs e)
@@ -87,13 +96,13 @@ namespace hotelsphere.View
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             UC_Home_Chien uC_Home_Chien = new UC_Home_Chien();
-            addUserControl(uC_Home_Chien);
+            ThemUserControl(uC_Home_Chien);
         }
 
         private void guna2Button1_Click_1(object sender, EventArgs e)
         {
             UC_Home_Chien uC_Home_Chien = new UC_Home_Chien();
-            addUserControl(uC_Home_Chien);
+            ThemUserControl(uC_Home_Chien);
         }
 
 
@@ -101,18 +110,18 @@ namespace hotelsphere.View
         {
             if (!notify_Chien.Visible)
             {
-                notify_Chien.Visible = true; 
+                notify_Chien.Visible = true;
                 notify_Chien.Height = 0;
                 notify_Chien.BringToFront();
-                notify_Chien.Width = 258; 
+                notify_Chien.Width = 258;
 
                 Timer timer = new Timer();
-                timer.Interval = 10; 
+                timer.Interval = 10;
                 timer.Tick += (s, args) =>
                 {
                     if (notify_Chien.Height < 119)
                     {
-                        notify_Chien.Height += 50; 
+                        notify_Chien.Height += 50;
                     }
                     else
                     {
@@ -124,16 +133,16 @@ namespace hotelsphere.View
             else
             {
                 Timer timer = new Timer();
-                timer.Interval = 10; 
+                timer.Interval = 10;
                 timer.Tick += (s, args) =>
                 {
                     if (notify_Chien.Height > 0)
                     {
-                        notify_Chien.Height -= 50; 
+                        notify_Chien.Height -= 50;
                     }
                     else
                     {
-                        notify_Chien.Visible = false; 
+                        notify_Chien.Visible = false;
                         timer.Stop();
                     }
                 };
@@ -161,7 +170,7 @@ namespace hotelsphere.View
         private void guna2CirclePictureBox2_Click(object sender, EventArgs e)
         {
             UC_Setting_Chien uC_Setting_Chien = new UC_Setting_Chien();
-            addUserControl(uC_Setting_Chien);
+            ThemUserControl(uC_Setting_Chien);
         }
 
         private void guna2ControlBox1_Click(object sender, EventArgs e)
@@ -177,7 +186,7 @@ namespace hotelsphere.View
             {
                 frmLogin_Chien loginForm = new frmLogin_Chien();
                 loginForm.Show();
-                this.Hide();
+                this.Close();
             }
         }
     }

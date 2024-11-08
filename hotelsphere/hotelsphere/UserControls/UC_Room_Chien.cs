@@ -60,7 +60,7 @@ namespace hotelsphere.UserControls
                     if (roomTypeId.HasValue && roomTypeId.Value > 0)
                     {
                         decimal roomPrice = roomController.LayGiaTienTheoIDRoom_Chien(roomTypeId.Value);
-                        ThongTinHoaDon_Chien thongTinHoaDon = new ThongTinHoaDon_Chien(this.roomController, this, customerModel, IdStaff, TenNhanVien)
+                        ThongTinHoaDon_Chien thongTinHoaDon = new ThongTinHoaDon_Chien(this.roomController, this, customerModel, IdStaff)
                         {
                             CustomerName_Chien = customerModel.NameCustomer,
                             RoomType_Chien = room.LoaiPhong_Chien,

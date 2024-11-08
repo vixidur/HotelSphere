@@ -71,5 +71,21 @@ namespace hotelsphere.Controller
             return 0;
         }
 
+        public string LayTenNhanVien(int? idStaff)
+        {
+            string query = "SELECT hoten FROM staff WHERE id_staff = @id_staff";
+
+            SqlParameter[] parameters = new SqlParameter[]
+            {
+                new SqlParameter("@id_staff", idStaff)
+            };
+
+            DataTable result = db.ExecuteQuery(query, parameters);
+            if (result.Rows.Count > 0 && result.Rows[0]["hoten"] != DBNull.Value)
+            {
+                return result.Rows[0]["hoten"].ToString();
+            }
+            return null; 
+        }
     }
 }

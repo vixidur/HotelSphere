@@ -29,8 +29,8 @@ namespace hotelsphere.UserControls
             customerService_Chien = new dvucustomerController();
             tabControl_Chien.SelectedTab = tabDSCustomer_Chien;
             tabControl_Chien.TabPages.Remove(tabChucnang);
-            LoadCustomers();
             dgvCustomer_Chien.AutoGenerateColumns = false;
+            LoadCustomers();
             roomController = new roomController();
             IdStaff = idStaff;
         }
@@ -85,11 +85,11 @@ namespace hotelsphere.UserControls
                 };
 
                 UC_Room_Chien ucRoomChien = new UC_Room_Chien(customerModel, IdStaff, TenNhanVien);
-                IStaff_Chien.addUserControl(ucRoomChien);
+                IStaff_Chien.ThemUserControl(ucRoomChien);
 
                 ucRoomChien.RoomSelected += (s, args) =>
                 {
-                    ThongTinHoaDon_Chien thongTinHoaDon = new ThongTinHoaDon_Chien(roomController, ucRoomChien, customerModel, IdStaff, TenNhanVien)
+                    ThongTinHoaDon_Chien thongTinHoaDon = new ThongTinHoaDon_Chien(roomController, ucRoomChien, customerModel, IdStaff)
                     {
                         CustomerName_Chien = tenKhachHang,
                         RoomType_Chien = ucRoomChien.TenLoaiPhong,

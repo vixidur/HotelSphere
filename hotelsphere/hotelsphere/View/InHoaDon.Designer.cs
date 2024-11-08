@@ -33,7 +33,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InHoaDon));
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnPrinter_Chien = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblCustomerName_Chien = new System.Windows.Forms.Label();
             this.lblNgayLapHoaDon_Khanh = new System.Windows.Forms.Label();
@@ -63,7 +63,7 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnPrinter_Chien)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -83,15 +83,17 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "HOÁ ĐƠN";
             // 
-            // pictureBox2
+            // btnPrinter_Chien
             // 
-            this.pictureBox2.Image = global::hotelsphere.Properties.Resources.icon_printer;
-            this.pictureBox2.Location = new System.Drawing.Point(524, 22);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(29, 25);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
+            this.btnPrinter_Chien.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPrinter_Chien.Image = global::hotelsphere.Properties.Resources.icon_printer;
+            this.btnPrinter_Chien.Location = new System.Drawing.Point(524, 22);
+            this.btnPrinter_Chien.Name = "btnPrinter_Chien";
+            this.btnPrinter_Chien.Size = new System.Drawing.Size(29, 25);
+            this.btnPrinter_Chien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnPrinter_Chien.TabIndex = 2;
+            this.btnPrinter_Chien.TabStop = false;
+            this.btnPrinter_Chien.Click += new System.EventHandler(this.btnPrinter_Chien_Click);
             // 
             // pictureBox1
             // 
@@ -183,7 +185,7 @@
             this.panel1.Controls.Add(this.lblNameStaff_Chien);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lblSoHoaDon_Hung);
-            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.btnPrinter_Chien);
             this.panel1.Controls.Add(this.lblNgayLapHoaDon_Khanh);
             this.panel1.Controls.Add(this.lblCustomerName_Chien);
             this.panel1.Controls.Add(this.lblLoaiPhong_Chien);
@@ -446,7 +448,7 @@
             this.Name = "InHoaDon";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InHoaDon";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnPrinter_Chien)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -464,7 +466,7 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox btnPrinter_Chien;
         private System.Windows.Forms.Label lblCustomerName_Chien;
         private System.Windows.Forms.Label lblNgayLapHoaDon_Khanh;
         private System.Windows.Forms.Label lblTenPhong_TAnh;

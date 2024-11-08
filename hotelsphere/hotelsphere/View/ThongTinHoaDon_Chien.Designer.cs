@@ -86,43 +86,42 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Navy;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(25, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(247, 22);
+            this.label1.Size = new System.Drawing.Size(245, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "THÔNG TIN KHÁCH HÀNG";
             // 
             // lblNameCustomer_Chien
             // 
             this.lblNameCustomer_Chien.AutoSize = true;
-            this.lblNameCustomer_Chien.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameCustomer_Chien.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNameCustomer_Chien.Location = new System.Drawing.Point(75, 72);
             this.lblNameCustomer_Chien.MaximumSize = new System.Drawing.Size(150, 0);
             this.lblNameCustomer_Chien.Name = "lblNameCustomer_Chien";
-            this.lblNameCustomer_Chien.Size = new System.Drawing.Size(137, 22);
+            this.lblNameCustomer_Chien.Size = new System.Drawing.Size(0, 24);
             this.lblNameCustomer_Chien.TabIndex = 2;
-            this.lblNameCustomer_Chien.Text = "";
             // 
             // lblDateRent_Chien
             // 
             this.lblDateRent_Chien.AutoSize = true;
-            this.lblDateRent_Chien.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDateRent_Chien.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDateRent_Chien.Location = new System.Drawing.Point(283, 72);
             this.lblDateRent_Chien.Name = "lblDateRent_Chien";
-            this.lblDateRent_Chien.Size = new System.Drawing.Size(114, 22);
+            this.lblDateRent_Chien.Size = new System.Drawing.Size(100, 24);
             this.lblDateRent_Chien.TabIndex = 2;
             this.lblDateRent_Chien.Text = "24/10/2024";
             // 
             // lblRoomType_Chien
             // 
             this.lblRoomType_Chien.AutoSize = true;
-            this.lblRoomType_Chien.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRoomType_Chien.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRoomType_Chien.Location = new System.Drawing.Point(463, 70);
             this.lblRoomType_Chien.MaximumSize = new System.Drawing.Size(100, 0);
             this.lblRoomType_Chien.Name = "lblRoomType_Chien";
-            this.lblRoomType_Chien.Size = new System.Drawing.Size(92, 44);
+            this.lblRoomType_Chien.Size = new System.Drawing.Size(83, 48);
             this.lblRoomType_Chien.TabIndex = 2;
             this.lblRoomType_Chien.Text = "Phòng Cao Cấp";
             // 
@@ -130,21 +129,21 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Navy;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(25, 126);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(194, 22);
+            this.label6.Size = new System.Drawing.Size(199, 24);
             this.label6.TabIndex = 0;
             this.label6.Text = "TÌNH TRẠNG PHÒNG";
             // 
             // lblStatusRoom_Chien
             // 
             this.lblStatusRoom_Chien.AutoSize = true;
-            this.lblStatusRoom_Chien.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatusRoom_Chien.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStatusRoom_Chien.Location = new System.Drawing.Point(288, 172);
             this.lblStatusRoom_Chien.Name = "lblStatusRoom_Chien";
-            this.lblStatusRoom_Chien.Size = new System.Drawing.Size(177, 22);
+            this.lblStatusRoom_Chien.Size = new System.Drawing.Size(166, 24);
             this.lblStatusRoom_Chien.TabIndex = 2;
             this.lblStatusRoom_Chien.Text = "Phòng Đang Thuê";
             // 
@@ -152,11 +151,11 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Navy;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(25, 217);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(89, 22);
+            this.label8.Size = new System.Drawing.Size(85, 24);
             this.label8.TabIndex = 0;
             this.label8.Text = "DỊCH VỤ";
             // 
@@ -182,7 +181,7 @@
             this.btnComfirmRent_Chien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnComfirmRent_Chien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnComfirmRent_Chien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnComfirmRent_Chien.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnComfirmRent_Chien.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnComfirmRent_Chien.ForeColor = System.Drawing.Color.White;
             this.btnComfirmRent_Chien.Location = new System.Drawing.Point(500, 485);
             this.btnComfirmRent_Chien.Name = "btnComfirmRent_Chien";
@@ -194,39 +193,39 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(25, 539);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(103, 22);
+            this.label9.Size = new System.Drawing.Size(123, 24);
             this.label9.TabIndex = 6;
             this.label9.Text = "TỔNG TIỀN: ";
             // 
             // lblCalcService_Chien
             // 
             this.lblCalcService_Chien.AutoSize = true;
-            this.lblCalcService_Chien.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCalcService_Chien.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCalcService_Chien.Location = new System.Drawing.Point(172, 539);
             this.lblCalcService_Chien.Name = "lblCalcService_Chien";
-            this.lblCalcService_Chien.Size = new System.Drawing.Size(0, 22);
+            this.lblCalcService_Chien.Size = new System.Drawing.Size(0, 24);
             this.lblCalcService_Chien.TabIndex = 6;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(499, 232);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(117, 22);
+            this.label10.Size = new System.Drawing.Size(116, 24);
             this.label10.TabIndex = 2;
             this.label10.Text = "Tên Dịch Vụ";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(500, 298);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(80, 22);
+            this.label11.Size = new System.Drawing.Size(81, 24);
             this.label11.TabIndex = 2;
             this.label11.Text = "Giá Tiền";
             // 
@@ -236,7 +235,7 @@
             this.btnSaveService_Chien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSaveService_Chien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSaveService_Chien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSaveService_Chien.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveService_Chien.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSaveService_Chien.ForeColor = System.Drawing.Color.White;
             this.btnSaveService_Chien.Location = new System.Drawing.Point(500, 430);
             this.btnSaveService_Chien.Name = "btnSaveService_Chien";
@@ -251,7 +250,7 @@
             this.dgvServiceRoom_Chien.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -266,7 +265,7 @@
             this.Column3});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
@@ -289,14 +288,14 @@
             this.dgvServiceRoom_Chien.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvServiceRoom_Chien.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.dgvServiceRoom_Chien.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvServiceRoom_Chien.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvServiceRoom_Chien.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvServiceRoom_Chien.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgvServiceRoom_Chien.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvServiceRoom_Chien.ThemeStyle.HeaderStyle.Height = 44;
             this.dgvServiceRoom_Chien.ThemeStyle.ReadOnly = true;
             this.dgvServiceRoom_Chien.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvServiceRoom_Chien.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgvServiceRoom_Chien.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvServiceRoom_Chien.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvServiceRoom_Chien.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgvServiceRoom_Chien.ThemeStyle.RowsStyle.Height = 30;
             this.dgvServiceRoom_Chien.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
@@ -345,20 +344,20 @@
             // lblPriceRoom_Chien
             // 
             this.lblPriceRoom_Chien.AutoSize = true;
-            this.lblPriceRoom_Chien.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPriceRoom_Chien.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPriceRoom_Chien.Location = new System.Drawing.Point(623, 70);
             this.lblPriceRoom_Chien.Name = "lblPriceRoom_Chien";
-            this.lblPriceRoom_Chien.Size = new System.Drawing.Size(130, 22);
+            this.lblPriceRoom_Chien.Size = new System.Drawing.Size(120, 24);
             this.lblPriceRoom_Chien.TabIndex = 2;
             this.lblPriceRoom_Chien.Text = "500.000 VNĐ";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(500, 362);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 22);
+            this.label3.Size = new System.Drawing.Size(92, 24);
             this.label3.TabIndex = 2;
             this.label3.Text = "Số Lượng";
             // 
@@ -380,10 +379,10 @@
             // lblTenPhong_Chien
             // 
             this.lblTenPhong_Chien.AutoSize = true;
-            this.lblTenPhong_Chien.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTenPhong_Chien.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTenPhong_Chien.Location = new System.Drawing.Point(75, 172);
             this.lblTenPhong_Chien.Name = "lblTenPhong_Chien";
-            this.lblTenPhong_Chien.Size = new System.Drawing.Size(101, 22);
+            this.lblTenPhong_Chien.Size = new System.Drawing.Size(96, 24);
             this.lblTenPhong_Chien.TabIndex = 2;
             this.lblTenPhong_Chien.Text = "Room 100";
             // 
@@ -480,10 +479,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(423, 231);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 17);
+            this.label2.Size = new System.Drawing.Size(57, 16);
             this.label2.TabIndex = 12;
             this.label2.Text = "Clear All";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -494,7 +493,7 @@
             this.panel_Chien.Controls.Add(this.lblNgayTraPhong_Chien);
             this.panel_Chien.Controls.Add(this.lblSoNgayThue_Chien);
             this.panel_Chien.Controls.Add(this.dtpNgayTraPhong);
-            this.panel_Chien.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel_Chien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel_Chien.Location = new System.Drawing.Point(500, 121);
             this.panel_Chien.Name = "panel_Chien";
             this.panel_Chien.Size = new System.Drawing.Size(253, 100);
@@ -503,12 +502,12 @@
             // lblNgayTraPhong_Chien
             // 
             this.lblNgayTraPhong_Chien.AutoSize = true;
-            this.lblNgayTraPhong_Chien.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNgayTraPhong_Chien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNgayTraPhong_Chien.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblNgayTraPhong_Chien.Location = new System.Drawing.Point(25, 8);
             this.lblNgayTraPhong_Chien.MaximumSize = new System.Drawing.Size(150, 0);
             this.lblNgayTraPhong_Chien.Name = "lblNgayTraPhong_Chien";
-            this.lblNgayTraPhong_Chien.Size = new System.Drawing.Size(110, 17);
+            this.lblNgayTraPhong_Chien.Size = new System.Drawing.Size(99, 16);
             this.lblNgayTraPhong_Chien.TabIndex = 1;
             this.lblNgayTraPhong_Chien.Text = "Ngày trả phòng";
             this.lblNgayTraPhong_Chien.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -516,11 +515,11 @@
             // lblSoNgayThue_Chien
             // 
             this.lblSoNgayThue_Chien.AutoSize = true;
-            this.lblSoNgayThue_Chien.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSoNgayThue_Chien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSoNgayThue_Chien.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblSoNgayThue_Chien.Location = new System.Drawing.Point(27, 73);
             this.lblSoNgayThue_Chien.Name = "lblSoNgayThue_Chien";
-            this.lblSoNgayThue_Chien.Size = new System.Drawing.Size(101, 17);
+            this.lblSoNgayThue_Chien.Size = new System.Drawing.Size(100, 16);
             this.lblSoNgayThue_Chien.TabIndex = 1;
             this.lblSoNgayThue_Chien.Text = "Số Ngày Thuê: ";
             // 
@@ -530,7 +529,7 @@
             this.dtpNgayTraPhong.BorderRadius = 12;
             this.dtpNgayTraPhong.Checked = true;
             this.dtpNgayTraPhong.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(244)))), ((int)(((byte)(179)))));
-            this.dtpNgayTraPhong.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNgayTraPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpNgayTraPhong.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dtpNgayTraPhong.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpNgayTraPhong.Location = new System.Drawing.Point(25, 36);
@@ -549,6 +548,7 @@
             this.lblTenNhanVien_Chien.Size = new System.Drawing.Size(60, 13);
             this.lblTenNhanVien_Chien.TabIndex = 14;
             this.lblTenNhanVien_Chien.Text = "tenhanvien";
+            this.lblTenNhanVien_Chien.Visible = false;
             // 
             // ThongTinHoaDon_Chien
             // 

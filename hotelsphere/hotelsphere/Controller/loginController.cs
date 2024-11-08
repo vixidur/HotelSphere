@@ -29,15 +29,15 @@ namespace hotelsphere.Controller
             {
                 DataRow row = result.Rows[0];
                 staff.Id_Staff_Chien = Convert.ToInt32(row["id_staff"]); // id staff = 4
-                string nameStaff = row["hoten"].ToString();
-                string roleFromDb = row["role"].ToString();
-                if (roleFromDb.Equals("staff", StringComparison.OrdinalIgnoreCase) && staff.Role_Chien.Equals("staff", StringComparison.OrdinalIgnoreCase))
+                string getTen_Chien = row["hoten"].ToString();
+                string role_Chien = row["role"].ToString();
+                if (role_Chien.Equals("staff", StringComparison.OrdinalIgnoreCase) && staff.Role_Chien.Equals("staff", StringComparison.OrdinalIgnoreCase))
                 {
                     MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     try
                     {
                         iStaff_Chien staffForm = new iStaff_Chien(staff.Id_Staff_Chien);
-                        staffForm.SetStaffInfo(nameStaff, staff.Id_Staff_Chien);
+                        staffForm.SetStaffInfo(getTen_Chien, staff.Id_Staff_Chien);
                         staffForm.Show();
                         currentForm.Hide(); 
                     }
@@ -46,10 +46,11 @@ namespace hotelsphere.Controller
                         MessageBox.Show("Có lỗi khi mở form iStaff_Chien: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
-                else if (roleFromDb.Equals("admin", StringComparison.OrdinalIgnoreCase) && staff.Role_Chien.Equals("admin", StringComparison.OrdinalIgnoreCase))
+                else if (role_Chien.Equals("admin", StringComparison.OrdinalIgnoreCase) && staff.Role_Chien.Equals("admin", StringComparison.OrdinalIgnoreCase))
                 {
                     MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     iAdmin_Chien adminForm = new iAdmin_Chien();
+                    adminForm.SetAdminInfo_Chien(getTen_Chien);
                     adminForm.Show();
                     currentForm.Hide(); 
                 }
