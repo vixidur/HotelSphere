@@ -35,9 +35,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BouncyCastle.Crypto, Version=1.9.0.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
-      <HintPath>..\packages\Portable.BouncyCastle.1.9.0\lib\net40\BouncyCastle.Crypto.dll</HintPath>
-    </Reference>
     <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
       <HintPath>..\packages\BouncyCastle.Cryptography.2.2.1\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
     </Reference>
@@ -171,7 +168,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\ADMIN\roomController_Hung.cs" />
     <Compile Include="Controller\ADMIN\roomtypeController_Hung.cs" />
+    <Compile Include="Controller\ADMIN\servicesController_Khanh.cs" />
+    <Compile Include="Controller\ADMIN\staffController_Chien.cs" />
     <Compile Include="Controller\dvucustomerController.cs" />
     <Compile Include="Controller\invoiceController.cs" />
     <Compile Include="Controller\loginController.cs" />
@@ -194,6 +194,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>hotelhubDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Models\ADMIN\RoomModel_Hung.cs" />
+    <Compile Include="Models\ADMIN\ServicesModel_TuanAnh.cs" />
+    <Compile Include="Models\ADMIN\StaffModel_Chien.cs" />
     <Compile Include="Models\customerModel_Chien.cs" />
     <Compile Include="Models\DB_Chien.cs" />
     <Compile Include="Models\DichVuModel.cs" />
@@ -207,6 +210,24 @@
     </Compile>
     <Compile Include="UserControls\ADMIN\UC_RoomType_Admin_Chien.Designer.cs">
       <DependentUpon>UC_RoomType_Admin_Chien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ADMIN\UC_Room_Admin_Chien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ADMIN\UC_Room_Admin_Chien.Designer.cs">
+      <DependentUpon>UC_Room_Admin_Chien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ADMIN\UC_Services_Admin_Khanh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ADMIN\UC_Services_Admin_Khanh.Designer.cs">
+      <DependentUpon>UC_Services_Admin_Khanh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ADMIN\UC_Staff_Admin_Chien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ADMIN\UC_Staff_Admin_Chien.Designer.cs">
+      <DependentUpon>UC_Staff_Admin_Chien.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\UC_Customer_Chien.cs">
       <SubType>UserControl</SubType>
@@ -280,6 +301,15 @@
     </Compile>
     <EmbeddedResource Include="UserControls\ADMIN\UC_RoomType_Admin_Chien.resx">
       <DependentUpon>UC_RoomType_Admin_Chien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ADMIN\UC_Room_Admin_Chien.resx">
+      <DependentUpon>UC_Room_Admin_Chien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ADMIN\UC_Services_Admin_Khanh.resx">
+      <DependentUpon>UC_Services_Admin_Khanh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ADMIN\UC_Staff_Admin_Chien.resx">
+      <DependentUpon>UC_Staff_Admin_Chien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UC_Customer_Chien.resx">
       <DependentUpon>UC_Customer_Chien.cs</DependentUpon>

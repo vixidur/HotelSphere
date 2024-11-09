@@ -124,11 +124,12 @@ W:\HotelSphere\hotelsphere\hotelsphere\bin\Debug\System.Numerics.Vectors.xml
 W:\HotelSphere\hotelsphere\hotelsphere\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 W:\HotelSphere\hotelsphere\hotelsphere\bin\Debug\System.Threading.Tasks.Extensions.xml
 W:\HotelSphere\hotelsphere\hotelsphere\bin\Debug\System.ValueTuple.xml
-W:\HotelSphere\hotelsphere\hotelsphere\bin\Debug\BouncyCastle.Crypto.dll
-W:\HotelSphere\hotelsphere\hotelsphere\bin\Debug\BouncyCastle.Crypto.xml
 W:\HotelSphere\hotelsphere\hotelsphere\bin\Debug\BouncyCastle.Cryptography.dll
 W:\HotelSphere\hotelsphere\hotelsphere\bin\Debug\itext.bouncy-castle-adapter.dll
 W:\HotelSphere\hotelsphere\hotelsphere\bin\Debug\BouncyCastle.Cryptography.xml
 W:\HotelSphere\hotelsphere\hotelsphere\bin\Debug\itext.bouncy-castle-adapter.xml
 W:\HotelSphere\hotelsphere\hotelsphere\obj\Debug\hotelsphere.View.iAdmin_Chien.resources
 W:\HotelSphere\hotelsphere\hotelsphere\obj\Debug\hotelsphere.UserControls.ADMIN.UC_RoomType_Admin_Chien.resources
+W:\HotelSphere\hotelsphere\hotelsphere\obj\Debug\hotelsphere.UserControls.ADMIN.UC_Room_Admin_Chien.resources
+W:\HotelSphere\hotelsphere\hotelsphere\obj\Debug\hotelsphere.UserControls.ADMIN.UC_Services_Admin_Khanh.resources
+W:\HotelSphere\hotelsphere\hotelsphere\obj\Debug\hotelsphere.UserControls.ADMIN.UC_Staff_Admin_Chien.resources

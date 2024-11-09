@@ -228,12 +228,6 @@
             this.cbRoomType_Chien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.cbRoomType_Chien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbRoomType_Chien.ItemHeight = 30;
-            this.cbRoomType_Chien.Items.AddRange(new object[] {
-            "Tất cả",
-            "1 Người",
-            "2 Người",
-            "Gia đình",
-            "Phòng Cao Cấp"});
             this.cbRoomType_Chien.Location = new System.Drawing.Point(32, 192);
             this.cbRoomType_Chien.Name = "cbRoomType_Chien";
             this.cbRoomType_Chien.Size = new System.Drawing.Size(166, 36);

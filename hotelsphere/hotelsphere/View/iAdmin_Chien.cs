@@ -71,5 +71,23 @@ namespace hotelsphere.View
             UC_RoomType_Admin_Chien roomtype = new UC_RoomType_Admin_Chien();
             ThemUserControl(roomtype);
         }
+
+        private void btnPhong_Hung_Click(object sender, EventArgs e)
+        {
+            UC_Room_Admin_Chien room = new UC_Room_Admin_Chien();
+            ThemUserControl(room);
+        }
+
+        private void btnDichVu_Hung_Click(object sender, EventArgs e)
+        {
+            UC_Services_Admin_Khanh services = new UC_Services_Admin_Khanh();
+            ThemUserControl(services);
+        }
+
+        private void btnStaff_Hung_Click(object sender, EventArgs e)
+        {
+            UC_Staff_Admin_Chien staff = new UC_Staff_Admin_Chien();
+            ThemUserControl(staff);
+        }
     }
 }

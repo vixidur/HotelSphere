@@ -59,8 +59,6 @@ namespace hotelsphere.View
             currentCustomerId = customer.Id_Customer;
             lblDateRent_Chien.Text = DateTime.Now.ToShortDateString();
             RoundPanel(panel_Chien, 20);
-            //idStaff = ucRoomChien.IdStaff;
-            MessageBox.Show("check id staff: " + idStaff);
             lblTenNhanVien_Chien.Text = hoadonController.LayTenNhanVien(idStaff);
             this.roomController = controller; 
             this.ucRoomChien = new UC_Room_Chien(customer, idStaff, TenNhanVien); 
@@ -244,13 +242,11 @@ namespace hotelsphere.View
 
         private void Xacnhanthuephong()
         {
-            currentRoomId = roomController.GetRoomIdByName(TenPhong);
+            currentRoomId = roomController.LayIdPhong(TenPhong);
             int totalDays = (ReturnDate_Chien - RentDate_Chien).Days + 1;
-
             decimal totalRoomPrice = PriceRoom_Chien * totalDays;
             decimal totalServicePrice = serviceController.TinhTongDichVu();
             decimal totalInvoiceAmount = totalRoomPrice + totalServicePrice;
-
             int invoiceId = hoadonController.ThemHoaDon(
                 currentCustomerId,
                 ucRoomChien.IdStaff,

@@ -38,6 +38,20 @@ namespace hotelsphere.Controller
         }
 
 
+        public List<string> LoaiPhong()
+        {
+            string query = "SELECT tenloaiphong FROM loaiphong";
+            DataTable kq = db.ExecuteQuery(query, null);
+
+            List<string> loaiPhong = new List<string>();
+            foreach (DataRow row in kq.Rows)
+            {
+                loaiPhong.Add(row["tenloaiphong"].ToString());
+            }
+
+            return loaiPhong;
+        }
+
 
         public List<RoomModel_Chien> GetRoomsByType(int? roomTypeId = null)
         {
@@ -142,22 +156,39 @@ namespace hotelsphere.Controller
             }
         }
 
-
-        public int? GetRoomIdByName(string roomName)
+        public int? LayIdPhong(string roomName_Chien)
         {
-            string query = "SELECT id_room FROM phong WHERE tenphong = @RoomName";
-            SqlParameter[] parameters = new SqlParameter[] { new SqlParameter("@RoomName", roomName) };
+            string query = "SELECT id_room FROM phong WHERE tenphong = @roomName";
+            SqlParameter[] parameters = new SqlParameter[] { new SqlParameter("@roomName", roomName_Chien) };
 
             DataTable result = db.ExecuteQuery(query, parameters);
             if (result.Rows.Count > 0)
             {
-                object roomIdValue = result.Rows[0]["id_room"];
-                if (roomIdValue != DBNull.Value && roomIdValue is int roomId)
+                object roomID = result.Rows[0]["id_room"];
+                if (roomID != DBNull.Value && roomID is int roomTypeId)
                 {
-                    return roomId; // Trả về id_room
+                    return roomTypeId;
                 }
             }
-            return -1; // Trả về -1 nếu không tìm thấy id_room
+
+            return null;
+        }
+        public int? LayLPTheoID(string roomTypeName_Chien)
+        {
+            string query = "SELECT id_loaiphong FROM loaiphong WHERE tenloaiphong = @RoomTypeName";
+            SqlParameter[] parameters = new SqlParameter[] { new SqlParameter("@RoomTypeName", roomTypeName_Chien) };
+
+            DataTable result = db.ExecuteQuery(query, parameters);
+            if (result.Rows.Count > 0)
+            {
+                object roomTypeIdValue = result.Rows[0]["id_loaiphong"];
+                if (roomTypeIdValue != DBNull.Value && roomTypeIdValue is int roomTypeId)
+                {
+                    return roomTypeId; 
+                }
+            }
+
+            return null; 
         }
 
         public string LayTenKhachHangTheoPhong(string tenPhong_Chien)

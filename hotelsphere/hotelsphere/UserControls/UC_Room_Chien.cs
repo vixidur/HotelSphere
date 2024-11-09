@@ -24,12 +24,12 @@ namespace hotelsphere.UserControls
         {
             InitializeComponent();
             roomController = new roomController();
-            customerModel = customer; // Gán customerModel trước
-            LoadCustomerData(); // Gọi LoadCustomerData() sau khi customerModel đã được gán
+            customerModel = customer; 
+            LoadCustomerData();
+            LayLoaiPhong();
             LoadRooms();
             IdStaff = idStaff;
             TenNhanVien = tenNhanVien;
-            MessageBox.Show("IdStaff: " + IdStaff);
         }
 
         private void UC_Room_Chien_Load(object sender, EventArgs e)
@@ -84,24 +84,34 @@ namespace hotelsphere.UserControls
             flpRooms_Chien.Refresh();
         }
 
-        private int? LayIDRoomType_Chien()
+        public void LayLoaiPhong()
         {
-            switch (cbRoomType_Chien.SelectedItem?.ToString())
+            List<string> roomTypes = roomController.LoaiPhong();
+            cbRoomType_Chien.Items.Clear();
+            cbRoomType_Chien.Items.Add("Tất cả");
+            foreach (string roomType in roomTypes)
             {
-                case "1 Người":
-                    return 1;
-                case "2 Người":
-                    return 2;
-                case "Gia đình":
-                    return 3;
-                case "Phòng Cao Cấp":
-                    return 4;
-                case "Tất cả":
-                    return null;
-                default:
-                    return null;
+                cbRoomType_Chien.Items.Add(roomType);
+            }
+            if (cbRoomType_Chien.Items.Count > 0)
+            {
+                cbRoomType_Chien.SelectedIndex = 0;
             }
         }
+
+
+        private int? LayIDRoomType_Chien()
+        {
+            string selectedRoomType = cbRoomType_Chien.SelectedItem?.ToString();
+
+            if (selectedRoomType == "Tất cả")
+            {
+                return null;
+            }
+            int? roomTypeId = roomController.LayLPTheoID(selectedRoomType);
+            return roomTypeId;
+        }
+
 
         public int? LoaiPhong
         {
@@ -127,50 +137,7 @@ namespace hotelsphere.UserControls
             else
                 return null; 
         }
-        //private void LoadRoomsEmptyOrRenting_Chien()
-        //{
-        //    flpRooms_Chien.Controls.Clear(); 
-
-        //    if (EmptyRoom_Chien.Checked) 
-        //    {
-        //        List<RoomModel_Chien> emptyRooms = roomController.GetRoomsByEmptyOrRenting("Trống");
-
-        //        foreach (RoomModel_Chien room in emptyRooms)
-        //        {
-        //            string displayStatus = room.TinhTrang_Chien;
-        //            if (room.TinhTrang_Chien == "Đang thuê")
-        //            {
-        //                string customerName = roomController.LayTenKhachHangTheoPhong(room.TenPhong_Chien);
-        //                displayStatus = string.IsNullOrEmpty(customerName) ? "Đang thuê" : customerName;
-        //            }
-        //            UC_RoomType_Chien roomControl = new UC_RoomType_Chien(IdStaff);
-        //            roomControl.SetRoomStatus(room.TinhTrang_Chien);
-        //            roomControl.SetRoomInfo(room.LoaiPhong_Chien, room.TenPhong_Chien, room.TinhTrang_Chien, displayStatus);
-        //            flpRooms_Chien.Controls.Add(roomControl);
-        //        }
-        //    }
-        //    else if (RentingRoom_Chien.Checked)
-        //    {
-        //        List<RoomModel_Chien> rentingRooms = roomController.GetRoomsByEmptyOrRenting("Đang thuê");
-
-        //        foreach (RoomModel_Chien room in rentingRooms)
-        //        {
-        //            string displayStatus = room.TinhTrang_Chien;
-        //            if (room.TinhTrang_Chien == "Đang thuê")
-        //            {
-        //                // Lấy tên khách hàng nếu phòng đang thuê
-        //                string customerName = roomController.LayTenKhachHangTheoPhong(room.TenPhong_Chien);
-        //                displayStatus = string.IsNullOrEmpty(customerName) ? "Đang thuê" : customerName;
-        //            }
-        //            UC_RoomType_Chien roomControl = new UC_RoomType_Chien(IdStaff);
-        //            roomControl.SetRoomStatus(room.TinhTrang_Chien);
-        //            roomControl.SetRoomInfo(room.LoaiPhong_Chien, room.TenPhong_Chien, room.TinhTrang_Chien, displayStatus);
-        //            flpRooms_Chien.Controls.Add(roomControl);
-        //        }
-        //    }
-        //}
-
-
+       
         private void allRoom_Chien_CheckedChanged(object sender, EventArgs e)
         {
             if (allRoom_Chien.Checked)

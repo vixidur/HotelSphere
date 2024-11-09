@@ -53,17 +53,29 @@ namespace hotelsphere.Controller.ADMIN
             {
                 throw new ArgumentException("Loại phòng không hợp lệ.");
             }
+
+            // Xóa các hóa đơn có liên kết với phòng thuộc loại phòng này
+            string delHoaDon = "DELETE FROM hoadon WHERE id_room IN (SELECT id_room FROM phong WHERE id_loaiphong = @id)";
+            SqlParameter[] hoaDonParams = {
+                new SqlParameter("@id", roomType.IdRoomType_Hung)
+            };
+            db.ExecuteNonQuery(delHoaDon, hoaDonParams);
+
+            // Xóa các phòng có liên kết với loại phòng này
             string delPhong = "DELETE FROM phong WHERE id_loaiphong = @id";
             SqlParameter[] phongParams = {
                 new SqlParameter("@id", roomType.IdRoomType_Hung)
             };
             db.ExecuteNonQuery(delPhong, phongParams);
+
+            // Xóa loại phòng
             string delLoaiPhong = "DELETE FROM loaiphong WHERE id_loaiphong = @id";
             SqlParameter[] loaiPhongParams = {
                 new SqlParameter("@id", roomType.IdRoomType_Hung)
             };
             db.ExecuteNonQuery(delLoaiPhong, loaiPhongParams);
         }
+
 
 
         public DataTable LayDataLoaiPhong()
