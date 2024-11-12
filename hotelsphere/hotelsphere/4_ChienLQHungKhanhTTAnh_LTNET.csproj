@@ -168,6 +168,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\ADMIN\hoadonController_Chien.cs" />
     <Compile Include="Controller\ADMIN\roomController_Hung.cs" />
     <Compile Include="Controller\ADMIN\roomtypeController_Hung.cs" />
     <Compile Include="Controller\ADMIN\servicesController_Khanh.cs" />
@@ -205,6 +206,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\ADMIN\RoomTypeModel_Hung.cs" />
+    <Compile Include="UserControls\ADMIN\UC_HoaDon_Hung.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ADMIN\UC_HoaDon_Hung.Designer.cs">
+      <DependentUpon>UC_HoaDon_Hung.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\ADMIN\UC_RoomType_Admin_Chien.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -228,6 +235,12 @@
     </Compile>
     <Compile Include="UserControls\ADMIN\UC_Staff_Admin_Chien.Designer.cs">
       <DependentUpon>UC_Staff_Admin_Chien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ADMIN\UC_ThongKe_Chien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ADMIN\UC_ThongKe_Chien.Designer.cs">
+      <DependentUpon>UC_ThongKe_Chien.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\UC_Customer_Chien.cs">
       <SubType>UserControl</SubType>
@@ -299,6 +312,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControls\ADMIN\UC_HoaDon_Hung.resx">
+      <DependentUpon>UC_HoaDon_Hung.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ADMIN\UC_RoomType_Admin_Chien.resx">
       <DependentUpon>UC_RoomType_Admin_Chien.cs</DependentUpon>
     </EmbeddedResource>

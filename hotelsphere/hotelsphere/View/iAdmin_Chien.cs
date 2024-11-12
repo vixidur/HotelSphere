@@ -89,5 +89,17 @@ namespace hotelsphere.View
             UC_Staff_Admin_Chien staff = new UC_Staff_Admin_Chien();
             ThemUserControl(staff);
         }
+
+        private void btnHoaDon_Hung_Click(object sender, EventArgs e)
+        {
+            UC_HoaDon_Hung hoadon = new UC_HoaDon_Hung();
+            ThemUserControl(hoadon);
+        }
+
+        private void guna2CirclePictureBox2_Click(object sender, EventArgs e)
+        {
+            UC_Setting_Chien uC_Setting_Chien = new UC_Setting_Chien();
+            ThemUserControl(uC_Setting_Chien);
+        }
     }
 }

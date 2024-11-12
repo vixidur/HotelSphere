@@ -34,7 +34,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl_Chien = new MetroFramework.Controls.MetroTabControl();
             this.tabDSCustomer_Chien = new MetroFramework.Controls.MetroTabPage();
-            this.useServices_Chien = new Guna.UI2.WinForms.Guna2Button();
             this.dgvCustomer_Chien = new Guna.UI2.WinForms.Guna2DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,6 +41,8 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.useServices_Chien = new Guna.UI2.WinForms.Guna2Button();
             this.tabChucnang = new MetroFramework.Controls.MetroTabPage();
             this.sdtError_Chien = new System.Windows.Forms.Label();
             this.gioitinhError_Chien = new System.Windows.Forms.Label();
@@ -67,14 +68,13 @@
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.tabControl_Chien.SuspendLayout();
             this.tabDSCustomer_Chien.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomer_Chien)).BeginInit();
+            this.panel3.SuspendLayout();
             this.tabChucnang.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl_Chien
@@ -104,25 +104,6 @@
             this.tabDSCustomer_Chien.VerticalScrollbarBarColor = true;
             this.tabDSCustomer_Chien.VerticalScrollbarHighlightOnWheel = false;
             this.tabDSCustomer_Chien.VerticalScrollbarSize = 10;
-            // 
-            // useServices_Chien
-            // 
-            this.useServices_Chien.AutoRoundedCorners = true;
-            this.useServices_Chien.BackColor = System.Drawing.Color.White;
-            this.useServices_Chien.BorderRadius = 17;
-            this.useServices_Chien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.useServices_Chien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.useServices_Chien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.useServices_Chien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.useServices_Chien.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.useServices_Chien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.useServices_Chien.ForeColor = System.Drawing.Color.White;
-            this.useServices_Chien.Location = new System.Drawing.Point(9, 5);
-            this.useServices_Chien.Name = "useServices_Chien";
-            this.useServices_Chien.Size = new System.Drawing.Size(220, 36);
-            this.useServices_Chien.TabIndex = 2;
-            this.useServices_Chien.Text = "TIẾN HÀNH ĐẶT PHÒNG";
-            this.useServices_Chien.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // dgvCustomer_Chien
             // 
@@ -234,6 +215,35 @@
             this.Column6.Name = "Column6";
             this.Column6.ReadOnly = true;
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.useServices_Chien);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(0, 320);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1074, 47);
+            this.panel3.TabIndex = 3;
+            // 
+            // useServices_Chien
+            // 
+            this.useServices_Chien.AutoRoundedCorners = true;
+            this.useServices_Chien.BackColor = System.Drawing.Color.White;
+            this.useServices_Chien.BorderRadius = 17;
+            this.useServices_Chien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.useServices_Chien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.useServices_Chien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.useServices_Chien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.useServices_Chien.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.useServices_Chien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.useServices_Chien.ForeColor = System.Drawing.Color.White;
+            this.useServices_Chien.Location = new System.Drawing.Point(9, 5);
+            this.useServices_Chien.Name = "useServices_Chien";
+            this.useServices_Chien.Size = new System.Drawing.Size(220, 36);
+            this.useServices_Chien.TabIndex = 2;
+            this.useServices_Chien.Text = "TIẾN HÀNH ĐẶT PHÒNG";
+            this.useServices_Chien.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
             // tabChucnang
             // 
             this.tabChucnang.Controls.Add(this.sdtError_Chien);
@@ -259,7 +269,7 @@
             this.tabChucnang.HorizontalScrollbarSize = 10;
             this.tabChucnang.Location = new System.Drawing.Point(4, 38);
             this.tabChucnang.Name = "tabChucnang";
-            this.tabChucnang.Size = new System.Drawing.Size(753, 366);
+            this.tabChucnang.Size = new System.Drawing.Size(1074, 367);
             this.tabChucnang.TabIndex = 1;
             this.tabChucnang.Text = "Chức năng";
             this.tabChucnang.VerticalScrollbarBarColor = true;
@@ -632,15 +642,6 @@
             this.panel2.Size = new System.Drawing.Size(1082, 409);
             this.panel2.TabIndex = 4;
             // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.useServices_Chien);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 320);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1074, 47);
-            this.panel3.TabIndex = 3;
-            // 
             // UC_Customer_Chien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -653,11 +654,11 @@
             this.tabControl_Chien.ResumeLayout(false);
             this.tabDSCustomer_Chien.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomer_Chien)).EndInit();
+            this.panel3.ResumeLayout(false);
             this.tabChucnang.ResumeLayout(false);
             this.tabChucnang.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

@@ -77,7 +77,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1034, 64);
+            this.panel1.Size = new System.Drawing.Size(1012, 64);
             this.panel1.TabIndex = 5;
             // 
             // txtTim_Khanh
@@ -162,7 +162,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 64);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1034, 446);
+            this.panel2.Size = new System.Drawing.Size(1012, 446);
             this.panel2.TabIndex = 6;
             // 
             // tabRoom_Khanh
@@ -173,7 +173,7 @@
             this.tabRoom_Khanh.Location = new System.Drawing.Point(0, 0);
             this.tabRoom_Khanh.Name = "tabRoom_Khanh";
             this.tabRoom_Khanh.SelectedIndex = 0;
-            this.tabRoom_Khanh.Size = new System.Drawing.Size(1034, 446);
+            this.tabRoom_Khanh.Size = new System.Drawing.Size(1012, 446);
             this.tabRoom_Khanh.TabIndex = 0;
             this.tabRoom_Khanh.UseSelectable = true;
             // 
@@ -185,7 +185,7 @@
             this.tabDanhSach_Khanh.HorizontalScrollbarSize = 10;
             this.tabDanhSach_Khanh.Location = new System.Drawing.Point(4, 38);
             this.tabDanhSach_Khanh.Name = "tabDanhSach_Khanh";
-            this.tabDanhSach_Khanh.Size = new System.Drawing.Size(1026, 404);
+            this.tabDanhSach_Khanh.Size = new System.Drawing.Size(1004, 404);
             this.tabDanhSach_Khanh.TabIndex = 0;
             this.tabDanhSach_Khanh.Text = "DANH SÁCH";
             this.tabDanhSach_Khanh.VerticalScrollbarBarColor = true;
@@ -199,7 +199,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1026, 404);
+            this.panel3.Size = new System.Drawing.Size(1004, 404);
             this.panel3.TabIndex = 5;
             // 
             // dgvRoom_Khanh
@@ -239,7 +239,7 @@
             this.dgvRoom_Khanh.RowHeadersVisible = false;
             this.dgvRoom_Khanh.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvRoom_Khanh.RowTemplate.Height = 41;
-            this.dgvRoom_Khanh.Size = new System.Drawing.Size(1026, 404);
+            this.dgvRoom_Khanh.Size = new System.Drawing.Size(1004, 404);
             this.dgvRoom_Khanh.TabIndex = 4;
             this.dgvRoom_Khanh.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.FeterRiver;
             this.dgvRoom_Khanh.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
@@ -503,7 +503,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "UC_Room_Admin_Chien";
-            this.Size = new System.Drawing.Size(1034, 510);
+            this.Size = new System.Drawing.Size(1012, 510);
             this.Load += new System.EventHandler(this.UC_Room_Admin_Chien_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

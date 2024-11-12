@@ -47,10 +47,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.btnSaveService_Chien = new Guna.UI2.WinForms.Guna2Button();
             this.dgvServiceRoom_Chien = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.lblPriceRoom_Chien = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -258,11 +254,6 @@
             this.dgvServiceRoom_Chien.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvServiceRoom_Chien.ColumnHeadersHeight = 44;
             this.dgvServiceRoom_Chien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgvServiceRoom_Chien.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column4,
-            this.Column3});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -301,34 +292,6 @@
             this.dgvServiceRoom_Chien.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvServiceRoom_Chien.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgvServiceRoom_Chien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvServiceRoom_Chien_CellContentClick);
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "tendichvu";
-            this.Column1.HeaderText = "TÊN DỊCH VỤ";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "giatien";
-            this.Column2.HeaderText = "GIÁ TIỀN";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "soluong";
-            this.Column4.HeaderText = "SL";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "thanhtien";
-            this.Column3.HeaderText = "THÀNH TIỀN";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
             // 
             // guna2ControlBox1
             // 
@@ -525,19 +488,24 @@
             // 
             // dtpNgayTraPhong
             // 
+            this.dtpNgayTraPhong.Animated = true;
             this.dtpNgayTraPhong.AutoRoundedCorners = true;
+            this.dtpNgayTraPhong.BackColor = System.Drawing.Color.Transparent;
             this.dtpNgayTraPhong.BorderRadius = 12;
             this.dtpNgayTraPhong.Checked = true;
             this.dtpNgayTraPhong.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(244)))), ((int)(((byte)(179)))));
-            this.dtpNgayTraPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNgayTraPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.dtpNgayTraPhong.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dtpNgayTraPhong.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpNgayTraPhong.IndicateFocus = true;
             this.dtpNgayTraPhong.Location = new System.Drawing.Point(25, 36);
             this.dtpNgayTraPhong.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpNgayTraPhong.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpNgayTraPhong.Name = "dtpNgayTraPhong";
+            this.dtpNgayTraPhong.ShowUpDown = true;
             this.dtpNgayTraPhong.Size = new System.Drawing.Size(190, 27);
             this.dtpNgayTraPhong.TabIndex = 0;
+            this.dtpNgayTraPhong.UseTransparentBackground = true;
             this.dtpNgayTraPhong.Value = new System.DateTime(2024, 11, 2, 1, 24, 27, 588);
             // 
             // lblTenNhanVien_Chien
@@ -638,10 +606,6 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label lblTenPhong_Chien;
         private Guna.UI2.WinForms.Guna2TextBox ServicePrice_Chien;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel_Chien;
