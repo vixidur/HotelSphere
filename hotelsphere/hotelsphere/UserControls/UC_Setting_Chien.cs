@@ -22,7 +22,7 @@ namespace hotelsphere.UserControls
         private async void InitializeWebView()
         {
             await webView21.EnsureCoreWebView2Async(null);
-            webView21.CoreWebView2.Navigate("http://duongkenh24h.site/INFO-MEMBER/info1.html");
+            webView21.CoreWebView2.Navigate("https://github.com/vixidur/HotelSphere");
         }
     }
 }
