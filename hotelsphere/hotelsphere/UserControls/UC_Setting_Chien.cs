@@ -15,6 +15,14 @@ namespace hotelsphere.UserControls
         public UC_Setting_Chien()
         {
             InitializeComponent();
+            InitializeWebView();
+        }
+
+
+        private async void InitializeWebView()
+        {
+            await webView21.EnsureCoreWebView2Async(null);
+            webView21.CoreWebView2.Navigate("http://duongkenh24h.site/INFO-MEMBER/info1.html");
         }
     }
 }

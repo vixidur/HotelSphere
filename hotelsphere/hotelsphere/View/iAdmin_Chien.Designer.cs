@@ -31,34 +31,33 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.panlContainer_Chien = new System.Windows.Forms.Panel();
-            this.guna2CirclePictureBox3 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
             this.btnStaff_Hung = new Guna.UI2.WinForms.Guna2Button();
-            this.btnCustomer_Hung = new Guna.UI2.WinForms.Guna2Button();
             this.btnHoaDon_Hung = new Guna.UI2.WinForms.Guna2Button();
             this.btnDichVu_Hung = new Guna.UI2.WinForms.Guna2Button();
             this.btnPhong_Hung = new Guna.UI2.WinForms.Guna2Button();
             this.btnLoaiPhong_Hung = new Guna.UI2.WinForms.Guna2Button();
             this.btnTrangChu_Hung = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.guna2CirclePictureBox3 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.panlContainer_Chien = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -66,8 +65,8 @@
             this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.guna2Button8);
+            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.btnStaff_Hung);
-            this.panel1.Controls.Add(this.btnCustomer_Hung);
             this.panel1.Controls.Add(this.btnHoaDon_Hung);
             this.panel1.Controls.Add(this.btnDichVu_Hung);
             this.panel1.Controls.Add(this.btnPhong_Hung);
@@ -99,135 +98,6 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "version 0.0.1";
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Teal;
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(215, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(785, 100);
-            this.panel2.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Teal;
-            this.panel3.Controls.Add(this.guna2CirclePictureBox3);
-            this.panel3.Controls.Add(this.guna2CirclePictureBox1);
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.guna2CirclePictureBox2);
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.guna2ControlBox3);
-            this.panel3.Controls.Add(this.guna2ControlBox2);
-            this.panel3.Controls.Add(this.guna2ControlBox1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(416, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(369, 100);
-            this.panel3.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Orange;
-            this.label3.Location = new System.Drawing.Point(105, 66);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(89, 21);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Đăng xuất";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(105, 41);
-            this.label2.MaximumSize = new System.Drawing.Size(198, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(198, 21);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Xin chào, Trần Văn Chiến";
-            // 
-            // guna2ControlBox3
-            // 
-            this.guna2ControlBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox3.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.guna2ControlBox3.FillColor = System.Drawing.Color.Teal;
-            this.guna2ControlBox3.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox3.Location = new System.Drawing.Point(233, 1);
-            this.guna2ControlBox3.Name = "guna2ControlBox3";
-            this.guna2ControlBox3.Size = new System.Drawing.Size(45, 29);
-            this.guna2ControlBox3.TabIndex = 0;
-            // 
-            // guna2ControlBox2
-            // 
-            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
-            this.guna2ControlBox2.FillColor = System.Drawing.Color.Teal;
-            this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(278, 1);
-            this.guna2ControlBox2.Name = "guna2ControlBox2";
-            this.guna2ControlBox2.Size = new System.Drawing.Size(45, 29);
-            this.guna2ControlBox2.TabIndex = 0;
-            // 
-            // guna2ControlBox1
-            // 
-            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.Teal;
-            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(323, 1);
-            this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
-            this.guna2ControlBox1.TabIndex = 0;
-            // 
-            // panlContainer_Chien
-            // 
-            this.panlContainer_Chien.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panlContainer_Chien.Location = new System.Drawing.Point(215, 100);
-            this.panlContainer_Chien.Name = "panlContainer_Chien";
-            this.panlContainer_Chien.Size = new System.Drawing.Size(785, 500);
-            this.panlContainer_Chien.TabIndex = 2;
-            // 
-            // guna2CirclePictureBox3
-            // 
-            this.guna2CirclePictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2CirclePictureBox3.Image = global::hotelsphere.Properties.Resources.icon_bell;
-            this.guna2CirclePictureBox3.ImageRotate = 0F;
-            this.guna2CirclePictureBox3.Location = new System.Drawing.Point(138, 3);
-            this.guna2CirclePictureBox3.Name = "guna2CirclePictureBox3";
-            this.guna2CirclePictureBox3.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox3.Size = new System.Drawing.Size(39, 26);
-            this.guna2CirclePictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2CirclePictureBox3.TabIndex = 7;
-            this.guna2CirclePictureBox3.TabStop = false;
-            // 
-            // guna2CirclePictureBox1
-            // 
-            this.guna2CirclePictureBox1.Image = global::hotelsphere.Properties.Resources.avt;
-            this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(55, 48);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(44, 44);
-            this.guna2CirclePictureBox1.TabIndex = 4;
-            this.guna2CirclePictureBox1.TabStop = false;
-            // 
-            // guna2CirclePictureBox2
-            // 
-            this.guna2CirclePictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2CirclePictureBox2.Image = global::hotelsphere.Properties.Resources.icon_setting;
-            this.guna2CirclePictureBox2.ImageRotate = 0F;
-            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(183, 2);
-            this.guna2CirclePictureBox2.Name = "guna2CirclePictureBox2";
-            this.guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox2.Size = new System.Drawing.Size(39, 26);
-            this.guna2CirclePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2CirclePictureBox2.TabIndex = 5;
-            this.guna2CirclePictureBox2.TabStop = false;
-            // 
             // guna2Button8
             // 
             this.guna2Button8.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -242,7 +112,7 @@
             this.guna2Button8.Image = global::hotelsphere.Properties.Resources.icon_reportviewers;
             this.guna2Button8.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button8.ImageSize = new System.Drawing.Size(25, 25);
-            this.guna2Button8.Location = new System.Drawing.Point(0, 415);
+            this.guna2Button8.Location = new System.Drawing.Point(0, 370);
             this.guna2Button8.Name = "guna2Button8";
             this.guna2Button8.Size = new System.Drawing.Size(215, 45);
             this.guna2Button8.TabIndex = 9;
@@ -262,32 +132,12 @@
             this.btnStaff_Hung.Image = global::hotelsphere.Properties.Resources.icon_staff;
             this.btnStaff_Hung.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnStaff_Hung.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnStaff_Hung.Location = new System.Drawing.Point(0, 370);
+            this.btnStaff_Hung.Location = new System.Drawing.Point(0, 325);
             this.btnStaff_Hung.Name = "btnStaff_Hung";
             this.btnStaff_Hung.Size = new System.Drawing.Size(215, 45);
             this.btnStaff_Hung.TabIndex = 8;
             this.btnStaff_Hung.Text = "Nhân Viên";
             this.btnStaff_Hung.Click += new System.EventHandler(this.btnStaff_Hung_Click);
-            // 
-            // btnCustomer_Hung
-            // 
-            this.btnCustomer_Hung.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCustomer_Hung.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnCustomer_Hung.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnCustomer_Hung.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCustomer_Hung.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCustomer_Hung.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCustomer_Hung.FillColor = System.Drawing.Color.Teal;
-            this.btnCustomer_Hung.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCustomer_Hung.ForeColor = System.Drawing.Color.AliceBlue;
-            this.btnCustomer_Hung.Image = global::hotelsphere.Properties.Resources.icon_customers;
-            this.btnCustomer_Hung.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnCustomer_Hung.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnCustomer_Hung.Location = new System.Drawing.Point(0, 325);
-            this.btnCustomer_Hung.Name = "btnCustomer_Hung";
-            this.btnCustomer_Hung.Size = new System.Drawing.Size(215, 45);
-            this.btnCustomer_Hung.TabIndex = 7;
-            this.btnCustomer_Hung.Text = "Khách Hàng";
             // 
             // btnHoaDon_Hung
             // 
@@ -308,6 +158,7 @@
             this.btnHoaDon_Hung.Size = new System.Drawing.Size(215, 45);
             this.btnHoaDon_Hung.TabIndex = 6;
             this.btnHoaDon_Hung.Text = "Hoá Đơn";
+            this.btnHoaDon_Hung.Click += new System.EventHandler(this.btnHoaDon_Hung_Click);
             // 
             // btnDichVu_Hung
             // 
@@ -405,6 +256,135 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Teal;
+            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(215, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(785, 100);
+            this.panel2.TabIndex = 1;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Teal;
+            this.panel3.Controls.Add(this.guna2CirclePictureBox3);
+            this.panel3.Controls.Add(this.guna2CirclePictureBox1);
+            this.panel3.Controls.Add(this.guna2CirclePictureBox2);
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.guna2ControlBox3);
+            this.panel3.Controls.Add(this.guna2ControlBox2);
+            this.panel3.Controls.Add(this.guna2ControlBox1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(416, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(369, 100);
+            this.panel3.TabIndex = 1;
+            // 
+            // guna2CirclePictureBox3
+            // 
+            this.guna2CirclePictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2CirclePictureBox3.Image = global::hotelsphere.Properties.Resources.icon_bell;
+            this.guna2CirclePictureBox3.ImageRotate = 0F;
+            this.guna2CirclePictureBox3.Location = new System.Drawing.Point(138, 3);
+            this.guna2CirclePictureBox3.Name = "guna2CirclePictureBox3";
+            this.guna2CirclePictureBox3.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox3.Size = new System.Drawing.Size(39, 26);
+            this.guna2CirclePictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2CirclePictureBox3.TabIndex = 7;
+            this.guna2CirclePictureBox3.TabStop = false;
+            // 
+            // guna2CirclePictureBox1
+            // 
+            this.guna2CirclePictureBox1.Image = global::hotelsphere.Properties.Resources.avt;
+            this.guna2CirclePictureBox1.ImageRotate = 0F;
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(55, 48);
+            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
+            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(44, 44);
+            this.guna2CirclePictureBox1.TabIndex = 4;
+            this.guna2CirclePictureBox1.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Orange;
+            this.label3.Location = new System.Drawing.Point(63, 534);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(89, 21);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Đăng xuất";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // guna2CirclePictureBox2
+            // 
+            this.guna2CirclePictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2CirclePictureBox2.Image = global::hotelsphere.Properties.Resources.icon_setting;
+            this.guna2CirclePictureBox2.ImageRotate = 0F;
+            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(183, 2);
+            this.guna2CirclePictureBox2.Name = "guna2CirclePictureBox2";
+            this.guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox2.Size = new System.Drawing.Size(39, 26);
+            this.guna2CirclePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2CirclePictureBox2.TabIndex = 5;
+            this.guna2CirclePictureBox2.TabStop = false;
+            this.guna2CirclePictureBox2.Click += new System.EventHandler(this.guna2CirclePictureBox2_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(105, 51);
+            this.label2.MaximumSize = new System.Drawing.Size(198, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(162, 42);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Xin chào, Trần Đình Hoàng Phúc";
+            // 
+            // guna2ControlBox3
+            // 
+            this.guna2ControlBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox3.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
+            this.guna2ControlBox3.FillColor = System.Drawing.Color.Teal;
+            this.guna2ControlBox3.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox3.Location = new System.Drawing.Point(233, 1);
+            this.guna2ControlBox3.Name = "guna2ControlBox3";
+            this.guna2ControlBox3.Size = new System.Drawing.Size(45, 29);
+            this.guna2ControlBox3.TabIndex = 0;
+            // 
+            // guna2ControlBox2
+            // 
+            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
+            this.guna2ControlBox2.FillColor = System.Drawing.Color.Teal;
+            this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox2.Location = new System.Drawing.Point(278, 1);
+            this.guna2ControlBox2.Name = "guna2ControlBox2";
+            this.guna2ControlBox2.Size = new System.Drawing.Size(45, 29);
+            this.guna2ControlBox2.TabIndex = 0;
+            // 
+            // guna2ControlBox1
+            // 
+            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.Teal;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(323, 1);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
+            this.guna2ControlBox1.TabIndex = 0;
+            // 
+            // panlContainer_Chien
+            // 
+            this.panlContainer_Chien.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panlContainer_Chien.Location = new System.Drawing.Point(215, 100);
+            this.panlContainer_Chien.Name = "panlContainer_Chien";
+            this.panlContainer_Chien.Size = new System.Drawing.Size(785, 500);
+            this.panlContainer_Chien.TabIndex = 2;
+            // 
             // iAdmin_Chien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -418,15 +398,16 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "iAdmin_Chien";
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -438,7 +419,6 @@
         private Guna.UI2.WinForms.Guna2Button btnTrangChu_Hung;
         private Guna.UI2.WinForms.Guna2Button guna2Button8;
         private Guna.UI2.WinForms.Guna2Button btnStaff_Hung;
-        private Guna.UI2.WinForms.Guna2Button btnCustomer_Hung;
         private Guna.UI2.WinForms.Guna2Button btnHoaDon_Hung;
         private Guna.UI2.WinForms.Guna2Button btnDichVu_Hung;
         private Guna.UI2.WinForms.Guna2Button btnPhong_Hung;

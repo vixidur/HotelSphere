@@ -83,7 +83,6 @@ namespace hotelsphere.UserControls
                     NameCustomer = tenKhachHang,
                     QuocTich = quocTich
                 };
-
                 UC_Room_Chien ucRoomChien = new UC_Room_Chien(customerModel, IdStaff, TenNhanVien);
                 IStaff_Chien.ThemUserControl(ucRoomChien);
 

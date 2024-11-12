@@ -94,6 +94,13 @@ namespace hotelsphere.View
             lblDateRent_Chien.Text = DateTime.Now.ToShortDateString();
             cbNameService_Chien.DataSource = serviceController.GetTenDichVu_Chien();
             lblTenNhanVien_Chien.Text = TenNhanVien;
+            var dataSource = serviceController.LayDataService_Chien();
+            dgvServiceRoom_Chien.DataSource = dataSource;
+            dgvServiceRoom_Chien.Columns["id_dichvu"].HeaderText = "ID";
+            dgvServiceRoom_Chien.Columns["tendichvu"].HeaderText = "Tên Dịch Vụ";
+            dgvServiceRoom_Chien.Columns["giatien"].HeaderText = "Giá Tiền";
+            dgvServiceRoom_Chien.Columns["soluong"].HeaderText = "SL";
+            dgvServiceRoom_Chien.Columns["thanhtien"].HeaderText = "Thành Tiền";
             DataGridViewImageColumn imgColumn = new DataGridViewImageColumn();
             imgColumn.Name = "HÀNH ĐỘNG";
             imgColumn.HeaderText = "HÀNH ĐỘNG";
@@ -120,10 +127,20 @@ namespace hotelsphere.View
                 serviceController.ThemCTDichVu(idDichVu, tenDichVu, giaDichVu, soLuong);
                 var dataSource = serviceController.LayDataService_Chien();
                 dgvServiceRoom_Chien.DataSource = dataSource;
-                if (dgvServiceRoom_Chien.Columns.Contains("id_dichvu"))
-                {
-                    dgvServiceRoom_Chien.Columns["id_dichvu"].Visible = false;
-                }
+
+                // Thiết lập lại thứ tự cột
+                dgvServiceRoom_Chien.Columns["id_dichvu"].DisplayIndex = 0;
+                dgvServiceRoom_Chien.Columns["tendichvu"].DisplayIndex = 1;
+                dgvServiceRoom_Chien.Columns["giatien"].DisplayIndex = 2;
+                dgvServiceRoom_Chien.Columns["soluong"].DisplayIndex = 3;
+                dgvServiceRoom_Chien.Columns["thanhtien"].DisplayIndex = 4;
+
+                dgvServiceRoom_Chien.Columns["id_dichvu"].HeaderText = "ID";
+                dgvServiceRoom_Chien.Columns["tendichvu"].HeaderText = "Tên Dịch Vụ";
+                dgvServiceRoom_Chien.Columns["giatien"].HeaderText = "Giá Tiền";
+                dgvServiceRoom_Chien.Columns["soluong"].HeaderText = "SL";
+                dgvServiceRoom_Chien.Columns["thanhtien"].HeaderText = "Thành Tiền";
+
                 CapNhatTongTien_Chien();
             }
             catch (Exception ex)
@@ -131,6 +148,8 @@ namespace hotelsphere.View
                 MessageBox.Show("Đã xảy ra lỗi: " + ex.Message);
             }
         }
+
+
 
         private void dgvServiceRoom_Chien_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -219,6 +238,30 @@ namespace hotelsphere.View
             return list;
         }
 
+        private void ClearAll_Chien()
+        {
+            dgvServiceRoom_Chien.DataSource = null;
+            dgvServiceRoom_Chien.Rows.Clear();
+            dgvServiceRoom_Chien.Columns.Clear();
+
+            // Define columns with the initial headers
+            dgvServiceRoom_Chien.Columns.Add("ID", "ID");
+            dgvServiceRoom_Chien.Columns.Add("TenDichVu", "Tên Dịch Vụ");
+            dgvServiceRoom_Chien.Columns.Add("GiaTien", "Giá Tiền");
+            dgvServiceRoom_Chien.Columns.Add("SL", "SL");
+            dgvServiceRoom_Chien.Columns.Add("ThanhTien", "Thành Tiền");
+
+            // Add action column with delete icon
+            DataGridViewImageColumn imgColumn = new DataGridViewImageColumn();
+            imgColumn.Name = "HanhDong";
+            imgColumn.HeaderText = "Hành động";
+            imgColumn.Image = Properties.Resources.icon_remove;
+            imgColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
+            dgvServiceRoom_Chien.Columns.Add(imgColumn);
+        }
+
+
+
 
         //iStaff_Chien staffModel_Chien;
         private void btnComfirmRent_Chien_Click(object sender, EventArgs e)
@@ -260,7 +303,7 @@ namespace hotelsphere.View
             //HTHoaDonCT(invoiceId, totalRoomPrice, totalServicePrice);
             if (invoiceId > 0)
             {
-                //LuuCTDichVu(invoiceId);
+                LuuCTDichVu(invoiceId);
                 // Hiển thị hóa đơn
                 InHoaDon inHoaDonForm = new InHoaDon
                 {
@@ -298,26 +341,51 @@ namespace hotelsphere.View
 
         private void LuuCTDichVu(int invoiceId)
         {
-            var dataTable = serviceController.LayDataService_Chien();
-            List<DichVuModel> serviceList = new List<DichVuModel>();
+            DataTable dataTable = serviceController.LayDataService_Chien();
+            if (dataTable == null || dataTable.Rows.Count == 0)
+            {
+                MessageBox.Show("Không có dữ liệu dịch vụ để lưu.");
+                return;
+            }
+
+            List<DichVuModel> dichvuList_Chien = new List<DichVuModel>();
+
+            // Verify column existence before processing
+            if (!dataTable.Columns.Contains("id_dichvu") ||
+                !dataTable.Columns.Contains("tendichvu") ||
+                !dataTable.Columns.Contains("giatien") ||
+                !dataTable.Columns.Contains("soluong"))
+            {
+                MessageBox.Show("Thiếu một hoặc nhiều cột dự kiến ​​trong DataTable.");
+                return;
+            }
 
             foreach (DataRow row in dataTable.Rows)
             {
-                var service = new DichVuModel
+                try
                 {
-                    IdDichVu = Convert.ToInt32(row["id_dichvu"]),
-                    TenDichVu = row["tendichvu"].ToString(),
-                    DonGia = Convert.ToDecimal(row["dongia"]),
-                    SoLuongSuDung = Convert.ToInt32(row["soluong"]),
-                };
-                serviceList.Add(service);
+                    var service = new DichVuModel
+                    {
+                        IdDichVu = Convert.ToInt32(row["id_dichvu"]),
+                        TenDichVu = row["tendichvu"].ToString(),
+                        DonGia = Convert.ToDecimal(row["giatien"]),
+                        SoLuongSuDung = Convert.ToInt32(row["soluong"]),
+                    };
+                    dichvuList_Chien.Add(service);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi khi xử lý dữ liệu dịch vụ: " + ex.Message);
+                }
             }
 
-            foreach (var service in serviceList)
+            foreach (var service in dichvuList_Chien)
             {
-                hoadonController.ThemCTHoaDon(service.IdDichVu, invoiceId, service.DonGia, service.SoLuongSuDung);
+                hoadonController.ThemCTHoaDon(invoiceId, service.IdDichVu, service.DonGia, service.SoLuongSuDung);
             }
+            MessageBox.Show("Dịch vụ đã được lưu thành công.");
         }
+
 
         private void HTHoaDonCT(int invoiceId, decimal totalRoomPrice, decimal totalServicePrice)
         {
