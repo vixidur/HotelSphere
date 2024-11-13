@@ -32,46 +32,49 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtSearchRoomType_Chien = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtTimHoaDon_Chien = new Guna.UI2.WinForms.Guna2TextBox();
             this.dgvHoaDon_Chien = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDon_Chien)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.txtSearchRoomType_Chien);
+            this.panel1.Controls.Add(this.txtTimHoaDon_Chien);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1034, 64);
             this.panel1.TabIndex = 5;
             // 
-            // txtSearchRoomType_Chien
+            // txtTimHoaDon_Chien
             // 
-            this.txtSearchRoomType_Chien.AutoRoundedCorners = true;
-            this.txtSearchRoomType_Chien.BorderRadius = 17;
-            this.txtSearchRoomType_Chien.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearchRoomType_Chien.DefaultText = "";
-            this.txtSearchRoomType_Chien.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSearchRoomType_Chien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSearchRoomType_Chien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearchRoomType_Chien.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearchRoomType_Chien.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchRoomType_Chien.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtSearchRoomType_Chien.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchRoomType_Chien.Location = new System.Drawing.Point(7, 14);
-            this.txtSearchRoomType_Chien.Name = "txtSearchRoomType_Chien";
-            this.txtSearchRoomType_Chien.PasswordChar = '\0';
-            this.txtSearchRoomType_Chien.PlaceholderText = "Nhập mã hoá đơn, họ tên khách hành, số CCCD, ...";
-            this.txtSearchRoomType_Chien.SelectedText = "";
-            this.txtSearchRoomType_Chien.Size = new System.Drawing.Size(489, 36);
-            this.txtSearchRoomType_Chien.TabIndex = 1;
+            this.txtTimHoaDon_Chien.AutoRoundedCorners = true;
+            this.txtTimHoaDon_Chien.BorderRadius = 17;
+            this.txtTimHoaDon_Chien.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTimHoaDon_Chien.DefaultText = "";
+            this.txtTimHoaDon_Chien.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTimHoaDon_Chien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTimHoaDon_Chien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTimHoaDon_Chien.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTimHoaDon_Chien.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTimHoaDon_Chien.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTimHoaDon_Chien.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTimHoaDon_Chien.Location = new System.Drawing.Point(7, 14);
+            this.txtTimHoaDon_Chien.Name = "txtTimHoaDon_Chien";
+            this.txtTimHoaDon_Chien.PasswordChar = '\0';
+            this.txtTimHoaDon_Chien.PlaceholderText = "Nhập mã hoá đơn, họ tên khách hành, số CCCD, ...";
+            this.txtTimHoaDon_Chien.SelectedText = "";
+            this.txtTimHoaDon_Chien.Size = new System.Drawing.Size(489, 36);
+            this.txtTimHoaDon_Chien.TabIndex = 1;
+            this.txtTimHoaDon_Chien.TextChanged += new System.EventHandler(this.txtSearchRoomType_Chien_TextChanged);
             // 
             // dgvHoaDon_Chien
             // 
@@ -79,7 +82,7 @@
             this.dgvHoaDon_Chien.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -97,13 +100,13 @@
             this.dgvHoaDon_Chien.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvHoaDon_Chien.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvHoaDon_Chien.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(220)))), ((int)(((byte)(242)))));
-            this.dgvHoaDon_Chien.Location = new System.Drawing.Point(20, 84);
+            this.dgvHoaDon_Chien.Location = new System.Drawing.Point(20, 112);
             this.dgvHoaDon_Chien.Name = "dgvHoaDon_Chien";
             this.dgvHoaDon_Chien.ReadOnly = true;
             this.dgvHoaDon_Chien.RowHeadersVisible = false;
             this.dgvHoaDon_Chien.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvHoaDon_Chien.RowTemplate.Height = 41;
-            this.dgvHoaDon_Chien.Size = new System.Drawing.Size(994, 406);
+            this.dgvHoaDon_Chien.Size = new System.Drawing.Size(994, 378);
             this.dgvHoaDon_Chien.TabIndex = 6;
             this.dgvHoaDon_Chien.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.FeterRiver;
             this.dgvHoaDon_Chien.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
@@ -115,7 +118,7 @@
             this.dgvHoaDon_Chien.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(220)))), ((int)(((byte)(242)))));
             this.dgvHoaDon_Chien.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
             this.dgvHoaDon_Chien.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvHoaDon_Chien.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvHoaDon_Chien.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvHoaDon_Chien.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgvHoaDon_Chien.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvHoaDon_Chien.ThemeStyle.HeaderStyle.Height = 60;
@@ -131,26 +134,37 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 64);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1034, 20);
+            this.panel2.Size = new System.Drawing.Size(1034, 48);
             this.panel2.TabIndex = 7;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(16, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(204, 23);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "THÔNG TIN HOÁ ĐƠN";
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 84);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 112);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(20, 426);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(20, 398);
             this.flowLayoutPanel1.TabIndex = 8;
             // 
             // panel3
             // 
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(1014, 84);
+            this.panel3.Location = new System.Drawing.Point(1014, 112);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(20, 426);
+            this.panel3.Size = new System.Drawing.Size(20, 398);
             this.panel3.TabIndex = 9;
             // 
             // flowLayoutPanel2
@@ -174,8 +188,11 @@
             this.Controls.Add(this.panel1);
             this.Name = "UC_HoaDon_Hung";
             this.Size = new System.Drawing.Size(1034, 510);
+            this.Load += new System.EventHandler(this.UC_HoaDon_Hung_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDon_Chien)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -183,11 +200,12 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private Guna.UI2.WinForms.Guna2TextBox txtSearchRoomType_Chien;
+        private Guna.UI2.WinForms.Guna2TextBox txtTimHoaDon_Chien;
         private Guna.UI2.WinForms.Guna2DataGridView dgvHoaDon_Chien;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private System.Windows.Forms.Label label1;
     }
 }

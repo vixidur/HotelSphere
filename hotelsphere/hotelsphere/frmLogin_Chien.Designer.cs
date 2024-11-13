@@ -53,7 +53,7 @@
             this.txtUserName_Chien.BorderColor = System.Drawing.Color.Navy;
             this.txtUserName_Chien.BorderThickness = 3;
             this.txtUserName_Chien.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtUserName_Chien.DefaultText = "nhanvien3";
+            this.txtUserName_Chien.DefaultText = "admin";
             this.txtUserName_Chien.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtUserName_Chien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtUserName_Chien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -78,7 +78,7 @@
             this.txtPassword_Chien.BorderColor = System.Drawing.Color.Navy;
             this.txtPassword_Chien.BorderThickness = 3;
             this.txtPassword_Chien.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPassword_Chien.DefaultText = "vanchien2402$$";
+            this.txtPassword_Chien.DefaultText = "admin";
             this.txtPassword_Chien.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtPassword_Chien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtPassword_Chien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));

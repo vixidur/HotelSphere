@@ -238,31 +238,6 @@ namespace hotelsphere.View
             return list;
         }
 
-        private void ClearAll_Chien()
-        {
-            dgvServiceRoom_Chien.DataSource = null;
-            dgvServiceRoom_Chien.Rows.Clear();
-            dgvServiceRoom_Chien.Columns.Clear();
-
-            // Define columns with the initial headers
-            dgvServiceRoom_Chien.Columns.Add("ID", "ID");
-            dgvServiceRoom_Chien.Columns.Add("TenDichVu", "Tên Dịch Vụ");
-            dgvServiceRoom_Chien.Columns.Add("GiaTien", "Giá Tiền");
-            dgvServiceRoom_Chien.Columns.Add("SL", "SL");
-            dgvServiceRoom_Chien.Columns.Add("ThanhTien", "Thành Tiền");
-
-            // Add action column with delete icon
-            DataGridViewImageColumn imgColumn = new DataGridViewImageColumn();
-            imgColumn.Name = "HanhDong";
-            imgColumn.HeaderText = "Hành động";
-            imgColumn.Image = Properties.Resources.icon_remove;
-            imgColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
-            dgvServiceRoom_Chien.Columns.Add(imgColumn);
-        }
-
-
-
-
         //iStaff_Chien staffModel_Chien;
         private void btnComfirmRent_Chien_Click(object sender, EventArgs e)
         {

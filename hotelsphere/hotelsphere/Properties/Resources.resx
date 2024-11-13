@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="icon-roomtype" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon-roomtype.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icon-printer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon-printer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -166,9 +169,6 @@
   <data name="icon-verify1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon-verify.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="UNETI" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\UNETI.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="icon-customers" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon-customers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -202,8 +202,11 @@
   <data name="icon-status-room" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon-status-room.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon-roomtype" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon-roomtype.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="UNETI" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UNETI.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon-reportviewers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon-reportviewers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BANNERHOTEL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BANNERHOTEL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -214,7 +217,7 @@
   <data name="icon-room1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon-room1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon-reportviewers" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon-reportviewers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon-details" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon-details.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -3,6 +3,82 @@
   "WorkspaceRootPath": "D:\\HotelSphere\\hotelsphere\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|d:\\hotelsphere\\hotelsphere\\hotelsphere\\usercontrols\\admin\\uc_hoadon_hung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\usercontrols\\admin\\uc_hoadon_hung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\usercontrols\\admin\\uc_room_admin_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\usercontrols\\admin\\uc_room_admin_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\usercontrols\\admin\\uc_hoadon_hung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\usercontrols\\admin\\uc_hoadon_hung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\view\\thongtinhoadon_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\view\\thongtinhoadon_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\controller\\admin\\hoadoncontroller_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\controller\\admin\\hoadoncontroller_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\models\\roommodel_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\models\\roommodel_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\usercontrols\\uc_home_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\usercontrols\\uc_home_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\controller\\admin\\servicescontroller_khanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\controller\\admin\\servicescontroller_khanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\frmlogin_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\frmlogin_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\form1_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\form1_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\view\\istaff_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\view\\istaff_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\controller\\admin\\roomcontroller_hung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\controller\\admin\\roomcontroller_hung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\usercontrols\\admin\\uc_room_admin_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\usercontrols\\admin\\uc_room_admin_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\view\\iadmin_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\view\\iadmin_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\models\\admin\\roommodel_hung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\models\\admin\\roommodel_hung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\view\\inhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\view\\inhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\usercontrols\\uc_setting_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\usercontrols\\uc_setting_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,28 +87,12 @@
       "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\usercontrols\\uc_setting_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|d:\\hotelsphere\\hotelsphere\\hotelsphere\\view\\iadmin_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\view\\iadmin_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\view\\iadmin_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\view\\iadmin_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\view\\iadmin_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\view\\istaff_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\view\\istaff_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\view\\istaff_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\view\\istaff_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\frmlogin_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\frmlogin_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\usercontrols\\admin\\uc_room_admin_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\usercontrols\\admin\\uc_room_admin_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\usercontrols\\admin\\uc_roomtype_admin_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -47,30 +107,6 @@
       "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\usercontrols\\admin\\uc_staff_admin_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\usercontrols\\admin\\uc_hoadon_hung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\usercontrols\\admin\\uc_hoadon_hung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\usercontrols\\uc_home_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\usercontrols\\uc_home_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\usercontrols\\admin\\uc_hoadon_hung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\usercontrols\\admin\\uc_hoadon_hung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\usercontrols\\admin\\uc_room_admin_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\usercontrols\\admin\\uc_room_admin_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\controller\\admin\\hoadoncontroller_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\controller\\admin\\hoadoncontroller_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\models\\admin\\roommodel_hung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\models\\admin\\roommodel_hung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\models\\admin\\roomtypemodel_hung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\models\\admin\\roomtypemodel_hung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -81,10 +117,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\models\\admin\\staffmodel_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\models\\admin\\staffmodel_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\controller\\admin\\roomcontroller_hung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\controller\\admin\\roomcontroller_hung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\usercontrols\\uc_roomtype_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -99,24 +131,12 @@
       "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\usercontrols\\uc_room_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\view\\thongtinhoadon_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\view\\thongtinhoadon_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\usercontrols\\uc_customer_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\usercontrols\\uc_customer_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\usercontrols\\uc_customer_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\usercontrols\\uc_customer_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\view\\thongtinhoadon_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\view\\thongtinhoadon_chien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\controller\\invoicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -133,10 +153,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\controller\\admin\\roomtypecontroller_hung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\controller\\admin\\roomtypecontroller_hung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\controller\\admin\\servicescontroller_khanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|solutionrelative:hotelsphere\\controller\\admin\\servicescontroller_khanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5CEAD6DF-8FB9-4BD9-A865-5993D2DEF0BA}|hotelsphere\\4_ChienLQHungKhanhTTAnh_LTNET.csproj|D:\\HotelSphere\\hotelsphere\\hotelsphere\\usercontrols\\admin\\uc_services_admin_khanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -158,91 +174,67 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "iStaff_Chien.cs",
-              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\View\\iStaff_Chien.cs",
-              "RelativeDocumentMoniker": "hotelsphere\\View\\iStaff_Chien.cs",
-              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\View\\iStaff_Chien.cs",
-              "RelativeToolTip": "hotelsphere\\View\\iStaff_Chien.cs",
-              "ViewState": "AgIAAJQAAAAAAAAAAAAowKsAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T22:44:55.105Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "iStaff_Chien.cs [Design]",
-              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\View\\iStaff_Chien.cs",
-              "RelativeDocumentMoniker": "hotelsphere\\View\\iStaff_Chien.cs",
-              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\View\\iStaff_Chien.cs [Design]",
-              "RelativeToolTip": "hotelsphere\\View\\iStaff_Chien.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T17:32:50.824Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "iAdmin_Chien.cs [Design]",
-              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\View\\iAdmin_Chien.cs",
-              "RelativeDocumentMoniker": "hotelsphere\\View\\iAdmin_Chien.cs",
-              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\View\\iAdmin_Chien.cs [Design]",
-              "RelativeToolTip": "hotelsphere\\View\\iAdmin_Chien.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T14:04:59.809Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UC_Setting_Chien.cs",
-              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\UC_Setting_Chien.cs",
-              "RelativeDocumentMoniker": "hotelsphere\\UserControls\\UC_Setting_Chien.cs",
-              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\UC_Setting_Chien.cs",
-              "RelativeToolTip": "hotelsphere\\UserControls\\UC_Setting_Chien.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T20:04:53.355Z",
+              "DocumentIndex": 8,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\App.config",
+              "RelativeDocumentMoniker": "hotelsphere\\App.config",
+              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\App.config",
+              "RelativeToolTip": "hotelsphere\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-13T13:57:44.028Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UC_Setting_Chien.cs [Design]",
-              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\UC_Setting_Chien.cs",
-              "RelativeDocumentMoniker": "hotelsphere\\UserControls\\UC_Setting_Chien.cs",
-              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\UC_Setting_Chien.cs [Design]",
-              "RelativeToolTip": "hotelsphere\\UserControls\\UC_Setting_Chien.cs [Design]",
+              "DocumentIndex": 9,
+              "Title": "UC_Home_Chien.cs [Design]",
+              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\UC_Home_Chien.cs",
+              "RelativeDocumentMoniker": "hotelsphere\\UserControls\\UC_Home_Chien.cs",
+              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\UC_Home_Chien.cs [Design]",
+              "RelativeToolTip": "hotelsphere\\UserControls\\UC_Home_Chien.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T20:03:49.063Z",
+              "WhenOpened": "2024-11-12T21:56:02.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\Program.cs",
+              "RelativeDocumentMoniker": "hotelsphere\\Program.cs",
+              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\Program.cs",
+              "RelativeToolTip": "hotelsphere\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T19:55:33.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UC_HoaDon_Hung.cs [Design]",
+              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\ADMIN\\UC_HoaDon_Hung.cs",
+              "RelativeDocumentMoniker": "hotelsphere\\UserControls\\ADMIN\\UC_HoaDon_Hung.cs",
+              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\ADMIN\\UC_HoaDon_Hung.cs [Design]",
+              "RelativeToolTip": "hotelsphere\\UserControls\\ADMIN\\UC_HoaDon_Hung.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T19:30:41.219Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "iAdmin_Chien.cs",
-              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\View\\iAdmin_Chien.cs",
-              "RelativeDocumentMoniker": "hotelsphere\\View\\iAdmin_Chien.cs",
-              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\View\\iAdmin_Chien.cs",
-              "RelativeToolTip": "hotelsphere\\View\\iAdmin_Chien.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAowGUAAAAuAAAAAAAAAA==",
+              "Title": "UC_HoaDon_Hung.cs",
+              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\ADMIN\\UC_HoaDon_Hung.cs",
+              "RelativeDocumentMoniker": "hotelsphere\\UserControls\\ADMIN\\UC_HoaDon_Hung.cs",
+              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\ADMIN\\UC_HoaDon_Hung.cs",
+              "RelativeToolTip": "hotelsphere\\UserControls\\ADMIN\\UC_HoaDon_Hung.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAApwFQAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T21:14:18.007Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T21:13:24.974Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "frmLogin_Chien.cs [Design]",
-              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\frmLogin_Chien.cs",
-              "RelativeDocumentMoniker": "hotelsphere\\frmLogin_Chien.cs",
-              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\frmLogin_Chien.cs [Design]",
-              "RelativeToolTip": "hotelsphere\\frmLogin_Chien.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T17:10:48.343Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "UC_Room_Admin_Chien.cs [Design]",
               "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\ADMIN\\UC_Room_Admin_Chien.cs",
               "RelativeDocumentMoniker": "hotelsphere\\UserControls\\ADMIN\\UC_Room_Admin_Chien.cs",
@@ -253,63 +245,135 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UC_RoomType_Admin_Chien.cs [Design]",
-              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\ADMIN\\UC_RoomType_Admin_Chien.cs",
-              "RelativeDocumentMoniker": "hotelsphere\\UserControls\\ADMIN\\UC_RoomType_Admin_Chien.cs",
-              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\ADMIN\\UC_RoomType_Admin_Chien.cs [Design]",
-              "RelativeToolTip": "hotelsphere\\UserControls\\ADMIN\\UC_RoomType_Admin_Chien.cs [Design]",
+              "DocumentIndex": 6,
+              "Title": "hoadonController_Chien.cs",
+              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\Controller\\ADMIN\\hoadonController_Chien.cs",
+              "RelativeDocumentMoniker": "hotelsphere\\Controller\\ADMIN\\hoadonController_Chien.cs",
+              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\Controller\\ADMIN\\hoadonController_Chien.cs",
+              "RelativeToolTip": "hotelsphere\\Controller\\ADMIN\\hoadonController_Chien.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAFgAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T14:02:30.194Z"
+              "WhenOpened": "2024-11-13T13:09:23.735Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UC_Services_Admin_Khanh.cs [Design]",
-              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\ADMIN\\UC_Services_Admin_Khanh.cs",
-              "RelativeDocumentMoniker": "hotelsphere\\UserControls\\ADMIN\\UC_Services_Admin_Khanh.cs",
-              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\ADMIN\\UC_Services_Admin_Khanh.cs [Design]",
-              "RelativeToolTip": "hotelsphere\\UserControls\\ADMIN\\UC_Services_Admin_Khanh.cs [Design]",
+              "DocumentIndex": 7,
+              "Title": "RoomModel_Chien.cs",
+              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\Models\\RoomModel_Chien.cs",
+              "RelativeDocumentMoniker": "hotelsphere\\Models\\RoomModel_Chien.cs",
+              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\Models\\RoomModel_Chien.cs",
+              "RelativeToolTip": "hotelsphere\\Models\\RoomModel_Chien.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T13:11:38.94Z"
+              "WhenOpened": "2024-11-13T14:00:24.663Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "UC_Staff_Admin_Chien.cs [Design]",
-              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\ADMIN\\UC_Staff_Admin_Chien.cs",
-              "RelativeDocumentMoniker": "hotelsphere\\UserControls\\ADMIN\\UC_Staff_Admin_Chien.cs",
-              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\ADMIN\\UC_Staff_Admin_Chien.cs [Design]",
-              "RelativeToolTip": "hotelsphere\\UserControls\\ADMIN\\UC_Staff_Admin_Chien.cs [Design]",
+              "Title": "servicesController_Khanh.cs",
+              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\Controller\\ADMIN\\servicesController_Khanh.cs",
+              "RelativeDocumentMoniker": "hotelsphere\\Controller\\ADMIN\\servicesController_Khanh.cs",
+              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\Controller\\ADMIN\\servicesController_Khanh.cs",
+              "RelativeToolTip": "hotelsphere\\Controller\\ADMIN\\servicesController_Khanh.cs",
+              "ViewState": "AgIAAC4AAACANDMzMzMqwEIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T15:21:59.051Z"
+              "WhenOpened": "2024-11-09T13:27:47.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ThongTinHoaDon_Chien.cs",
+              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\View\\ThongTinHoaDon_Chien.cs",
+              "RelativeDocumentMoniker": "hotelsphere\\View\\ThongTinHoaDon_Chien.cs",
+              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\View\\ThongTinHoaDon_Chien.cs",
+              "RelativeToolTip": "hotelsphere\\View\\ThongTinHoaDon_Chien.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAMwGsAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T16:59:27.434Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "UC_HoaDon_Hung.cs [Design]",
-              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\ADMIN\\UC_HoaDon_Hung.cs",
-              "RelativeDocumentMoniker": "hotelsphere\\UserControls\\ADMIN\\UC_HoaDon_Hung.cs",
-              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\ADMIN\\UC_HoaDon_Hung.cs [Design]",
-              "RelativeToolTip": "hotelsphere\\UserControls\\ADMIN\\UC_HoaDon_Hung.cs [Design]",
+              "Title": "frmLogin_Chien.cs [Design]",
+              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\frmLogin_Chien.cs",
+              "RelativeDocumentMoniker": "hotelsphere\\frmLogin_Chien.cs",
+              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\frmLogin_Chien.cs [Design]",
+              "RelativeToolTip": "hotelsphere\\frmLogin_Chien.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T19:30:41.219Z"
+              "WhenOpened": "2024-11-09T17:10:48.343Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Resources.resx",
+              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\Properties\\Resources.resx",
+              "RelativeDocumentMoniker": "hotelsphere\\Properties\\Resources.resx",
+              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\Properties\\Resources.resx",
+              "RelativeToolTip": "hotelsphere\\Properties\\Resources.resx",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwv94AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-11-13T14:25:25.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "iAdmin_Chien.cs [Design]",
+              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\View\\iAdmin_Chien.cs",
+              "RelativeDocumentMoniker": "hotelsphere\\View\\iAdmin_Chien.cs",
+              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\View\\iAdmin_Chien.cs [Design]",
+              "RelativeToolTip": "hotelsphere\\View\\iAdmin_Chien.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T14:04:59.809Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
+              "Title": "roomController_Hung.cs",
+              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\Controller\\ADMIN\\roomController_Hung.cs",
+              "RelativeDocumentMoniker": "hotelsphere\\Controller\\ADMIN\\roomController_Hung.cs",
+              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\Controller\\ADMIN\\roomController_Hung.cs",
+              "RelativeToolTip": "hotelsphere\\Controller\\ADMIN\\roomController_Hung.cs",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAWwI8AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T13:29:41.803Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Form1_Chien.cs [Design]",
+              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\Form1_Chien.cs",
+              "RelativeDocumentMoniker": "hotelsphere\\Form1_Chien.cs",
+              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\Form1_Chien.cs [Design]",
+              "RelativeToolTip": "hotelsphere\\Form1_Chien.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T13:01:23.27Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "UC_Room_Admin_Chien.cs",
               "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\ADMIN\\UC_Room_Admin_Chien.cs",
               "RelativeDocumentMoniker": "hotelsphere\\UserControls\\ADMIN\\UC_Room_Admin_Chien.cs",
               "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\ADMIN\\UC_Room_Admin_Chien.cs",
               "RelativeToolTip": "hotelsphere\\UserControls\\ADMIN\\UC_Room_Admin_Chien.cs",
-              "ViewState": "AgIAAAQAAAAAzczMzMwiwCEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowCkAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-09T13:47:48.633Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 13,
+              "Title": "iStaff_Chien.cs [Design]",
+              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\View\\iStaff_Chien.cs",
+              "RelativeDocumentMoniker": "hotelsphere\\View\\iStaff_Chien.cs",
+              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\View\\iStaff_Chien.cs [Design]",
+              "RelativeToolTip": "hotelsphere\\View\\iStaff_Chien.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T17:32:50.824Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "RoomModel_Hung.cs",
               "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\Models\\ADMIN\\RoomModel_Hung.cs",
               "RelativeDocumentMoniker": "hotelsphere\\Models\\ADMIN\\RoomModel_Hung.cs",
@@ -321,42 +385,98 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "UC_Home_Chien.cs [Design]",
-              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\UC_Home_Chien.cs",
-              "RelativeDocumentMoniker": "hotelsphere\\UserControls\\UC_Home_Chien.cs",
-              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\UC_Home_Chien.cs [Design]",
-              "RelativeToolTip": "hotelsphere\\UserControls\\UC_Home_Chien.cs [Design]",
+              "DocumentIndex": 18,
+              "Title": "InHoaDon.cs [Design]",
+              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\View\\InHoaDon.cs",
+              "RelativeDocumentMoniker": "hotelsphere\\View\\InHoaDon.cs",
+              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\View\\InHoaDon.cs [Design]",
+              "RelativeToolTip": "hotelsphere\\View\\InHoaDon.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T21:56:02.073Z"
+              "WhenOpened": "2024-11-13T08:22:46.409Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "hoadonController_Chien.cs",
-              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\Controller\\ADMIN\\hoadonController_Chien.cs",
-              "RelativeDocumentMoniker": "hotelsphere\\Controller\\ADMIN\\hoadonController_Chien.cs",
-              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\Controller\\ADMIN\\hoadonController_Chien.cs",
-              "RelativeToolTip": "hotelsphere\\Controller\\ADMIN\\hoadonController_Chien.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACQAAABIAAAAAAAAAA==",
+              "DocumentIndex": 21,
+              "Title": "iAdmin_Chien.cs",
+              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\View\\iAdmin_Chien.cs",
+              "RelativeDocumentMoniker": "hotelsphere\\View\\iAdmin_Chien.cs",
+              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\View\\iAdmin_Chien.cs",
+              "RelativeToolTip": "hotelsphere\\View\\iAdmin_Chien.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAowGUAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T21:01:35.853Z"
+              "WhenOpened": "2024-11-12T21:14:18.007Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "UC_HoaDon_Hung.cs",
-              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\ADMIN\\UC_HoaDon_Hung.cs",
-              "RelativeDocumentMoniker": "hotelsphere\\UserControls\\ADMIN\\UC_HoaDon_Hung.cs",
-              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\ADMIN\\UC_HoaDon_Hung.cs",
-              "RelativeToolTip": "hotelsphere\\UserControls\\ADMIN\\UC_HoaDon_Hung.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAArwB8AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 20,
+              "Title": "UC_Setting_Chien.cs [Design]",
+              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\UC_Setting_Chien.cs",
+              "RelativeDocumentMoniker": "hotelsphere\\UserControls\\UC_Setting_Chien.cs",
+              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\UC_Setting_Chien.cs [Design]",
+              "RelativeToolTip": "hotelsphere\\UserControls\\UC_Setting_Chien.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T21:13:24.974Z"
+              "WhenOpened": "2024-11-12T20:03:49.063Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
+              "Title": "UC_Setting_Chien.cs",
+              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\UC_Setting_Chien.cs",
+              "RelativeDocumentMoniker": "hotelsphere\\UserControls\\UC_Setting_Chien.cs",
+              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\UC_Setting_Chien.cs",
+              "RelativeToolTip": "hotelsphere\\UserControls\\UC_Setting_Chien.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T20:04:53.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "iStaff_Chien.cs",
+              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\View\\iStaff_Chien.cs",
+              "RelativeDocumentMoniker": "hotelsphere\\View\\iStaff_Chien.cs",
+              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\View\\iStaff_Chien.cs",
+              "RelativeToolTip": "hotelsphere\\View\\iStaff_Chien.cs",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAowKsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T22:44:55.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UC_RoomType_Admin_Chien.cs [Design]",
+              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\ADMIN\\UC_RoomType_Admin_Chien.cs",
+              "RelativeDocumentMoniker": "hotelsphere\\UserControls\\ADMIN\\UC_RoomType_Admin_Chien.cs",
+              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\ADMIN\\UC_RoomType_Admin_Chien.cs [Design]",
+              "RelativeToolTip": "hotelsphere\\UserControls\\ADMIN\\UC_RoomType_Admin_Chien.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T14:02:30.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UC_Services_Admin_Khanh.cs [Design]",
+              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\ADMIN\\UC_Services_Admin_Khanh.cs",
+              "RelativeDocumentMoniker": "hotelsphere\\UserControls\\ADMIN\\UC_Services_Admin_Khanh.cs",
+              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\ADMIN\\UC_Services_Admin_Khanh.cs [Design]",
+              "RelativeToolTip": "hotelsphere\\UserControls\\ADMIN\\UC_Services_Admin_Khanh.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T13:11:38.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "UC_Staff_Admin_Chien.cs [Design]",
+              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\ADMIN\\UC_Staff_Admin_Chien.cs",
+              "RelativeDocumentMoniker": "hotelsphere\\UserControls\\ADMIN\\UC_Staff_Admin_Chien.cs",
+              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\ADMIN\\UC_Staff_Admin_Chien.cs [Design]",
+              "RelativeToolTip": "hotelsphere\\UserControls\\ADMIN\\UC_Staff_Admin_Chien.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T15:21:59.051Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
               "Title": "RoomTypeModel_Hung.cs",
               "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\Models\\ADMIN\\RoomTypeModel_Hung.cs",
               "RelativeDocumentMoniker": "hotelsphere\\Models\\ADMIN\\RoomTypeModel_Hung.cs",
@@ -368,7 +488,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 27,
               "Title": "ServicesModel_TuanAnh.cs",
               "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\Models\\ADMIN\\ServicesModel_TuanAnh.cs",
               "RelativeDocumentMoniker": "hotelsphere\\Models\\ADMIN\\ServicesModel_TuanAnh.cs",
@@ -380,7 +500,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 28,
               "Title": "StaffModel_Chien.cs",
               "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\Models\\ADMIN\\StaffModel_Chien.cs",
               "RelativeDocumentMoniker": "hotelsphere\\Models\\ADMIN\\StaffModel_Chien.cs",
@@ -392,19 +512,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "roomController_Hung.cs",
-              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\Controller\\ADMIN\\roomController_Hung.cs",
-              "RelativeDocumentMoniker": "hotelsphere\\Controller\\ADMIN\\roomController_Hung.cs",
-              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\Controller\\ADMIN\\roomController_Hung.cs",
-              "RelativeToolTip": "hotelsphere\\Controller\\ADMIN\\roomController_Hung.cs",
-              "ViewState": "AgIAAHAAAAAAAAAAAAAWwH4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T13:29:41.803Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 29,
               "Title": "UC_RoomType_Chien.cs [Design]",
               "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\UC_RoomType_Chien.cs",
               "RelativeDocumentMoniker": "hotelsphere\\UserControls\\UC_RoomType_Chien.cs",
@@ -415,7 +523,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 30,
               "Title": "UC_ThongKe_Chien.cs [Design]",
               "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\ADMIN\\UC_ThongKe_Chien.cs",
               "RelativeDocumentMoniker": "hotelsphere\\UserControls\\ADMIN\\UC_ThongKe_Chien.cs",
@@ -426,7 +534,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 31,
               "Title": "UC_Room_Chien.cs [Design]",
               "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\UC_Room_Chien.cs",
               "RelativeDocumentMoniker": "hotelsphere\\UserControls\\UC_Room_Chien.cs",
@@ -437,18 +545,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "ThongTinHoaDon_Chien.cs [Design]",
-              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\View\\ThongTinHoaDon_Chien.cs",
-              "RelativeDocumentMoniker": "hotelsphere\\View\\ThongTinHoaDon_Chien.cs",
-              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\View\\ThongTinHoaDon_Chien.cs [Design]",
-              "RelativeToolTip": "hotelsphere\\View\\ThongTinHoaDon_Chien.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T17:32:51.997Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 33,
               "Title": "UC_Customer_Chien.cs [Design]",
               "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\UC_Customer_Chien.cs",
               "RelativeDocumentMoniker": "hotelsphere\\UserControls\\UC_Customer_Chien.cs",
@@ -459,7 +556,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 32,
               "Title": "UC_Customer_Chien.cs",
               "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\UC_Customer_Chien.cs",
               "RelativeDocumentMoniker": "hotelsphere\\UserControls\\UC_Customer_Chien.cs",
@@ -471,19 +568,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\Program.cs",
-              "RelativeDocumentMoniker": "hotelsphere\\Program.cs",
-              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\Program.cs",
-              "RelativeToolTip": "hotelsphere\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T19:55:33.745Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 34,
               "Title": "invoiceController.cs",
               "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\Controller\\invoiceController.cs",
               "RelativeDocumentMoniker": "hotelsphere\\Controller\\invoiceController.cs",
@@ -495,19 +580,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "ThongTinHoaDon_Chien.cs",
-              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\View\\ThongTinHoaDon_Chien.cs",
-              "RelativeDocumentMoniker": "hotelsphere\\View\\ThongTinHoaDon_Chien.cs",
-              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\View\\ThongTinHoaDon_Chien.cs",
-              "RelativeToolTip": "hotelsphere\\View\\ThongTinHoaDon_Chien.cs",
-              "ViewState": "AgIAAFsBAAAAAAAAAAApwAwBAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T16:59:27.434Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 37,
               "Title": "roomtypeController_Hung.cs",
               "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\Controller\\ADMIN\\roomtypeController_Hung.cs",
               "RelativeDocumentMoniker": "hotelsphere\\Controller\\ADMIN\\roomtypeController_Hung.cs",
@@ -519,7 +592,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 36,
               "Title": "UC_Staff_Admin_Chien.cs",
               "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\ADMIN\\UC_Staff_Admin_Chien.cs",
               "RelativeDocumentMoniker": "hotelsphere\\UserControls\\ADMIN\\UC_Staff_Admin_Chien.cs",
@@ -531,7 +604,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 35,
               "Title": "staffController_Chien.cs",
               "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\Controller\\ADMIN\\staffController_Chien.cs",
               "RelativeDocumentMoniker": "hotelsphere\\Controller\\ADMIN\\staffController_Chien.cs",
@@ -543,7 +616,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 39,
               "Title": "UC_RoomType_Admin_Chien.cs",
               "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\ADMIN\\UC_RoomType_Admin_Chien.cs",
               "RelativeDocumentMoniker": "hotelsphere\\UserControls\\ADMIN\\UC_RoomType_Admin_Chien.cs",
@@ -555,7 +628,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 38,
               "Title": "UC_Services_Admin_Khanh.cs",
               "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\UserControls\\ADMIN\\UC_Services_Admin_Khanh.cs",
               "RelativeDocumentMoniker": "hotelsphere\\UserControls\\ADMIN\\UC_Services_Admin_Khanh.cs",
@@ -564,18 +637,6 @@
               "ViewState": "AgIAAHMAAACAYWZmZmYkwHsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-09T13:59:20.243Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "servicesController_Khanh.cs",
-              "DocumentMoniker": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\Controller\\ADMIN\\servicesController_Khanh.cs",
-              "RelativeDocumentMoniker": "hotelsphere\\Controller\\ADMIN\\servicesController_Khanh.cs",
-              "ToolTip": "D:\\HotelSphere\\hotelsphere\\hotelsphere\\Controller\\ADMIN\\servicesController_Khanh.cs",
-              "RelativeToolTip": "hotelsphere\\Controller\\ADMIN\\servicesController_Khanh.cs",
-              "ViewState": "AgIAABAAAACgNDMzMzMqwFgAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T13:27:47.972Z"
             }
           ]
         }
