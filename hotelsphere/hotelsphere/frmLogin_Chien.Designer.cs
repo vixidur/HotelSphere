@@ -51,7 +51,7 @@
             // txtUserName_Chien
             // 
             this.txtUserName_Chien.BorderColor = System.Drawing.Color.Navy;
-            this.txtUserName_Chien.BorderThickness = 3;
+            this.txtUserName_Chien.BorderThickness = 2;
             this.txtUserName_Chien.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtUserName_Chien.DefaultText = "admin";
             this.txtUserName_Chien.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -59,7 +59,7 @@
             this.txtUserName_Chien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtUserName_Chien.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtUserName_Chien.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUserName_Chien.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUserName_Chien.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUserName_Chien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(43)))));
             this.txtUserName_Chien.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtUserName_Chien.Location = new System.Drawing.Point(17, 205);
@@ -76,7 +76,7 @@
             // txtPassword_Chien
             // 
             this.txtPassword_Chien.BorderColor = System.Drawing.Color.Navy;
-            this.txtPassword_Chien.BorderThickness = 3;
+            this.txtPassword_Chien.BorderThickness = 2;
             this.txtPassword_Chien.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPassword_Chien.DefaultText = "admin";
             this.txtPassword_Chien.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -84,7 +84,7 @@
             this.txtPassword_Chien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtPassword_Chien.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtPassword_Chien.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPassword_Chien.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword_Chien.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword_Chien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(43)))));
             this.txtPassword_Chien.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPassword_Chien.Location = new System.Drawing.Point(17, 262);
