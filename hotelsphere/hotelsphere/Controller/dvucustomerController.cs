@@ -55,12 +55,16 @@ namespace hotelsphere.Controller
             {
                 throw new ArgumentException("Khách hàng không hợp lệ.");
             }
-            string deleteInvoiceQuery = "DELETE FROM hoadon WHERE id_customer = @id";
-            SqlParameter[] invoiceParams = {
-                new SqlParameter("@id", customer.Id_Customer)
-            };
-            db.ExecuteNonQuery(deleteInvoiceQuery, invoiceParams);
-            string deleteCustomerQuery = "DELETE FROM customer WHERE id_customer = @id";
+
+            string deleteCustomerQuery = @"
+                                            UPDATE phong SET tinhtrang = N'Trống' 
+                                            WHERE id_room 
+                                            IN (SELECT id_room FROM hoadon WHERE id_customer = @id)
+                                            DELETE FROM cthoadon WHERE id_hoadon 
+                                            IN (SELECT id_hoadon FROM hoadon WHERE id_customer = @id)
+                                            DELETE FROM hoadon WHERE id_customer = @id
+                                            DELETE FROM customer WHERE id_customer = @id
+                                            ";
             SqlParameter[] customerParams = {
                 new SqlParameter("@id", customer.Id_Customer)
             };

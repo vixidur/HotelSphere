@@ -197,3 +197,4 @@ D:\HotelSphere\hotelsphere\hotelsphere\obj\Debug\hotelsphere.UserControls.ADMIN.
 D:\HotelSphere\hotelsphere\hotelsphere\obj\Debug\hotelsphere.UserControls.ADMIN.UC_Staff_Admin_Chien.resources
 D:\HotelSphere\hotelsphere\hotelsphere\obj\Debug\hotelsphere.View.iAdmin_Chien.resources
 D:\HotelSphere\hotelsphere\hotelsphere\obj\Debug\hotelsphere.UserControls.ADMIN.UC_HoaDon_Hung.resources
+W:\HotelSphere\hotelsphere\hotelsphere\obj\Debug\hotelsphere.UserControls.ADMIN.UC_HoaDon_Hung.resources
