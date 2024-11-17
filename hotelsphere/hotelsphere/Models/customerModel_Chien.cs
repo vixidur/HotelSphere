@@ -20,6 +20,7 @@ namespace hotelsphere.Models
         [Display(Name = "Số CCCD")]
         [Required(ErrorMessage = "Số CCCD là bắt buộc.")]
         [StringLength(12, ErrorMessage = "Số CCCD không được vượt quá 12 ký tự.")]
+        [RegularExpression("^[0-9]+$", ErrorMessage = "Số CCCD chỉ được phép chứa số.")]
         public string SoCCCD { get; set; }
 
         [Display(Name = "Quốc Tịch")]
@@ -27,14 +28,15 @@ namespace hotelsphere.Models
         [StringLength(50, ErrorMessage = "Quốc tịch không được vượt quá 50 ký tự.")]
         public string QuocTich { get; set; }
 
-        [Display(Name = "Quốc Tịch")]
-        [Required(ErrorMessage = "Quốc tịch là bắt buộc.")]
-        [StringLength(50, ErrorMessage = "Quốc tịch không được vượt quá 50 ký tự.")]
+        [Display(Name = "Giới Tính")]
+        [Required(ErrorMessage = "Giới tính là bắt buộc.")]
+        [StringLength(50, ErrorMessage = "Giới tính không được vượt quá 50 ký tự.")]
         public string Gioitinh { get; set; }
 
         [Display(Name = "Số Điện Thoại")]
         [Required(ErrorMessage = "Số điện thoại là bắt buộc.")]
         [StringLength(15, ErrorMessage = "Số điện thoại không được vượt quá 15 ký tự.")]
+        [RegularExpression("^[0-9]+$", ErrorMessage = "Số điện thoại chỉ được phép chứa số.")]
         public string SDT { get; set; }
 
     }

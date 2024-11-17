@@ -18,6 +18,7 @@ namespace hotelsphere.UserControls.ADMIN
         {
             InitializeComponent();
             hd = new hoadonController_Chien();
+            dgvHoaDon_Chien.AllowUserToAddRows = false;
         }
 
         public void LoadDataHoaDon_Chien()

@@ -80,6 +80,7 @@
             this.panel1.Controls.Add(this.lblLoaiPhong_Chien);
             this.panel1.Controls.Add(this.lblChiTiet_Chien);
             this.panel1.Controls.Add(this.lblTenPhong_Chien);
+            this.panel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";

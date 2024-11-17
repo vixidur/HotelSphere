@@ -71,7 +71,10 @@ namespace hotelsphere.Controller.ADMIN
                 throw new ArgumentException("Dịch vụ không hợp lệ.");
             }
 
-            string deleteServices = "DELETE FROM dichvu WHERE id_dichvu = @id";
+            string deleteServices = @"
+                                    DELETE FROM cthoadon WHERE id_dichvu = @id
+                                    DELETE FROM ct_dichvu WHERE id_dichvu = @id
+                                    DELETE FROM dichvu WHERE id_dichvu = @id";
             SqlParameter[] dichvuParams = {
                 new SqlParameter("@id", services.IdServices_TA)
             };

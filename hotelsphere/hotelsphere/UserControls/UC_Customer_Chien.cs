@@ -22,6 +22,7 @@ namespace hotelsphere.UserControls
         private roomController roomController;
         public int? IdStaff { get; set; }
         public string TenNhanVien { get; set; }
+        private bool isFlag_Chien = false;
         public UC_Customer_Chien(iStaff_Chien ic, int? idStaff)
         {
             InitializeComponent();
@@ -116,6 +117,7 @@ namespace hotelsphere.UserControls
         {
             if (selectedRow != null)
             {
+                isFlag_Chien = false; 
                 if (selectedRow.Cells[0].Value != null)
                     idCustomer_Chien.Text = selectedRow.Cells[0].Value.ToString();
 
@@ -133,7 +135,6 @@ namespace hotelsphere.UserControls
 
                 if (selectedRow.Cells[5].Value != null)
                     sdt_Chien.Text = selectedRow.Cells[5].Value.ToString();
-
 
                 tabControl_Chien.TabPages.Remove(tabDSCustomer_Chien);
                 tabControl_Chien.TabPages.Add(tabChucnang);
@@ -192,7 +193,7 @@ namespace hotelsphere.UserControls
         {
             var customer = new customerModel_Chien
             {
-                Id_Customer = !string.IsNullOrEmpty(idCustomer_Chien.Text) ? (int?)int.Parse(idCustomer_Chien.Text) : null,
+                Id_Customer = isFlag_Chien ? null : (int?)int.Parse(idCustomer_Chien.Text), 
                 NameCustomer = tenCustomer_Chien.Text,
                 SoCCCD = soCCCD_Chien.Text,
                 QuocTich = quoctich_Chien.Text,
@@ -239,24 +240,25 @@ namespace hotelsphere.UserControls
 
             try
             {
-                if (customer.Id_Customer.HasValue)
+                if (isFlag_Chien)
                 {
-                    tabControl_Chien.TabPages.Remove(tabChucnang);
-                    tabControl_Chien.TabPages.Add(tabDSCustomer_Chien);
-                    tabControl_Chien.SelectedTab = tabDSCustomer_Chien;
-                    customerService_Chien.UpdateCustomer(customer);
-                    MessageBox.Show("Cập nhật khách hàng thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                {
-                    tabControl_Chien.TabPages.Remove(tabChucnang);
-                    tabControl_Chien.TabPages.Add(tabDSCustomer_Chien);
-                    tabControl_Chien.SelectedTab = tabDSCustomer_Chien;
+                    // Xử lý thêm khách hàng
                     customerService_Chien.AddCustomer(customer);
                     MessageBox.Show("Thêm khách hàng thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
+                else
+                {
+                    // Xử lý cập nhật khách hàng
+                    customerService_Chien.UpdateCustomer(customer);
+                    MessageBox.Show("Cập nhật khách hàng thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
 
+                // Reset trạng thái và giao diện
+                isFlag_Chien = false;
+                ClearTextFields();
                 LoadCustomers();
+                tabControl_Chien.TabPages.Remove(tabChucnang);
+                tabControl_Chien.TabPages.Add(tabDSCustomer_Chien);
                 tabControl_Chien.SelectedTab = tabDSCustomer_Chien;
             }
             catch (Exception ex)
@@ -267,63 +269,11 @@ namespace hotelsphere.UserControls
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            isFlag_Chien = true;
+            ClearTextFields(); 
             tabControl_Chien.TabPages.Remove(tabDSCustomer_Chien);
             tabControl_Chien.TabPages.Add(tabChucnang);
             tabControl_Chien.SelectedTab = tabChucnang;
-            var newCustomer = new customerModel_Chien
-            {
-                NameCustomer = tenCustomer_Chien.Text,
-                SoCCCD = soCCCD_Chien.Text,
-                QuocTich = quoctich_Chien.Text,
-                Gioitinh = gioitinh_Chien.SelectedItem?.ToString() ?? string.Empty,
-                SDT = sdt_Chien.Text
-            };
-            var validationContext = new ValidationContext(newCustomer);
-            var validationResults = new List<ValidationResult>();
-            bool isValid = Validator.TryValidateObject(newCustomer, validationContext, validationResults, true);
-            clearErrorMessages();
-
-            if (!isValid)
-            {
-                foreach (var validationResult in validationResults)
-                {
-                    switch (validationResult.MemberNames.FirstOrDefault())
-                    {
-                        case "NameCustomer":
-                            nameError_Chien.Text = validationResult.ErrorMessage;
-                            nameError_Chien.ForeColor = Color.Red;
-                            break;
-                        case "SoCCCD":
-                            socccdError_Chien.Text = validationResult.ErrorMessage;
-                            socccdError_Chien.ForeColor = Color.Red;
-                            break;
-                        case "QuocTich":
-                            quoctichError_Chien.Text = validationResult.ErrorMessage;
-                            quoctichError_Chien.ForeColor = Color.Red;
-                            break;
-                        case "Gioitinh":
-                            gioitinhError_Chien.Text = validationResult.ErrorMessage;
-                            gioitinhError_Chien.ForeColor = Color.Red;
-                            break;
-                        case "SDT":
-                            sdtError_Chien.Text = validationResult.ErrorMessage;
-                            sdtError_Chien.ForeColor = Color.Red;
-                            break;
-                    }
-                }
-                return;
-            }
-            try
-            {
-                customerService_Chien.AddCustomer(newCustomer);
-                MessageBox.Show("Thêm khách hàng thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                ClearTextFields();
-                LoadCustomers();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
         }
 
         private void txtSearchCustomer_Chien_TextChanged(object sender, EventArgs e)

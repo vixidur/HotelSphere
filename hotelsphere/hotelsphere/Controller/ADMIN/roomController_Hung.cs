@@ -115,13 +115,18 @@ namespace hotelsphere.Controller.ADMIN
             {
                 throw new ArgumentException("Phòng không hợp lệ.");
             }
-
-            string delPhong = "DELETE FROM phong WHERE id_room = @id";
-            SqlParameter[] phongParams = {
+            string xoaRoom = @"
+                            DELETE FROM cthoadon 
+                            WHERE id_hoadon IN (SELECT id_hoadon FROM hoadon WHERE id_room = @id)
+                            DELETE FROM hoadon WHERE id_room = @id
+                            DELETE FROM phong WHERE id_room = @id
+                            ";
+            SqlParameter[] invoiceParams = {
                 new SqlParameter("@id", room.IdRoom_Hung)
             };
-            db.ExecuteNonQuery(delPhong, phongParams);
+            db.ExecuteNonQuery(xoaRoom, invoiceParams);
         }
+
 
 
         public DataTable LayDataPhong_Khanh()

@@ -194,16 +194,19 @@
             // 
             // panel3
             // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Controls.Add(this.dgvRoom_Khanh);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Location = new System.Drawing.Point(-1, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1004, 404);
+            this.panel3.Size = new System.Drawing.Size(1005, 404);
             this.panel3.TabIndex = 5;
             // 
             // dgvRoom_Khanh
             // 
+            this.dgvRoom_Khanh.AllowUserToAddRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
             this.dgvRoom_Khanh.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -239,7 +242,7 @@
             this.dgvRoom_Khanh.RowHeadersVisible = false;
             this.dgvRoom_Khanh.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvRoom_Khanh.RowTemplate.Height = 41;
-            this.dgvRoom_Khanh.Size = new System.Drawing.Size(1004, 404);
+            this.dgvRoom_Khanh.Size = new System.Drawing.Size(1005, 404);
             this.dgvRoom_Khanh.TabIndex = 4;
             this.dgvRoom_Khanh.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.FeterRiver;
             this.dgvRoom_Khanh.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
@@ -324,7 +327,7 @@
             this.tabChucNang_Khanh.HorizontalScrollbarSize = 10;
             this.tabChucNang_Khanh.Location = new System.Drawing.Point(4, 38);
             this.tabChucNang_Khanh.Name = "tabChucNang_Khanh";
-            this.tabChucNang_Khanh.Size = new System.Drawing.Size(1026, 404);
+            this.tabChucNang_Khanh.Size = new System.Drawing.Size(1004, 404);
             this.tabChucNang_Khanh.TabIndex = 1;
             this.tabChucNang_Khanh.Text = "CHỨC NĂNG";
             this.tabChucNang_Khanh.VerticalScrollbarBarColor = true;

@@ -27,7 +27,7 @@ namespace hotelsphere.Controller.ADMIN
             for (int i = 0; i < 10; i++)
             {
                 string kitu = dsKiTu[random.Next(dsKiTu.Length)];
-                int so = random.Next(1, 100); 
+                int so = random.Next(1, 100);
                 danhSachGoiY.Add($"{kitu}{so}");
             }
 
@@ -119,17 +119,21 @@ namespace hotelsphere.Controller.ADMIN
             {
                 throw new ArgumentException("Nhân viên không hợp lệ.");
             }
-            string updateInvoices = "DELETE FROM hoadon WHERE id_staff = @id";
-            SqlParameter[] invoiceParams = {
+
+            string xoa = @"
+                UPDATE phong SET tinhtrang = N'Trống'
+                DELETE FROM cthoadon 
+                WHERE id_hoadon IN (SELECT id_hoadon FROM hoadon WHERE id_staff = @id)
+                DELETE FROM hoadon WHERE id_staff = @id
+                DELETE FROM staff WHERE id_staff = @id
+                ";
+            SqlParameter[] xoaParam = {
                 new SqlParameter("@id", staff.IdStaff_Chien)
             };
-            db.ExecuteNonQuery(updateInvoices, invoiceParams);
-            string deleteStaff = "DELETE FROM staff WHERE id_staff = @id";
-            SqlParameter[] staffParams = {
-                new SqlParameter("@id", staff.IdStaff_Chien)
-            };
-            db.ExecuteNonQuery(deleteStaff, staffParams);
+            db.ExecuteNonQuery(xoa, xoaParam);
+
         }
+
 
 
         public DataTable LayDataStaff_Chien()

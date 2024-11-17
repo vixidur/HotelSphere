@@ -76,6 +76,7 @@ namespace hotelsphere.View
 
             hoadonController = new invoiceController();
             TenNhanVien = lblTenNhanVien_Chien.Text;
+            dgvServiceRoom_Chien.AllowUserToAddRows = false;
         }
         private void CapNhatTongTien_Chien()
         {

@@ -178,7 +178,7 @@
             this.tabStaff_Chien.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabStaff_Chien.Location = new System.Drawing.Point(0, 0);
             this.tabStaff_Chien.Name = "tabStaff_Chien";
-            this.tabStaff_Chien.SelectedIndex = 1;
+            this.tabStaff_Chien.SelectedIndex = 0;
             this.tabStaff_Chien.Size = new System.Drawing.Size(1034, 446);
             this.tabStaff_Chien.TabIndex = 0;
             this.tabStaff_Chien.UseSelectable = true;
@@ -200,6 +200,7 @@
             // 
             // dgvStaff_Chien
             // 
+            this.dgvStaff_Chien.AllowUserToAddRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
             this.dgvStaff_Chien.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;

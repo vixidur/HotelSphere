@@ -1,5 +1,6 @@
 ﻿using hotelsphere.UserControls;
 using hotelsphere.UserControls.ADMIN;
+using hotelsphere.UserControls.ADMIN.REPORTS;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -100,6 +101,37 @@ namespace hotelsphere.View
         {
             UC_Setting_Chien uC_Setting_Chien = new UC_Setting_Chien();
             ThemUserControl(uC_Setting_Chien);
+        }
+
+
+        bool morong = false;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if(morong == false)
+            {
+                panel6.Height += 15;
+                if(panel6.Height >= panel6.MaximumSize.Height)
+                {
+                    timer1.Stop();
+                    morong = true;
+                }
+            }
+            else
+            {
+                panel6.Height -= 15;
+                if(panel6.Height <= panel6.MinimumSize.Height)
+                {
+                    timer1.Stop();
+                    morong = false;
+                }
+            }
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+            UC_Reports_Chien reports = new UC_Reports_Chien();
+            ThemUserControl(reports);
         }
     }
 }
