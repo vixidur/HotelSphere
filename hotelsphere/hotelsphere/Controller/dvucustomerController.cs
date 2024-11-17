@@ -57,6 +57,7 @@ namespace hotelsphere.Controller
             }
 
             string deleteCustomerQuery = @"
+<<<<<<< HEAD
                                 UPDATE phong SET tinhtrang = N'Trống' 
                                 WHERE id_room 
                                 IN (SELECT id_room FROM hoadon WHERE id_customer = @id)
@@ -65,6 +66,16 @@ namespace hotelsphere.Controller
                                 DELETE FROM hoadon WHERE id_customer = @id
                                 DELETE FROM customer WHERE id_customer = @id
                                 ";
+=======
+                                            UPDATE phong SET tinhtrang = N'Trống' 
+                                            WHERE id_room 
+                                            IN (SELECT id_room FROM hoadon WHERE id_customer = @id)
+                                            DELETE FROM cthoadon WHERE id_hoadon 
+                                            IN (SELECT id_hoadon FROM hoadon WHERE id_customer = @id)
+                                            DELETE FROM hoadon WHERE id_customer = @id
+                                            DELETE FROM customer WHERE id_customer = @id
+                                            ";
+>>>>>>> 9c1aece0a079535efbc469ab5c8c07184ee77977
             SqlParameter[] customerParams = {
                 new SqlParameter("@id", customer.Id_Customer)
             };
