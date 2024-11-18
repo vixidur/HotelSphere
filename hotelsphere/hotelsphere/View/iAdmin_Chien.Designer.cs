@@ -141,6 +141,7 @@
             this.btnTkNhanVien_Chien.Size = new System.Drawing.Size(215, 45);
             this.btnTkNhanVien_Chien.TabIndex = 0;
             this.btnTkNhanVien_Chien.Text = "Nhân Viên";
+            this.btnTkNhanVien_Chien.Click += new System.EventHandler(this.btnTkNhanVien_Chien_Click);
             // 
             // panel9
             // 
@@ -169,6 +170,7 @@
             this.btnTkDoanhThu_Chien.Size = new System.Drawing.Size(215, 45);
             this.btnTkDoanhThu_Chien.TabIndex = 0;
             this.btnTkDoanhThu_Chien.Text = "Doanh Thu";
+            this.btnTkDoanhThu_Chien.Click += new System.EventHandler(this.btnTkDoanhThu_Chien_Click);
             // 
             // panel8
             // 

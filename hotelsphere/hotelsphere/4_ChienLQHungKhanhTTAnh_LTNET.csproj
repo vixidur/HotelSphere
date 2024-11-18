@@ -251,6 +251,18 @@
     <Compile Include="UserControls\ADMIN\REPORTS\UC_Reports_Customer_Chien.Designer.cs">
       <DependentUpon>UC_Reports_Customer_Chien.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\ADMIN\REPORTS\UC_Reports_DoanhThu_Chien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ADMIN\REPORTS\UC_Reports_DoanhThu_Chien.Designer.cs">
+      <DependentUpon>UC_Reports_DoanhThu_Chien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ADMIN\REPORTS\UC_Reports_Staff_Chien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ADMIN\REPORTS\UC_Reports_Staff_Chien.Designer.cs">
+      <DependentUpon>UC_Reports_Staff_Chien.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\ADMIN\UC_HoaDon_Hung.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -351,6 +363,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ADMIN\REPORTS\UC_Reports_Customer_Chien.resx">
       <DependentUpon>UC_Reports_Customer_Chien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ADMIN\REPORTS\UC_Reports_DoanhThu_Chien.resx">
+      <DependentUpon>UC_Reports_DoanhThu_Chien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ADMIN\REPORTS\UC_Reports_Staff_Chien.resx">
+      <DependentUpon>UC_Reports_Staff_Chien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ADMIN\UC_HoaDon_Hung.resx">
       <DependentUpon>UC_HoaDon_Hung.cs</DependentUpon>

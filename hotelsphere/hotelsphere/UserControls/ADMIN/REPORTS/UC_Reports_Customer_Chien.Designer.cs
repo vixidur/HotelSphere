@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnExcel_Chien = new Guna.UI2.WinForms.Guna2GradientButton();
             this.dgvReportsCustomer_Chien = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btnExcel_Chien = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReportsCustomer_Chien)).BeginInit();
             this.SuspendLayout();
@@ -60,32 +60,56 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(785, 61);
             this.panel2.TabIndex = 2;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // btnExcel_Chien
+            // 
+            this.btnExcel_Chien.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExcel_Chien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnExcel_Chien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnExcel_Chien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnExcel_Chien.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnExcel_Chien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnExcel_Chien.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(138)))), ((int)(((byte)(177)))));
+            this.btnExcel_Chien.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(58)))), ((int)(((byte)(75)))));
+            this.btnExcel_Chien.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcel_Chien.ForeColor = System.Drawing.Color.White;
+            this.btnExcel_Chien.Image = global::hotelsphere.Properties.Resources.icon_excel;
+            this.btnExcel_Chien.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnExcel_Chien.Location = new System.Drawing.Point(579, 8);
+            this.btnExcel_Chien.Name = "btnExcel_Chien";
+            this.btnExcel_Chien.Size = new System.Drawing.Size(180, 45);
+            this.btnExcel_Chien.TabIndex = 10;
+            this.btnExcel_Chien.Text = "Xuất ra Excel";
+            this.btnExcel_Chien.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnExcel_Chien.Click += new System.EventHandler(this.btnExcel_Chien_Click);
             // 
             // dgvReportsCustomer_Chien
             // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
-            this.dgvReportsCustomer_Chien.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
+            this.dgvReportsCustomer_Chien.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvReportsCustomer_Chien.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvReportsCustomer_Chien.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvReportsCustomer_Chien.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvReportsCustomer_Chien.ColumnHeadersHeight = 60;
             this.dgvReportsCustomer_Chien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(186)))), ((int)(((byte)(231)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvReportsCustomer_Chien.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(186)))), ((int)(((byte)(231)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvReportsCustomer_Chien.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvReportsCustomer_Chien.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(220)))), ((int)(((byte)(242)))));
             this.dgvReportsCustomer_Chien.Location = new System.Drawing.Point(16, 67);
             this.dgvReportsCustomer_Chien.Name = "dgvReportsCustomer_Chien";
@@ -117,6 +141,7 @@
             this.dgvReportsCustomer_Chien.ThemeStyle.RowsStyle.Height = 41;
             this.dgvReportsCustomer_Chien.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(186)))), ((int)(((byte)(231)))));
             this.dgvReportsCustomer_Chien.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvReportsCustomer_Chien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvReportsCustomer_Chien_CellContentClick);
             // 
             // panel1
             // 
@@ -125,6 +150,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(10, 439);
             this.panel1.TabIndex = 8;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel3
             // 
@@ -133,29 +159,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(20, 439);
             this.panel3.TabIndex = 9;
-            // 
-            // btnExcel_Chien
-            // 
-            this.btnExcel_Chien.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExcel_Chien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnExcel_Chien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnExcel_Chien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnExcel_Chien.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnExcel_Chien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnExcel_Chien.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(138)))), ((int)(((byte)(177)))));
-            this.btnExcel_Chien.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(58)))), ((int)(((byte)(75)))));
-            this.btnExcel_Chien.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExcel_Chien.ForeColor = System.Drawing.Color.White;
-            this.btnExcel_Chien.Image = global::hotelsphere.Properties.Resources.icon_excel;
-            this.btnExcel_Chien.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnExcel_Chien.Location = new System.Drawing.Point(579, 8);
-            this.btnExcel_Chien.Name = "btnExcel_Chien";
-            this.btnExcel_Chien.Size = new System.Drawing.Size(180, 45);
-            this.btnExcel_Chien.TabIndex = 10;
-            this.btnExcel_Chien.Text = "Xuất ra Excel";
-            this.btnExcel_Chien.TextOffset = new System.Drawing.Point(10, 0);
-            this.btnExcel_Chien.Click += new System.EventHandler(this.btnExcel_Chien_Click);
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // UC_Reports_Customer_Chien
             // 

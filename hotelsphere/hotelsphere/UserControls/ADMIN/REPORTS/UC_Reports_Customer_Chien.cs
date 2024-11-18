@@ -63,7 +63,10 @@ namespace hotelsphere.UserControls.ADMIN.REPORTS
                                 }
 
                                 // Thêm DataTable vào Excel
-                                wb.Worksheets.Add(dt, "ThongKeKhachHang");
+                                var worksheet = wb.Worksheets.Add(dt, "ThongKeKhachHang");
+
+                                // Tự động điều chỉnh độ rộng các cột theo nội dung
+                                worksheet.Columns().AdjustToContents();
 
                                 // Lưu file Excel
                                 wb.SaveAs(saveFileDialog.FileName);
@@ -82,6 +85,26 @@ namespace hotelsphere.UserControls.ADMIN.REPORTS
             {
                 MessageBox.Show("Không có dữ liệu để xuất!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dgvReportsCustomer_Chien_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

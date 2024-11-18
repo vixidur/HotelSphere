@@ -114,6 +114,64 @@ namespace hotelsphere.Controller.ADMIN
             return db.ExecuteQuery(query);
         }
 
+        public DataTable ThongKeDoanhThu()
+        {
+            string query = @"
+                            SELECT 
+                                hd.id_hoadon AS MaHoaDon,
+                                c.tenkhachhang AS TenKhachHang,
+                                hd.ngaythuephong AS NgayThuePhong,
+                                hd.ngaytraphong AS NgayTraPhong,
+                                hd.giaphongmotngay AS GiaPhongMotNgay,
+                                DATEDIFF(DAY, hd.ngaythuephong, hd.ngaytraphong) AS SoNgayThue,
+                                (DATEDIFF(DAY, hd.ngaythuephong, hd.ngaytraphong) * hd.giaphongmotngay) AS ThanhTienPhong,
+                                ISNULL(SUM(cthd.dongia * cthd.soluongsudungdichvu), 0) AS ThanhTienDichVu,
+                                (DATEDIFF(DAY, hd.ngaythuephong, hd.ngaytraphong) * hd.giaphongmotngay + 
+                                ISNULL(SUM(cthd.dongia * cthd.soluongsudungdichvu), 0)) AS TongDoanhThu
+                            FROM 
+                                hoadon hd
+                            LEFT JOIN customer c ON hd.id_customer = c.id_customer
+                            LEFT JOIN cthoadon cthd ON hd.id_hoadon = cthd.id_hoadon
+                            GROUP BY 
+                                hd.id_hoadon, 
+                                c.tenkhachhang, 
+                                hd.ngaythuephong, 
+                                hd.ngaytraphong, 
+                                hd.giaphongmotngay
+                            ORDER BY 
+                                hd.id_hoadon;
+
+                            ";
+            return db.ExecuteQuery(query);
+        }
+
+        public DataTable ThongKeNhanVien()
+        {
+            string query = @"
+                            SELECT 
+                                s.id_staff AS MaNhanVien,
+                                s.hoten AS TenNhanVien,
+                                s.taikhoan AS TaiKhoan,
+                                s.ngaysinh AS NgaySinh,
+                                s.gioitinh AS GioiTinh,
+                                s.role AS VaiTro,
+                                COUNT(hd.id_hoadon) AS SoHoaDonDaXuLy,
+                                ISNULL(SUM(hd.thanhtien), 0) AS TongDoanhThuXuLy
+                            FROM 
+                                staff s
+                            LEFT JOIN hoadon hd ON s.id_staff = hd.id_staff
+                            GROUP BY 
+                                s.id_staff, 
+                                s.hoten, 
+                                s.taikhoan, 
+                                s.ngaysinh, 
+                                s.gioitinh, 
+                                s.role
+                            ORDER BY 
+                                s.id_staff;
+                            ";
+            return db.ExecuteQuery(query);
+        }
         public DataTable LayThongKeDichVuKhachHang()
         {
             string query = @"

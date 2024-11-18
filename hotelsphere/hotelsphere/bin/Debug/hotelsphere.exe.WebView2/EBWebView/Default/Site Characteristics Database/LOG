@@ -1,1 +1,9 @@
-2024/11/18-13:29:59.806 1c1c Reusing MANIFEST W:\HotelSphere\hotelsphere\hotelsphere\bin\Debug\hotelsphere.exe.WebView2\EBWebView\Default\Site Characteristics Database/MANIFEST-000001
+2024/11/18-21:29:19.196 69c Reusing MANIFEST D:\HotelSphere\hotelsphere\hotelsphere\bin\Debug\hotelsphere.exe.WebView2\EBWebView\Default\Site Characteristics Database/MANIFEST-000001
+2024/11/18-21:29:19.205 1048 Compacting 4@0 + 0@1 files
+2024/11/18-21:29:19.223 1048 Generated table #16@0: 3 keys, 253 bytes
+2024/11/18-21:29:19.224 1048 Compacted 4@0 + 0@1 files => 253 bytes
+2024/11/18-21:29:19.235 1048 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/11/18-21:29:19.236 1048 Delete type=2 #4
+2024/11/18-21:29:19.236 1048 Delete type=2 #7
+2024/11/18-21:29:19.236 1048 Delete type=2 #10
+2024/11/18-21:29:19.236 1048 Delete type=2 #13
