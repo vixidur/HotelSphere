@@ -133,5 +133,11 @@ namespace hotelsphere.View
             UC_Reports_Chien reports = new UC_Reports_Chien();
             ThemUserControl(reports);
         }
+
+        private void btnTkCustomer_Chien_Click(object sender, EventArgs e)
+        {
+            UC_Reports_Customer_Chien reportsCus = new UC_Reports_Customer_Chien();
+            ThemUserControl(reportsCus);
+        }
     }
 }

@@ -1,6 +1,7 @@
-2024/11/14-13:59:44.124 53c4 Log #6: 4 ops saved to Table #7 OK
-2024/11/14-13:59:44.125 53c4 Archiving W:\HotelSphere\hotelsphere\hotelsphere\bin\Debug\hotelsphere.exe.WebView2\EBWebView\Default\Site Characteristics Database/000006.log: OK
-2024/11/14-13:59:44.126 53c4 Table #4: 5 entries OK
-2024/11/14-13:59:44.126 53c4 Table #7: 4 entries OK
-2024/11/14-13:59:44.129 53c4 Archiving W:\HotelSphere\hotelsphere\hotelsphere\bin\Debug\hotelsphere.exe.WebView2\EBWebView\Default\Site Characteristics Database/MANIFEST-000001: OK
-2024/11/14-13:59:44.137 53c4 **** Repaired leveldb W:\HotelSphere\hotelsphere\hotelsphere\bin\Debug\hotelsphere.exe.WebView2\EBWebView\Default\Site Characteristics Database; recovered 2 files; 475 bytes. Some data may have been lost. ****
+2024/11/18-13:29:59.794 1c1c Log #9: 1 ops saved to Table #10 OK
+2024/11/18-13:29:59.795 1c1c Archiving W:\HotelSphere\hotelsphere\hotelsphere\bin\Debug\hotelsphere.exe.WebView2\EBWebView\Default\Site Characteristics Database/000009.log: OK
+2024/11/18-13:29:59.797 1c1c Table #4: 5 entries OK
+2024/11/18-13:29:59.797 1c1c Table #7: 4 entries OK
+2024/11/18-13:29:59.797 1c1c Table #10: 1 entries OK
+2024/11/18-13:29:59.800 1c1c Archiving W:\HotelSphere\hotelsphere\hotelsphere\bin\Debug\hotelsphere.exe.WebView2\EBWebView\Default\Site Characteristics Database/MANIFEST-000001: OK
+2024/11/18-13:29:59.803 1c1c **** Repaired leveldb W:\HotelSphere\hotelsphere\hotelsphere\bin\Debug\hotelsphere.exe.WebView2\EBWebView\Default\Site Characteristics Database; recovered 3 files; 637 bytes. Some data may have been lost. ****

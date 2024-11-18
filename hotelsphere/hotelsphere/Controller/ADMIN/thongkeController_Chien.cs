@@ -61,12 +61,13 @@ namespace hotelsphere.Controller.ADMIN
         public DataTable LayChartDataDoanhThuTheoNgay()
         {
             string query = @"
-                                SELECT 
-                                    FORMAT(CAST(ngaythuephong AS DATE), 'dd/MM/yyyy') AS Ngay, 
-                                    SUM(thanhtien) AS TongDoanhThu
-                                FROM hoadon
-                                GROUP BY CAST(ngaythuephong AS DATE)
-                                ORDER BY Ngay";
+                            SELECT 
+                                FORMAT(CAST(ngaythuephong AS DATE), 'dd/MM/yyyy') AS Ngay, 
+                                SUM(thanhtien) AS TongDoanhThu
+                            FROM cthoadon
+                            JOIN hoadon h ON cthoadon.id_hoadon = h.id_hoadon
+                            GROUP BY CAST(ngaythuephong AS DATE)
+                            ORDER BY Ngay";
 
             return db.ExecuteQuery(query);
         }
@@ -89,7 +90,31 @@ namespace hotelsphere.Controller.ADMIN
             return db.ExecuteQuery(query);
         }
 
-        internal DataTable LayThongKeDichVuKhachHang()
+        public DataTable ThongKeKhachHang()
+        {
+            string query = @"
+                            SELECT 
+                                c.id_customer AS 'ID',
+                                c.tenkhachhang AS 'Họ tên',
+                                c.so_cmt AS 'Số CCCD',
+                                c.quoctich AS 'Quốc tịch',
+                                c.gioitinh AS 'Giới tính',
+                                c.sdt AS 'SĐT',
+                                COUNT(hd.id_hoadon) AS 'SLHĐ',
+                                SUM(hd.thanhtien) AS 'Tổng tiền'
+                            FROM 
+                                customer c
+                            LEFT JOIN 
+                                hoadon hd ON c.id_customer = hd.id_customer
+                            GROUP BY 
+                                c.id_customer, c.tenkhachhang, c.so_cmt, c.quoctich, c.gioitinh, c.sdt
+                            ORDER BY 
+                                c.id_customer;
+                            ";
+            return db.ExecuteQuery(query);
+        }
+
+        public DataTable LayThongKeDichVuKhachHang()
         {
             string query = @"
                             SELECT 

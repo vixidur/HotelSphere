@@ -31,6 +31,14 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(iAdmin_Chien));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.btnTkNhanVien_Chien = new Guna.UI2.WinForms.Guna2Button();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.btnTkDoanhThu_Chien = new Guna.UI2.WinForms.Guna2Button();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.btnTkCustomer_Chien = new Guna.UI2.WinForms.Guna2Button();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -42,14 +50,6 @@
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.panlContainer_Chien = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.btnTkCustomer_Chien = new Guna.UI2.WinForms.Guna2Button();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.btnTkDoanhThu_Chien = new Guna.UI2.WinForms.Guna2Button();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.btnTkNhanVien_Chien = new Guna.UI2.WinForms.Guna2Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.guna2CirclePictureBox3 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
@@ -64,15 +64,15 @@
             this.btnTrangChu_Hung = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel10.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).BeginInit();
@@ -98,6 +98,118 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(215, 600);
             this.panel1.TabIndex = 0;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.Aquamarine;
+            this.panel6.Controls.Add(this.panel10);
+            this.panel6.Controls.Add(this.panel9);
+            this.panel6.Controls.Add(this.panel8);
+            this.panel6.Controls.Add(this.panel7);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(0, 370);
+            this.panel6.MaximumSize = new System.Drawing.Size(215, 178);
+            this.panel6.MinimumSize = new System.Drawing.Size(215, 45);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(215, 45);
+            this.panel6.TabIndex = 12;
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.panel10.Controls.Add(this.btnTkNhanVien_Chien);
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel10.Location = new System.Drawing.Point(0, 135);
+            this.panel10.Margin = new System.Windows.Forms.Padding(0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(215, 45);
+            this.panel10.TabIndex = 3;
+            // 
+            // btnTkNhanVien_Chien
+            // 
+            this.btnTkNhanVien_Chien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnTkNhanVien_Chien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnTkNhanVien_Chien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnTkNhanVien_Chien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnTkNhanVien_Chien.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnTkNhanVien_Chien.FillColor = System.Drawing.Color.Teal;
+            this.btnTkNhanVien_Chien.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnTkNhanVien_Chien.ForeColor = System.Drawing.Color.White;
+            this.btnTkNhanVien_Chien.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnTkNhanVien_Chien.Location = new System.Drawing.Point(0, 0);
+            this.btnTkNhanVien_Chien.Name = "btnTkNhanVien_Chien";
+            this.btnTkNhanVien_Chien.Size = new System.Drawing.Size(215, 45);
+            this.btnTkNhanVien_Chien.TabIndex = 0;
+            this.btnTkNhanVien_Chien.Text = "Nhân Viên";
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.panel9.Controls.Add(this.btnTkDoanhThu_Chien);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel9.Location = new System.Drawing.Point(0, 90);
+            this.panel9.Margin = new System.Windows.Forms.Padding(0);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(215, 45);
+            this.panel9.TabIndex = 2;
+            // 
+            // btnTkDoanhThu_Chien
+            // 
+            this.btnTkDoanhThu_Chien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnTkDoanhThu_Chien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnTkDoanhThu_Chien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnTkDoanhThu_Chien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnTkDoanhThu_Chien.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnTkDoanhThu_Chien.FillColor = System.Drawing.Color.Teal;
+            this.btnTkDoanhThu_Chien.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnTkDoanhThu_Chien.ForeColor = System.Drawing.Color.White;
+            this.btnTkDoanhThu_Chien.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnTkDoanhThu_Chien.Location = new System.Drawing.Point(0, 0);
+            this.btnTkDoanhThu_Chien.Name = "btnTkDoanhThu_Chien";
+            this.btnTkDoanhThu_Chien.Size = new System.Drawing.Size(215, 45);
+            this.btnTkDoanhThu_Chien.TabIndex = 0;
+            this.btnTkDoanhThu_Chien.Text = "Doanh Thu";
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.panel8.Controls.Add(this.btnTkCustomer_Chien);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel8.Location = new System.Drawing.Point(0, 45);
+            this.panel8.Margin = new System.Windows.Forms.Padding(0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(215, 45);
+            this.panel8.TabIndex = 1;
+            // 
+            // btnTkCustomer_Chien
+            // 
+            this.btnTkCustomer_Chien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnTkCustomer_Chien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnTkCustomer_Chien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnTkCustomer_Chien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnTkCustomer_Chien.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnTkCustomer_Chien.FillColor = System.Drawing.Color.Teal;
+            this.btnTkCustomer_Chien.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnTkCustomer_Chien.ForeColor = System.Drawing.Color.White;
+            this.btnTkCustomer_Chien.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnTkCustomer_Chien.Location = new System.Drawing.Point(0, 0);
+            this.btnTkCustomer_Chien.Name = "btnTkCustomer_Chien";
+            this.btnTkCustomer_Chien.Size = new System.Drawing.Size(215, 45);
+            this.btnTkCustomer_Chien.TabIndex = 0;
+            this.btnTkCustomer_Chien.Text = "Khách Hàng";
+            this.btnTkCustomer_Chien.Click += new System.EventHandler(this.btnTkCustomer_Chien_Click);
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.panel7.Controls.Add(this.guna2PictureBox1);
+            this.panel7.Controls.Add(this.guna2Button1);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel7.Location = new System.Drawing.Point(0, 0);
+            this.panel7.Margin = new System.Windows.Forms.Padding(0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(215, 45);
+            this.panel7.TabIndex = 0;
             // 
             // panel5
             // 
@@ -217,117 +329,6 @@
             this.panlContainer_Chien.Name = "panlContainer_Chien";
             this.panlContainer_Chien.Size = new System.Drawing.Size(785, 500);
             this.panlContainer_Chien.TabIndex = 2;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.Aquamarine;
-            this.panel6.Controls.Add(this.panel10);
-            this.panel6.Controls.Add(this.panel9);
-            this.panel6.Controls.Add(this.panel8);
-            this.panel6.Controls.Add(this.panel7);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 370);
-            this.panel6.MaximumSize = new System.Drawing.Size(215, 178);
-            this.panel6.MinimumSize = new System.Drawing.Size(215, 45);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(215, 45);
-            this.panel6.TabIndex = 12;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.panel7.Controls.Add(this.guna2PictureBox1);
-            this.panel7.Controls.Add(this.guna2Button1);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(0, 0);
-            this.panel7.Margin = new System.Windows.Forms.Padding(0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(215, 45);
-            this.panel7.TabIndex = 0;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.panel8.Controls.Add(this.btnTkCustomer_Chien);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel8.Location = new System.Drawing.Point(0, 45);
-            this.panel8.Margin = new System.Windows.Forms.Padding(0);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(215, 45);
-            this.panel8.TabIndex = 1;
-            // 
-            // btnTkCustomer_Chien
-            // 
-            this.btnTkCustomer_Chien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnTkCustomer_Chien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnTkCustomer_Chien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnTkCustomer_Chien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnTkCustomer_Chien.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnTkCustomer_Chien.FillColor = System.Drawing.Color.Teal;
-            this.btnTkCustomer_Chien.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
-            this.btnTkCustomer_Chien.ForeColor = System.Drawing.Color.White;
-            this.btnTkCustomer_Chien.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btnTkCustomer_Chien.Location = new System.Drawing.Point(0, 0);
-            this.btnTkCustomer_Chien.Name = "btnTkCustomer_Chien";
-            this.btnTkCustomer_Chien.Size = new System.Drawing.Size(215, 45);
-            this.btnTkCustomer_Chien.TabIndex = 0;
-            this.btnTkCustomer_Chien.Text = "Khách Hàng";
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.panel9.Controls.Add(this.btnTkDoanhThu_Chien);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel9.Location = new System.Drawing.Point(0, 90);
-            this.panel9.Margin = new System.Windows.Forms.Padding(0);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(215, 45);
-            this.panel9.TabIndex = 2;
-            // 
-            // btnTkDoanhThu_Chien
-            // 
-            this.btnTkDoanhThu_Chien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnTkDoanhThu_Chien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnTkDoanhThu_Chien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnTkDoanhThu_Chien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnTkDoanhThu_Chien.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnTkDoanhThu_Chien.FillColor = System.Drawing.Color.Teal;
-            this.btnTkDoanhThu_Chien.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
-            this.btnTkDoanhThu_Chien.ForeColor = System.Drawing.Color.White;
-            this.btnTkDoanhThu_Chien.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btnTkDoanhThu_Chien.Location = new System.Drawing.Point(0, 0);
-            this.btnTkDoanhThu_Chien.Name = "btnTkDoanhThu_Chien";
-            this.btnTkDoanhThu_Chien.Size = new System.Drawing.Size(215, 45);
-            this.btnTkDoanhThu_Chien.TabIndex = 0;
-            this.btnTkDoanhThu_Chien.Text = "Doanh Thu";
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.panel10.Controls.Add(this.btnTkNhanVien_Chien);
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel10.Location = new System.Drawing.Point(0, 135);
-            this.panel10.Margin = new System.Windows.Forms.Padding(0);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(215, 45);
-            this.panel10.TabIndex = 3;
-            // 
-            // btnTkNhanVien_Chien
-            // 
-            this.btnTkNhanVien_Chien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnTkNhanVien_Chien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnTkNhanVien_Chien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnTkNhanVien_Chien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnTkNhanVien_Chien.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnTkNhanVien_Chien.FillColor = System.Drawing.Color.Teal;
-            this.btnTkNhanVien_Chien.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
-            this.btnTkNhanVien_Chien.ForeColor = System.Drawing.Color.White;
-            this.btnTkNhanVien_Chien.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btnTkNhanVien_Chien.Location = new System.Drawing.Point(0, 0);
-            this.btnTkNhanVien_Chien.Name = "btnTkNhanVien_Chien";
-            this.btnTkNhanVien_Chien.Size = new System.Drawing.Size(215, 45);
-            this.btnTkNhanVien_Chien.TabIndex = 0;
-            this.btnTkNhanVien_Chien.Text = "Nhân Viên";
             // 
             // timer1
             // 
@@ -555,6 +556,11 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "iAdmin_Chien";
             this.panel1.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel10.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -562,11 +568,6 @@
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
-            this.panel9.ResumeLayout(false);
-            this.panel10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).EndInit();
