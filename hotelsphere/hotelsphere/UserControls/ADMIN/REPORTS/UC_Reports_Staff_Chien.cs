@@ -19,12 +19,11 @@ namespace hotelsphere.UserControls.ADMIN.REPORTS
         {
             InitializeComponent();
             thongkeController_Chien = new thongkeController_Chien();
-            LoadThongKeNhanVien();
         }
 
-        private void LoadThongKeNhanVien()
+        private void LoadThongKeNhanVien(int year)
         {
-            var dt = thongkeController_Chien.ThongKeNhanVien();
+            var dt = thongkeController_Chien.ThongKeDoanhThuThangTheoNam(year);
             dgvReportsStaff_Chien.DataSource = dt;
         }
 
@@ -36,7 +35,7 @@ namespace hotelsphere.UserControls.ADMIN.REPORTS
                 {
                     saveFileDialog.Filter = "Excel Files|*.xlsx";
                     saveFileDialog.Title = "Save an Excel File";
-                    saveFileDialog.FileName = "ThongKeNhanVien.xlsx";
+                    saveFileDialog.FileName = "ThongKeDoanhThuThangTheoNam.xlsx";
 
                     if (saveFileDialog.ShowDialog() == DialogResult.OK)
                     {
@@ -83,6 +82,24 @@ namespace hotelsphere.UserControls.ADMIN.REPORTS
             {
                 MessageBox.Show("Không có dữ liệu để xuất!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void txtNam_Chien_TextChanged(object sender, EventArgs e)
+        {
+            string year = txtNam_Chien.Text.Trim(); 
+
+            if (string.IsNullOrEmpty(year))
+            {
+                MessageBox.Show("Vui lòng nhập năm!");
+                return; 
+            }
+
+            if (!int.TryParse(year, out int years) || years <= 0)
+            {
+                MessageBox.Show("Nhập năm không hợp lệ!");
+                return; 
+            }
+            LoadThongKeNhanVien(years);
         }
     }
 }

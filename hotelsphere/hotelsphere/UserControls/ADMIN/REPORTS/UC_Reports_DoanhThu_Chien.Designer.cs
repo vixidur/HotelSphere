@@ -33,10 +33,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvReportsDoanhThu_Chien = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnExcel_Chien = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnExcel_Chien = new Guna.UI2.WinForms.Guna2GradientButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReportsDoanhThu_Chien)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -110,15 +110,38 @@
             this.panel2.TabIndex = 10;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
+            // btnExcel_Chien
+            // 
+            this.btnExcel_Chien.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExcel_Chien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnExcel_Chien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnExcel_Chien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnExcel_Chien.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnExcel_Chien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnExcel_Chien.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(138)))), ((int)(((byte)(177)))));
+            this.btnExcel_Chien.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(58)))), ((int)(((byte)(75)))));
+            this.btnExcel_Chien.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcel_Chien.ForeColor = System.Drawing.Color.White;
+            this.btnExcel_Chien.Image = global::hotelsphere.Properties.Resources.icon_excel;
+            this.btnExcel_Chien.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnExcel_Chien.Location = new System.Drawing.Point(569, 8);
+            this.btnExcel_Chien.Name = "btnExcel_Chien";
+            this.btnExcel_Chien.Size = new System.Drawing.Size(180, 45);
+            this.btnExcel_Chien.TabIndex = 10;
+            this.btnExcel_Chien.Text = "Xuất ra Excel";
+            this.btnExcel_Chien.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnExcel_Chien.Click += new System.EventHandler(this.btnExcel_Chien_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(364, 24);
+            this.label1.Size = new System.Drawing.Size(388, 24);
             this.label1.TabIndex = 0;
-            this.label1.Text = "THỐNG KÊ THÔNG TIN DOANH THU";
+            this.label1.Text = "THỐNG KÊ DOANH THU TỪNG PHÒNG";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel3
@@ -138,29 +161,6 @@
             this.panel1.Size = new System.Drawing.Size(10, 500);
             this.panel1.TabIndex = 12;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // btnExcel_Chien
-            // 
-            this.btnExcel_Chien.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExcel_Chien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnExcel_Chien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnExcel_Chien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnExcel_Chien.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnExcel_Chien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnExcel_Chien.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(138)))), ((int)(((byte)(177)))));
-            this.btnExcel_Chien.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(58)))), ((int)(((byte)(75)))));
-            this.btnExcel_Chien.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExcel_Chien.ForeColor = System.Drawing.Color.White;
-            this.btnExcel_Chien.Image = global::hotelsphere.Properties.Resources.icon_excel;
-            this.btnExcel_Chien.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnExcel_Chien.Location = new System.Drawing.Point(549, 8);
-            this.btnExcel_Chien.Name = "btnExcel_Chien";
-            this.btnExcel_Chien.Size = new System.Drawing.Size(180, 45);
-            this.btnExcel_Chien.TabIndex = 10;
-            this.btnExcel_Chien.Text = "Xuất ra Excel";
-            this.btnExcel_Chien.TextOffset = new System.Drawing.Point(10, 0);
-            this.btnExcel_Chien.Click += new System.EventHandler(this.btnExcel_Chien_Click);
             // 
             // UC_Reports_DoanhThu_Chien
             // 

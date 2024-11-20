@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -90,87 +91,48 @@ namespace hotelsphere.Controller.ADMIN
             return db.ExecuteQuery(query);
         }
 
-        public DataTable ThongKeKhachHang()
+        public DataTable ThongKeDichVu()
         {
             string query = @"
                             SELECT 
-                                c.id_customer AS 'ID',
-                                c.tenkhachhang AS 'Họ tên',
-                                c.so_cmt AS 'Số CCCD',
-                                c.quoctich AS 'Quốc tịch',
-                                c.gioitinh AS 'Giới tính',
-                                c.sdt AS 'SĐT',
-                                COUNT(hd.id_hoadon) AS 'SLHĐ',
-                                SUM(hd.thanhtien) AS 'Tổng tiền'
-                            FROM 
-                                customer c
-                            LEFT JOIN 
-                                hoadon hd ON c.id_customer = hd.id_customer
-                            GROUP BY 
-                                c.id_customer, c.tenkhachhang, c.so_cmt, c.quoctich, c.gioitinh, c.sdt
-                            ORDER BY 
-                                c.id_customer;
+                                id_dichvu AS 'Mã Dịch Vụ',
+                                tendichvu AS 'Tên Dịch Vụ',
+                                giadichvu AS 'Giá Dịch Vụ'
+                            FROM dichvu;
                             ";
             return db.ExecuteQuery(query);
         }
 
-        public DataTable ThongKeDoanhThu()
+        public DataTable ThongKeDoanhThuTungPhong()
         {
             string query = @"
                             SELECT 
-                                hd.id_hoadon AS MaHoaDon,
-                                c.tenkhachhang AS TenKhachHang,
-                                hd.ngaythuephong AS NgayThuePhong,
-                                hd.ngaytraphong AS NgayTraPhong,
-                                hd.giaphongmotngay AS GiaPhongMotNgay,
-                                DATEDIFF(DAY, hd.ngaythuephong, hd.ngaytraphong) AS SoNgayThue,
-                                (DATEDIFF(DAY, hd.ngaythuephong, hd.ngaytraphong) * hd.giaphongmotngay) AS ThanhTienPhong,
-                                ISNULL(SUM(cthd.dongia * cthd.soluongsudungdichvu), 0) AS ThanhTienDichVu,
-                                (DATEDIFF(DAY, hd.ngaythuephong, hd.ngaytraphong) * hd.giaphongmotngay + 
-                                ISNULL(SUM(cthd.dongia * cthd.soluongsudungdichvu), 0)) AS TongDoanhThu
-                            FROM 
-                                hoadon hd
-                            LEFT JOIN customer c ON hd.id_customer = c.id_customer
-                            LEFT JOIN cthoadon cthd ON hd.id_hoadon = cthd.id_hoadon
-                            GROUP BY 
-                                hd.id_hoadon, 
-                                c.tenkhachhang, 
-                                hd.ngaythuephong, 
-                                hd.ngaytraphong, 
-                                hd.giaphongmotngay
-                            ORDER BY 
-                                hd.id_hoadon;
-
+                                phong.tenphong AS 'Tên Phòng',
+                                SUM(hoadon.thanhtien) AS 'Tổng Doanh Thu'
+                            FROM hoadon
+                            JOIN phong ON hoadon.id_room = phong.id_room
+                            GROUP BY phong.tenphong
+                            ORDER BY SUM(hoadon.thanhtien) DESC;
                             ";
             return db.ExecuteQuery(query);
         }
 
-        public DataTable ThongKeNhanVien()
+        public DataTable ThongKeDoanhThuThangTheoNam(int year)
         {
             string query = @"
                             SELECT 
-                                s.id_staff AS MaNhanVien,
-                                s.hoten AS TenNhanVien,
-                                s.taikhoan AS TaiKhoan,
-                                s.ngaysinh AS NgaySinh,
-                                s.gioitinh AS GioiTinh,
-                                s.role AS VaiTro,
-                                COUNT(hd.id_hoadon) AS SoHoaDonDaXuLy,
-                                ISNULL(SUM(hd.thanhtien), 0) AS TongDoanhThuXuLy
-                            FROM 
-                                staff s
-                            LEFT JOIN hoadon hd ON s.id_staff = hd.id_staff
-                            GROUP BY 
-                                s.id_staff, 
-                                s.hoten, 
-                                s.taikhoan, 
-                                s.ngaysinh, 
-                                s.gioitinh, 
-                                s.role
-                            ORDER BY 
-                                s.id_staff;
+                                MONTH(hoadon.ngaythuephong) AS 'Tháng',
+                                SUM(hoadon.thanhtien) AS 'Doanh Thu'
+                            FROM hoadon
+                            WHERE YEAR(hoadon.ngaythuephong) = @year
+                            GROUP BY MONTH(hoadon.ngaythuephong)
+                            ORDER BY MONTH(hoadon.ngaythuephong);
                             ";
-            return db.ExecuteQuery(query);
+            SqlParameter[] doanhthutheonam =
+            {
+                new SqlParameter("@year", year),
+            };
+            return db.ExecuteQuery(query, doanhthutheonam);
         }
         public DataTable LayThongKeDichVuKhachHang()
         {

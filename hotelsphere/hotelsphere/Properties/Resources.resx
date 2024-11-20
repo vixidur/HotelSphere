@@ -169,9 +169,6 @@
   <data name="icon-home" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon-home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon-alert" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon-alert.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="icon-verify1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon-verify.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -181,11 +178,11 @@
   <data name="icon-customers" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon-customers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icon-room1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon-room1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="5583604" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\5583604.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="imagereporthoadon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\imagereporthoadon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="6324346" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\6324346.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -193,20 +190,26 @@
   <data name="icon-staff-report" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon-staff-report.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icon-excel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon-excel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icon-services" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon-services.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon-roomtype" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon-roomtype.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon-client" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon-client.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon-alert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon-alert.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon-notify" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon-notify.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon-report-customer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon-report-customer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BANNERHOTEL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BANNERHOTEL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon-datetime" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon-datetime.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -226,8 +229,8 @@
   <data name="icon-reportviewers" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon-reportviewers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BANNERHOTEL" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BANNERHOTEL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon-client" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon-client.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon-staff" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon-staff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -235,10 +238,10 @@
   <data name="5507757-200" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\5507757-200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon-room1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon-room1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="imagereporthoadon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imagereporthoadon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon-excel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon-excel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

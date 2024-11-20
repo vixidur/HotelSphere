@@ -24,7 +24,7 @@ namespace hotelsphere.UserControls.ADMIN.REPORTS
 
         private void LoadThongKeDoanhThu()
         {
-            var dt = thongkeController.ThongKeDoanhThu();
+            var dt = thongkeController.ThongKeDoanhThuTungPhong();
             dgvReportsDoanhThu_Chien.DataSource = dt;
         }
 
@@ -36,7 +36,7 @@ namespace hotelsphere.UserControls.ADMIN.REPORTS
                 {
                     saveFileDialog.Filter = "Excel Files|*.xlsx";
                     saveFileDialog.Title = "Save an Excel File";
-                    saveFileDialog.FileName = "ThongKeDoanhThu.xlsx";
+                    saveFileDialog.FileName = "ThongKeDoanhThuTungPhong.xlsx";
 
                     if (saveFileDialog.ShowDialog() == DialogResult.OK)
                     {

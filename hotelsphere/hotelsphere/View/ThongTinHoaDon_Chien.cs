@@ -292,14 +292,14 @@ namespace hotelsphere.View
                     TotalRoomPrice = totalRoomPrice,
                     TotalServicePrice = totalServicePrice
                 };
-                MessageBox.Show($"Ten Khach Hang: {CustomerName_Chien}"
-                    +$"\nSo hoa don: {invoiceId}"
-                    +$"\nTen phong: {TenPhong}"
-                    +$"\nso ngay thue {totalDays}"
-                    +$"\nloai phong: {RoomType_Chien}"
-                    +$"\nten nhan vien: {TenNhanVien}"
-                    +$"\nTien  thue phong: {totalRoomPrice}"
-                    +$"\ntien dich vu: {totalServicePrice}");
+                //MessageBox.Show($"Ten Khach Hang: {CustomerName_Chien}"
+                //    +$"\nSo hoa don: {invoiceId}"
+                //    +$"\nTen phong: {TenPhong}"
+                //    +$"\nso ngay thue {totalDays}"
+                //    +$"\nloai phong: {RoomType_Chien}"
+                //    +$"\nten nhan vien: {TenNhanVien}"
+                //    +$"\nTien  thue phong: {totalRoomPrice}"
+                //    +$"\ntien dich vu: {totalServicePrice}");
                 inHoaDonForm.HienthiHoaDonChiTiet();
                 inHoaDonForm.ShowDialog();
 
@@ -326,7 +326,6 @@ namespace hotelsphere.View
 
             List<DichVuModel> dichvuList_Chien = new List<DichVuModel>();
 
-            // Verify column existence before processing
             if (!dataTable.Columns.Contains("id_dichvu") ||
                 !dataTable.Columns.Contains("tendichvu") ||
                 !dataTable.Columns.Contains("giatien") ||
@@ -363,18 +362,18 @@ namespace hotelsphere.View
         }
 
 
-        private void HTHoaDonCT(int invoiceId, decimal totalRoomPrice, decimal totalServicePrice)
-        {
-            MessageBox.Show($"idHoaDon: {invoiceId}\n" +
-                             $"currentCustomerId: {currentCustomerId}\n" +
-                             $"idStaff: {ucRoomChien.IdStaff}\n" +
-                             $"currentRoomId: {currentRoomId}\n" +
-                             $"Giá phòng 1 ngày: {PriceRoom_Chien}\n" +
-                             $"Ngày thuê phòng: {RentDate_Chien}\n" +
-                             $"Ngày trả phòng: {ReturnDate_Chien}\n" +
-                             $"Thành tiền: {totalRoomPrice + totalServicePrice}\n" +
-                             $"Tổng tiền thuê phòng: {totalRoomPrice}\n" +
-                             $"Tổng tiền dịch vụ: {totalServicePrice}");
-        }
+        //private void HTHoaDonCT(int invoiceId, decimal totalRoomPrice, decimal totalServicePrice)
+        //{
+        //    MessageBox.Show($"idHoaDon: {invoiceId}\n" +
+        //                     $"currentCustomerId: {currentCustomerId}\n" +
+        //                     $"idStaff: {ucRoomChien.IdStaff}\n" +
+        //                     $"currentRoomId: {currentRoomId}\n" +
+        //                     $"Giá phòng 1 ngày: {PriceRoom_Chien}\n" +
+        //                     $"Ngày thuê phòng: {RentDate_Chien}\n" +
+        //                     $"Ngày trả phòng: {ReturnDate_Chien}\n" +
+        //                     $"Thành tiền: {totalRoomPrice + totalServicePrice}\n" +
+        //                     $"Tổng tiền thuê phòng: {totalRoomPrice}\n" +
+        //                     $"Tổng tiền dịch vụ: {totalServicePrice}");
+        //}
     }
 }

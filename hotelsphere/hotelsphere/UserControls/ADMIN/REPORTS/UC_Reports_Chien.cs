@@ -1,12 +1,6 @@
 ﻿using hotelsphere.Controller.ADMIN;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 
@@ -37,15 +31,34 @@ namespace hotelsphere.UserControls.ADMIN.REPORTS
         public void TongDoanhThu()
         {
             DataTable dt = thongkeController_Chien.LayChartDataDoanhThuTheoNgay();
+            if (dt.Rows.Count <= 5)
+            {
+                chartData_Chien.Series["DoanhThu"].ChartType = SeriesChartType.Pie;
+            }
+            else // Bar Chart nếu dữ liệu nhiều
+            {
+                chartData_Chien.Series["DoanhThu"].ChartType = SeriesChartType.Column;
+            }
+
             foreach (DataRow row in dt.Rows)
             {
                 chartData_Chien.Series["DoanhThu"].Points.AddXY(row["Ngay"].ToString(), Convert.ToDecimal(row["TongDoanhThu"]));
             }
         }
 
+
         public void SLPhongTheoLoai()
         {
             DataTable dtPhong = thongkeController_Chien.LayChartDataSoLuongPhongTheoLoai();
+
+            if (dtPhong.Rows.Count <= 5)
+            {
+                chartSLPhongTheoLoai_Chien.Series["SoLuongPhongTheoLoai"].ChartType = SeriesChartType.Pie;
+            }
+            else
+            {
+                chartSLPhongTheoLoai_Chien.Series["SoLuongPhongTheoLoai"].ChartType = SeriesChartType.Column;
+            }
 
             foreach (DataRow row in dtPhong.Rows)
             {
@@ -53,18 +66,30 @@ namespace hotelsphere.UserControls.ADMIN.REPORTS
             }
         }
 
+
         public void LoadChart_DichVuKhachHang()
         {
             DataTable dt = thongkeController_Chien.LayThongKeDichVuKhachHang();
+
+            if (dt.Rows.Count <= 5) // Pie Chart nếu dữ liệu ít (<= 5 khách hàng)
+            {
+                chart2.Series["DichVuKhachHang"].ChartType = SeriesChartType.Pie;
+            }
+            else // Bar Chart nếu dữ liệu nhiều
+            {
+                chart2.Series["DichVuKhachHang"].ChartType = SeriesChartType.Column;
+            }
+
             foreach (DataRow row in dt.Rows)
             {
                 string tenKhachHang = row["TenKhachHang"].ToString();
                 int soLuongDichVu = Convert.ToInt32(row["SoLuongDichVu"]);
                 decimal tongTienDichVu = Convert.ToDecimal(row["TongTienDichVu"]);
+
                 chart2.Series["DichVuKhachHang"].Points.AddXY(tenKhachHang, tongTienDichVu);
             }
-
         }
+
 
 
     }

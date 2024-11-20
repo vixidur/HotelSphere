@@ -214,8 +214,6 @@ D:\HotelSphere\hotelsphere\hotelsphere\bin\Debug\System.Runtime.CompilerServices
 D:\HotelSphere\hotelsphere\hotelsphere\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\HotelSphere\hotelsphere\hotelsphere\bin\Debug\System.ValueTuple.xml
 D:\HotelSphere\hotelsphere\hotelsphere\obj\Debug\4_ChienLQHungKhanhTTAnh_LTNET.csproj.AssemblyReference.cache
-D:\HotelSphere\hotelsphere\hotelsphere\obj\Debug\4_ChienLQHungKhanhTTAnh_LTNET.csproj.SuggestedBindingRedirects.cache
-D:\HotelSphere\hotelsphere\hotelsphere\obj\Debug\hotelsphere.exe.config
 D:\HotelSphere\hotelsphere\hotelsphere\obj\Debug\hotelsphere.Form1_Chien.resources
 D:\HotelSphere\hotelsphere\hotelsphere\obj\Debug\hotelsphere.frmLogin_Chien.resources
 D:\HotelSphere\hotelsphere\hotelsphere\obj\Debug\hotelsphere.Properties.Resources.resources
@@ -242,3 +240,4 @@ D:\HotelSphere\hotelsphere\hotelsphere\obj\Debug\hotelsphere.exe
 D:\HotelSphere\hotelsphere\hotelsphere\obj\Debug\hotelsphere.pdb
 D:\HotelSphere\hotelsphere\hotelsphere\obj\Debug\hotelsphere.UserControls.ADMIN.REPORTS.UC_Reports_DoanhThu_Chien.resources
 D:\HotelSphere\hotelsphere\hotelsphere\obj\Debug\hotelsphere.UserControls.ADMIN.REPORTS.UC_Reports_Staff_Chien.resources
+D:\HotelSphere\hotelsphere\hotelsphere\obj\Debug\hotelsphere.View.ChiTietHoaDon.resources

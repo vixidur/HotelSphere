@@ -1,4 +1,6 @@
-﻿using hotelsphere.Controller.ADMIN;
+﻿using DocumentFormat.OpenXml.VariantTypes;
+using hotelsphere.Controller.ADMIN;
+using hotelsphere.View;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -66,21 +68,33 @@ namespace hotelsphere.UserControls.ADMIN
         {
             if (e.RowIndex >= 0)
             {
-                // Check if "Xem Chi Tiết" button was clicked
-                if (dgvHoaDon_Chien.Columns[e.ColumnIndex].Name == "Xem Chi Tiết")
+                if (!dgvHoaDon_Chien.Columns.Contains("Xem Chi Tiết") || !dgvHoaDon_Chien.Columns.Contains("Xóa"))
+                {
+                    MessageBox.Show("Không tìm thấy các cột hành động cần thiết.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                string tenCot = dgvHoaDon_Chien.Columns[e.ColumnIndex].Name;
+                if (tenCot == "Xem Chi Tiết")
                 {
                     int maHoaDon = Convert.ToInt32(dgvHoaDon_Chien.Rows[e.RowIndex].Cells["MaHoaDon"].Value);
                     HienThiChiTietHoaDon(maHoaDon);
                 }
-                // Check if "Xóa" button was clicked
-                else if (dgvHoaDon_Chien.Columns[e.ColumnIndex].Name == "Xóa")
+                else if (tenCot == "Xóa")
                 {
                     var result = MessageBox.Show("Bạn có chắc chắn muốn xóa hoá đơn này không?", "Xác nhận", MessageBoxButtons.YesNo);
                     if (result == DialogResult.Yes)
                     {
-                        int maHoaDon = Convert.ToInt32(dgvHoaDon_Chien.Rows[e.RowIndex].Cells["MaHoaDon"].Value);
-                        XoaHoaDon(maHoaDon);
-                        dgvHoaDon_Chien.DataSource = hd.LayDataHoaDon_Chien();
+                        try
+                        {
+                            int maHoaDon = Convert.ToInt32(dgvHoaDon_Chien.Rows[e.RowIndex].Cells["MaHoaDon"].Value);
+                            XoaHoaDon(maHoaDon);
+                            MessageBox.Show("Xóa hoá đơn thành công.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            dgvHoaDon_Chien.DataSource = hd.LayDataHoaDon_Chien(); 
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Lỗi khi xóa hóa đơn: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
                 }
                 else
@@ -92,7 +106,9 @@ namespace hotelsphere.UserControls.ADMIN
 
         private void HienThiChiTietHoaDon(int maHoaDon)
         {
-            MessageBox.Show("Hiển thị chi tiết hoá đơn: " + maHoaDon);
+            //MessageBox.Show("check ma nhé: " + maHoaDon);
+            ChiTietHoaDon chiTietHoaDon = new ChiTietHoaDon(maHoaDon);
+            chiTietHoaDon.Show();
         }
 
         private void txtSearchRoomType_Chien_TextChanged(object sender, EventArgs e)

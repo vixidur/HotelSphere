@@ -31,14 +31,15 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -102,13 +103,13 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(20, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(765, 20);
+            this.panel2.Size = new System.Drawing.Size(748, 20);
             this.panel2.TabIndex = 1;
             // 
             // panel3
             // 
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(765, 20);
+            this.panel3.Location = new System.Drawing.Point(748, 20);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(20, 480);
             this.panel3.TabIndex = 2;
@@ -121,7 +122,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(20, 20);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(745, 480);
+            this.panel4.Size = new System.Drawing.Size(728, 480);
             this.panel4.TabIndex = 3;
             // 
             // tableLayoutPanel2
@@ -138,7 +139,7 @@
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(745, 319);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(728, 319);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
             // guna2Panel7
@@ -150,10 +151,10 @@
             this.guna2Panel7.Controls.Add(this.chart2);
             this.guna2Panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(194)))), ((int)(((byte)(255)))));
-            this.guna2Panel7.Location = new System.Drawing.Point(496, 0);
+            this.guna2Panel7.Location = new System.Drawing.Point(484, 0);
             this.guna2Panel7.Margin = new System.Windows.Forms.Padding(0, 0, 10, 10);
             this.guna2Panel7.Name = "guna2Panel7";
-            this.guna2Panel7.Size = new System.Drawing.Size(239, 309);
+            this.guna2Panel7.Size = new System.Drawing.Size(234, 309);
             this.guna2Panel7.TabIndex = 2;
             // 
             // chart2
@@ -176,8 +177,12 @@
             series1.Name = "DichVuKhachHang";
             series1.YValuesPerPoint = 2;
             this.chart2.Series.Add(series1);
-            this.chart2.Size = new System.Drawing.Size(229, 282);
+            this.chart2.Size = new System.Drawing.Size(224, 282);
             this.chart2.TabIndex = 4;
+            title1.ForeColor = System.Drawing.Color.White;
+            title1.Name = "Title1";
+            title1.Text = "PHÂN TÍCH DOANH THU DỊCH VỤ THEO KHÁCH HÀNG";
+            this.chart2.Titles.Add(title1);
             // 
             // guna2Panel6
             // 
@@ -188,10 +193,10 @@
             this.guna2Panel6.Controls.Add(this.chartSLPhongTheoLoai_Chien);
             this.guna2Panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(194)))), ((int)(((byte)(255)))));
-            this.guna2Panel6.Location = new System.Drawing.Point(248, 0);
+            this.guna2Panel6.Location = new System.Drawing.Point(242, 0);
             this.guna2Panel6.Margin = new System.Windows.Forms.Padding(0, 0, 10, 10);
             this.guna2Panel6.Name = "guna2Panel6";
-            this.guna2Panel6.Size = new System.Drawing.Size(238, 309);
+            this.guna2Panel6.Size = new System.Drawing.Size(232, 309);
             this.guna2Panel6.TabIndex = 1;
             // 
             // chartSLPhongTheoLoai_Chien
@@ -214,13 +219,13 @@
             series2.Name = "SoLuongPhongTheoLoai";
             series2.YValuesPerPoint = 2;
             this.chartSLPhongTheoLoai_Chien.Series.Add(series2);
-            this.chartSLPhongTheoLoai_Chien.Size = new System.Drawing.Size(229, 282);
+            this.chartSLPhongTheoLoai_Chien.Size = new System.Drawing.Size(223, 282);
             this.chartSLPhongTheoLoai_Chien.TabIndex = 5;
             this.chartSLPhongTheoLoai_Chien.Text = "chart1";
-            title1.ForeColor = System.Drawing.Color.White;
-            title1.Name = "Title1";
-            title1.Text = "THỐNG KÊ SỐ LƯỢNG PHÒNG CÁC LOẠI";
-            this.chartSLPhongTheoLoai_Chien.Titles.Add(title1);
+            title2.ForeColor = System.Drawing.Color.White;
+            title2.Name = "Title1";
+            title2.Text = "THỐNG KÊ DOANH THU TỪNG PHÒNG";
+            this.chartSLPhongTheoLoai_Chien.Titles.Add(title2);
             // 
             // guna2Panel5
             // 
@@ -234,7 +239,7 @@
             this.guna2Panel5.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel5.Margin = new System.Windows.Forms.Padding(0, 0, 10, 10);
             this.guna2Panel5.Name = "guna2Panel5";
-            this.guna2Panel5.Size = new System.Drawing.Size(238, 309);
+            this.guna2Panel5.Size = new System.Drawing.Size(232, 309);
             this.guna2Panel5.TabIndex = 0;
             // 
             // chartData_Chien
@@ -251,25 +256,24 @@
             this.chartData_Chien.Name = "chartData_Chien";
             this.chartData_Chien.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
             series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
             series3.Legend = "Legend1";
             series3.Name = "DoanhThu";
             series3.YValuesPerPoint = 2;
             this.chartData_Chien.Series.Add(series3);
-            this.chartData_Chien.Size = new System.Drawing.Size(228, 282);
+            this.chartData_Chien.Size = new System.Drawing.Size(222, 282);
             this.chartData_Chien.TabIndex = 4;
             this.chartData_Chien.Text = "chart1";
-            title2.ForeColor = System.Drawing.Color.White;
-            title2.Name = "Title1";
-            title2.Text = "DOANH THU THEO NGÀY THUÊ PHÒNG";
-            this.chartData_Chien.Titles.Add(title2);
+            title3.ForeColor = System.Drawing.Color.White;
+            title3.Name = "Title1";
+            title3.Text = "DOANH THU THEO NGÀY THUÊ PHÒNG";
+            this.chartData_Chien.Titles.Add(title3);
             // 
             // panel5
             // 
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel5.Location = new System.Drawing.Point(0, 456);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(745, 24);
+            this.panel5.Size = new System.Drawing.Size(728, 24);
             this.panel5.TabIndex = 1;
             // 
             // tableLayoutPanel1
@@ -288,7 +292,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(745, 137);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(728, 137);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // guna2Panel4
@@ -302,10 +306,10 @@
             this.guna2Panel4.Controls.Add(this.label8);
             this.guna2Panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(101)))), ((int)(((byte)(0)))));
-            this.guna2Panel4.Location = new System.Drawing.Point(558, 0);
+            this.guna2Panel4.Location = new System.Drawing.Point(546, 0);
             this.guna2Panel4.Margin = new System.Windows.Forms.Padding(0, 0, 10, 10);
             this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.Size = new System.Drawing.Size(177, 127);
+            this.guna2Panel4.Size = new System.Drawing.Size(172, 127);
             this.guna2Panel4.TabIndex = 7;
             // 
             // label7
@@ -318,7 +322,7 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(9, 72);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(75, 32);
+            this.label7.Size = new System.Drawing.Size(70, 32);
             this.label7.TabIndex = 8;
             this.label7.Text = "1,587";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -333,7 +337,7 @@
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(6, 22);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(78, 47);
+            this.label8.Size = new System.Drawing.Size(73, 47);
             this.label8.TabIndex = 9;
             this.label8.Text = "Thông Báo";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -349,10 +353,10 @@
             this.guna2Panel3.Controls.Add(this.label6);
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
-            this.guna2Panel3.Location = new System.Drawing.Point(372, 0);
+            this.guna2Panel3.Location = new System.Drawing.Point(364, 0);
             this.guna2Panel3.Margin = new System.Windows.Forms.Padding(0, 0, 10, 10);
             this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(176, 127);
+            this.guna2Panel3.Size = new System.Drawing.Size(172, 127);
             this.guna2Panel3.TabIndex = 6;
             // 
             // lblTongNhanVien_Chien
@@ -365,7 +369,7 @@
             this.lblTongNhanVien_Chien.ForeColor = System.Drawing.Color.White;
             this.lblTongNhanVien_Chien.Location = new System.Drawing.Point(9, 72);
             this.lblTongNhanVien_Chien.Name = "lblTongNhanVien_Chien";
-            this.lblTongNhanVien_Chien.Size = new System.Drawing.Size(74, 32);
+            this.lblTongNhanVien_Chien.Size = new System.Drawing.Size(70, 32);
             this.lblTongNhanVien_Chien.TabIndex = 8;
             this.lblTongNhanVien_Chien.Text = "1,587";
             this.lblTongNhanVien_Chien.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -380,7 +384,7 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(6, 22);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(77, 47);
+            this.label6.Size = new System.Drawing.Size(73, 47);
             this.label6.TabIndex = 9;
             this.label6.Text = "Nhân Viên";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -396,10 +400,10 @@
             this.guna2Panel2.Controls.Add(this.label4);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(97)))));
-            this.guna2Panel2.Location = new System.Drawing.Point(186, 0);
+            this.guna2Panel2.Location = new System.Drawing.Point(182, 0);
             this.guna2Panel2.Margin = new System.Windows.Forms.Padding(0, 0, 10, 10);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(176, 127);
+            this.guna2Panel2.Size = new System.Drawing.Size(172, 127);
             this.guna2Panel2.TabIndex = 5;
             // 
             // lblTongKhachHang_Chien
@@ -412,7 +416,7 @@
             this.lblTongKhachHang_Chien.ForeColor = System.Drawing.Color.White;
             this.lblTongKhachHang_Chien.Location = new System.Drawing.Point(9, 72);
             this.lblTongKhachHang_Chien.Name = "lblTongKhachHang_Chien";
-            this.lblTongKhachHang_Chien.Size = new System.Drawing.Size(74, 32);
+            this.lblTongKhachHang_Chien.Size = new System.Drawing.Size(70, 32);
             this.lblTongKhachHang_Chien.TabIndex = 8;
             this.lblTongKhachHang_Chien.Text = "1,587";
             this.lblTongKhachHang_Chien.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -427,7 +431,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(6, 22);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 47);
+            this.label4.Size = new System.Drawing.Size(73, 47);
             this.label4.TabIndex = 9;
             this.label4.Text = "Khách Hàng";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -446,7 +450,7 @@
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(0, 0, 10, 10);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(176, 127);
+            this.guna2Panel1.Size = new System.Drawing.Size(172, 127);
             this.guna2Panel1.TabIndex = 4;
             // 
             // lblTongDoanhThu
@@ -459,7 +463,7 @@
             this.lblTongDoanhThu.ForeColor = System.Drawing.Color.White;
             this.lblTongDoanhThu.Location = new System.Drawing.Point(6, 64);
             this.lblTongDoanhThu.Name = "lblTongDoanhThu";
-            this.lblTongDoanhThu.Size = new System.Drawing.Size(98, 45);
+            this.lblTongDoanhThu.Size = new System.Drawing.Size(94, 45);
             this.lblTongDoanhThu.TabIndex = 8;
             this.lblTongDoanhThu.Text = "49,245,000 VNĐ";
             this.lblTongDoanhThu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -474,7 +478,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(25, 17);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 47);
+            this.label1.Size = new System.Drawing.Size(63, 47);
             this.label1.TabIndex = 9;
             this.label1.Text = "Doanh Thu";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -491,7 +495,7 @@
             this.guna2PictureBox4.FillColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox4.Image = global::hotelsphere.Properties.Resources.icon_alert;
             this.guna2PictureBox4.ImageRotate = 0F;
-            this.guna2PictureBox4.Location = new System.Drawing.Point(90, 0);
+            this.guna2PictureBox4.Location = new System.Drawing.Point(85, 0);
             this.guna2PictureBox4.Name = "guna2PictureBox4";
             this.guna2PictureBox4.Size = new System.Drawing.Size(87, 127);
             this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -505,7 +509,7 @@
             this.guna2PictureBox3.FillColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox3.Image = global::hotelsphere.Properties.Resources.icon_staff_report;
             this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(89, 0);
+            this.guna2PictureBox3.Location = new System.Drawing.Point(85, 0);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
             this.guna2PictureBox3.Size = new System.Drawing.Size(87, 127);
             this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -519,7 +523,7 @@
             this.guna2PictureBox2.FillColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox2.Image = global::hotelsphere.Properties.Resources.icon_report_customer;
             this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(89, 0);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(85, 0);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
             this.guna2PictureBox2.Size = new System.Drawing.Size(87, 127);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -533,7 +537,7 @@
             this.guna2PictureBox1.FillColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Image = global::hotelsphere.Properties.Resources.icon_revenue;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(98, 0);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(94, 0);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(78, 127);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -550,7 +554,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "UC_Reports_Chien";
-            this.Size = new System.Drawing.Size(785, 500);
+            this.Size = new System.Drawing.Size(768, 500);
             this.panel4.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.guna2Panel7.ResumeLayout(false);
